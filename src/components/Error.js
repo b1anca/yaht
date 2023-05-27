@@ -1,3 +1,6 @@
+import React from "react"
+import PropTypes from 'prop-types'
+
 const Error = ({ children, ...props }) => {
   return (
     <div
@@ -7,6 +10,10 @@ const Error = ({ children, ...props }) => {
       {children}
     </div>
   )
+}
+
+Error.propTypes = {
+  children: PropTypes.node
 }
 
 export default Error

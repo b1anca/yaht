@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux'
+import React, { useSelector } from 'react-redux'
 
 const ProfileScreen = () => {
   const { userInfo } = useSelector((state) => state.auth)
@@ -8,7 +8,7 @@ const ProfileScreen = () => {
     <div>
       <span>
         Welcome <strong>{userInfo?.email}!</strong> You can view this page
-        because you're logged in
+        because you&apos;re logged in
       </span>
     </div>
   )

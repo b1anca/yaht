@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import Spinner from "./Spinner"
 
 const Button = ({ type, loading, children, ...rest }) => {
@@ -10,6 +12,12 @@ const Button = ({ type, loading, children, ...rest }) => {
       {loading ? <Spinner /> : children}
     </button>
   )
+}
+
+Button.propTypes = {
+  type: PropTypes.string,
+  loading: PropTypes.bool,
+  children: PropTypes.node,
 }
 
 export default Button

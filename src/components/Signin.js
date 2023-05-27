@@ -1,3 +1,4 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 import StyledForm from '../styles'
 
@@ -10,7 +11,7 @@ function Signup() {
           <input type="text" placeholder="Password" />
           <button>Sign In</button>
           <br></br>
-          Don't have an account?
+          Don&apos;t have an account?
           <Link
             to="/sign-up">
             Sign up
