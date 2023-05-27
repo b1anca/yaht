@@ -1,25 +1,25 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const authApi = createApi({
-  reducerPath: 'authApi',
+  reducerPath: "authApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://127.0.0.1:4000/',
+    baseUrl: "http://127.0.0.1:4000/",
     prepareHeaders: (headers, { getState }) => {
-      const token = getState().auth.userToken
+      const token = getState().auth.userToken;
       if (token) {
-        headers.set('authorization', `Bearer ${token}`)
-        return headers
+        headers.set("authorization", `Bearer ${token}`);
+        return headers;
       }
     },
   }),
   endpoints: (build) => ({
     getDetails: build.query({
       query: () => ({
-        url: 'users/1',
-        method: 'GET',
+        url: "users/1",
+        method: "GET",
       }),
     }),
   }),
-})
+});
 
-export const { useGetDetailsQuery } = authApi
+export const { useGetDetailsQuery } = authApi;

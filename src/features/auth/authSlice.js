@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { registerUser, userLogin } from './authActions'
+import { createSlice } from "@reduxjs/toolkit";
+import { registerUser, userLogin } from "./authActions";
 
-const userToken = localStorage.getItem('userToken')
-  ? localStorage.getItem('userToken')
-  : null
+const userToken = localStorage.getItem("userToken")
+  ? localStorage.getItem("userToken")
+  : null;
 
 const initialState = {
   loading: false,
@@ -11,52 +11,52 @@ const initialState = {
   userToken,
   error: null,
   success: false,
-}
+};
 
 const authSlice = createSlice({
-  name: 'user',
+  name: "user",
   initialState,
   reducers: {
     logout: (state) => {
-      localStorage.removeItem('userToken')
-      state.loading = false
-      state.userInfo = null
-      state.userToken = null
-      state.error = null
+      localStorage.removeItem("userToken");
+      state.loading = false;
+      state.userInfo = null;
+      state.userToken = null;
+      state.error = null;
     },
     setCredentials: (state, { payload }) => {
-      state.userInfo = payload
+      state.userInfo = payload;
     },
   },
   extraReducers: {
     [userLogin.pending]: (state) => {
-      state.loading = true
-      state.error = null
+      state.loading = true;
+      state.error = null;
     },
     [userLogin.fulfilled]: (state, { payload }) => {
-      state.loading = false
-      state.userInfo = payload
-      state.userToken = payload.userToken
+      state.loading = false;
+      state.userInfo = payload;
+      state.userToken = payload.userToken;
     },
     [userLogin.rejected]: (state, { payload }) => {
-      state.loading = false
-      state.error = payload
+      state.loading = false;
+      state.error = payload;
     },
     [registerUser.pending]: (state) => {
-      state.loading = true
-      state.error = null
+      state.loading = true;
+      state.error = null;
     },
     [registerUser.fulfilled]: (state) => {
-      state.loading = false
-      state.success = true
+      state.loading = false;
+      state.success = true;
     },
     [registerUser.rejected]: (state, { payload }) => {
-      state.loading = false
-      state.error = payload
+      state.loading = false;
+      state.error = payload;
     },
   },
-})
+});
 
-export const { logout, setCredentials } = authSlice.actions
+export const { logout, setCredentials } = authSlice.actions;
 
-export default authSlice.reducer
+export default authSlice.reducer;

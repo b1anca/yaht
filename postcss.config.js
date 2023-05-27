@@ -4,4 +4,4 @@ module.exports = {
     require("tailwindcss")("./src/tailwind.config.js"),
     require("autoprefixer"),
   ],
-}
+};

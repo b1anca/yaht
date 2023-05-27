@@ -1,19 +1,19 @@
-import React from "react"
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 const Error = ({ children, ...props }) => {
   return (
     <div
-      style={{ color: '#f23838', textAlign: 'center', margin: '0.5rem 0' }}
+      style={{ color: "#f23838", textAlign: "center", margin: "0.5rem 0" }}
       {...props}
     >
       {children}
     </div>
-  )
-}
+  );
+};
 
 Error.propTypes = {
-  children: PropTypes.node
-}
+  children: PropTypes.node,
+};
 
-export default Error
+export default Error;
