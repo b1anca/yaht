@@ -2,12 +2,12 @@ import { useSelector } from 'react-redux'
 
 const ProfileScreen = () => {
   const { userInfo } = useSelector((state) => state.auth)
+  console.log('debug profile screen', userInfo)
 
   return (
     <div>
-      <figure>{userInfo?.firstName.charAt(0).toUpperCase()}</figure>
       <span>
-        Welcome <strong>{userInfo?.firstName}!</strong> You can view this page
+        Welcome <strong>{userInfo?.email}!</strong> You can view this page
         because you're logged in
       </span>
     </div>
