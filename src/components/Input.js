@@ -5,11 +5,16 @@ const Input = forwardRef((props, ref) => {
   const { type, required = false, label, ...rest } = props;
 
   return (
-    <div className="form-group">
-      <label htmlFor={type}>{label}</label>
+    <div className="mb-6">
+      <label
+        htmlFor={type}
+        className="block text-sm font-semibold leading-6 text-gray-700"
+      >
+        {label}
+      </label>
       <input
         type={type}
-        className="form-input border-gray-300 mb-4 w-full border-solid border rounded py-2 px-4"
+        className="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
         required={required}
         ref={ref}
         {...rest}
