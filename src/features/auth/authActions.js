@@ -33,8 +33,11 @@ export const userLogin = createAsyncThunk(
 );
 
 export const registerUser = createAsyncThunk(
-  "user/register",
-  async ({ firstName, email, password }, { rejectWithValue }) => {
+  "users/create",
+  async (
+    { name, email, password, password_confirmation },
+    { rejectWithValue }
+  ) => {
     try {
       const config = {
         headers: {
@@ -43,8 +46,8 @@ export const registerUser = createAsyncThunk(
       };
 
       await axios.post(
-        `${backendURL}/api/user/register`,
-        { firstName, email, password },
+        `${backendURL}/users`,
+        { name, email, password, password_confirmation },
         config
       );
     } catch (error) {
