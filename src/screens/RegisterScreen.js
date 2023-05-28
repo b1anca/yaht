@@ -39,12 +39,7 @@ const RegisterScreen = () => {
         <form className="w-full max-w-sm" onSubmit={handleSubmit(submitForm)}>
           {error && <Error>{error}</Error>}
           {customError && <Error>{customError}</Error>}
-          <Input
-            type="text"
-            required
-            {...register("name")}
-            label="First name"
-          />
+          <Input type="text" required {...register("name")} label="Name" />
           <Input type="email" required {...register("email")} label="Email" />
           <Input
             type="password"
