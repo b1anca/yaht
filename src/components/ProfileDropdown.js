@@ -1,12 +1,12 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { logout } from "../features/auth/authSlice";
 import Dropdown from "./Dropdown";
 
-const ProfileDropdown = ({ userInfo }) => {
+const ProfileDropdown = () => {
   const dispatch = useDispatch();
+  const { userInfo } = useSelector((state) => state.auth);
 
   return (
     <Dropdown
@@ -45,10 +45,6 @@ const ProfileDropdown = ({ userInfo }) => {
       </div>
     </Dropdown>
   );
-};
-
-ProfileDropdown.propTypes = {
-  userInfo: PropTypes.object.isRequired,
 };
 
 export default ProfileDropdown;

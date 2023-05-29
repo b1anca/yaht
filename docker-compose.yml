@@ -5,7 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.dev
+    container_name: yaht-app
     volumes:
       - ./:/app/
     ports:
       - "3000:3000"
+    env_file:
+      - .env.development.local

@@ -38,7 +38,7 @@ const Header = () => {
                 </span>
               )}
               {userInfo ? (
-                <ProfileDropdown userInfo={userInfo} />
+                <ProfileDropdown />
               ) : (
                 <>
                   <NavLink
