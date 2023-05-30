@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "../features/auth/authActions";
 import Error from "../components/Error";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import NavLink from "../components/NavLink";
 
 function LoginScreen() {
   const { loading, userInfo, error } = useSelector((state) => state.auth);
@@ -17,7 +18,7 @@ function LoginScreen() {
 
   useEffect(() => {
     if (userInfo) {
-      navigate("/user-profile");
+      navigate("/dashboard");
     }
   }, [navigate, userInfo]);
 
@@ -47,10 +48,7 @@ function LoginScreen() {
           <p className="text-center sm:text-left">
             Don&apos;t have an account?
           </p>
-          <NavLink
-            className="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
-            to="/register"
-          >
+          <NavLink secondary to="/register">
             Register
           </NavLink>
         </div>

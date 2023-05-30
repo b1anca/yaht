@@ -3,23 +3,20 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 
 const API_URL = process.env.REACT_APP_YAHT_API_URL;
 
-export const userLogin = createAsyncThunk(
-  "auth/userLogin",
-  async ({ email, password }, { rejectWithValue }) => {
+export const createHabit = createAsyncThunk(
+  "habits/createHabit",
+  async ({ name }, { rejectWithValue, getState }) => {
     try {
+      const state = getState();
+      const token = state.auth.userToken;
       const config = {
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       };
 
-      const { data } = await axios.post(
-        `${API_URL}/auth/login`,
-        { email, password },
-        config
-      );
-
-      localStorage.setItem("userToken", data.token);
+      const { data } = await axios.post(`${API_URL}/habits`, { name }, config);
 
       return data;
     } catch (error) {
@@ -32,24 +29,22 @@ export const userLogin = createAsyncThunk(
   }
 );
 
-export const registerUser = createAsyncThunk(
-  "users/create",
-  async (
-    { name, email, password, password_confirmation },
-    { rejectWithValue }
-  ) => {
+export const fetchHabits = createAsyncThunk(
+  "habits/fetchHabits",
+  async (_, { rejectWithValue, getState }) => {
     try {
+      const state = getState();
+      const token = state.auth.userToken;
       const config = {
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
         },
       };
 
-      await axios.post(
-        `${API_URL}/users`,
-        { name, email, password, password_confirmation },
-        config
-      );
+      const { data } = await axios.get(`${API_URL}/habits`, config);
+
+      return data;
     } catch (error) {
       if (error.response && error.response.data.message) {
         return rejectWithValue(error.response.data.message);

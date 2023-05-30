@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Error from "../components/Error";
 import { registerUser } from "../features/auth/authActions";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import NavLink from "../components/NavLink";
 
 const RegisterScreen = () => {
   const [customError, setCustomError] = useState(null);
@@ -19,7 +20,7 @@ const RegisterScreen = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (userInfo) navigate("/user-profile");
+    if (userInfo) navigate("/user-profile"); // TODO: check this
     if (success) navigate("/login");
   }, [navigate, userInfo, success]);
 
@@ -61,10 +62,7 @@ const RegisterScreen = () => {
       <footer className="relative shrink-0">
         <div className="space-y-4 text-sm text-gray-700 sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
           <p className="text-center sm:text-left">Already have an account?</p>
-          <NavLink
-            className="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
-            to="/login"
-          >
+          <NavLink secondary to="/login">
             Sign in
           </NavLink>
         </div>
