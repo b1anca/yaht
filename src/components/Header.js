@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useGetDetailsQuery } from "../app/services/auth/authService";
 import { setCredentials } from "../features/auth/authSlice";
-import Button from "./Button";
 import ProfileDropdown from "./ProfileDropdown";
+import NavLink from "./NavLink";
 
 const PATHNAME_WITHOUT_HEADER = ["/login", "/register"];
 
@@ -33,7 +33,7 @@ const Header = () => {
           <div className="relative flex items-center">
             <div className="relative hidden lg:flex items-center ml-auto">
               {isFetching && (
-                <span className="text-slate-600 px-5">
+                <span className="whitespace-nowrap text-slate-600 px-5">
                   Fetching your profile...
                 </span>
               )}
@@ -41,15 +41,12 @@ const Header = () => {
                 <ProfileDropdown />
               ) : (
                 <>
-                  <NavLink
-                    className="whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-slate-600"
-                    to="/login"
-                  >
+                  <NavLink tetriary to="/login">
                     Sign in
                   </NavLink>
-                  <Button primary>
-                    <NavLink to="/register">Register</NavLink>
-                  </Button>
+                  <NavLink primary to="/register">
+                    Register
+                  </NavLink>
                 </>
               )}
             </div>
