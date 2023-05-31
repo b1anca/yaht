@@ -6,6 +6,8 @@ import { createHabit } from "../features/habits/habitsActions";
 import Error from "../components/Error";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import withSideNavLayout from "../hoc/withSidenavLayout";
+import { H1 } from "../components/Typography";
 
 const CreateHabitScreen = () => {
   const { loading, error } = useSelector((state) => state.habits);
@@ -19,18 +21,17 @@ const CreateHabitScreen = () => {
   };
 
   return (
-    <main className="relative h-screen flex flex-1 flex-col overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
-      <div className="relative flex flex-1 flex-col items-center justify-center pb-16 pt-12">
-        <form className="w-full max-w-sm" onSubmit={handleSubmit(submitForm)}>
-          {error && <Error>{error}</Error>}
-          <Input type="name" required {...register("name")} label="Name" />
-          <Button primary type="submit" loading={loading}>
-            Create habit
-          </Button>
-        </form>
-      </div>
-    </main>
+    <>
+      <H1>Create habit</H1>
+      <form className="max-w-sm" onSubmit={handleSubmit(submitForm)}>
+        {error && <Error>{error}</Error>}
+        <Input type="name" required {...register("name")} label="Name" />
+        <Button primary type="submit" loading={loading}>
+          Create habit
+        </Button>
+      </form>
+    </>
   );
 };
 
-export default CreateHabitScreen;
+export default withSideNavLayout(CreateHabitScreen);
