@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { createHabit } from "../features/habits/habitsActions";
+import { createHabit } from "../features/habits/habitActions";
 import Error from "../components/Error";
 import Input from "../components/Input";
 import Button from "../components/Button";

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createHabit, fetchHabits } from "./habitsActions";
+import { createHabit, fetchHabits } from "./habitActions";
 
 const initialState = {
   loading: false,
