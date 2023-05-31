@@ -12,6 +12,18 @@ export const H1 = ({ children, ...props }) => {
   );
 };
 
+export const P = ({ children, ...props }) => {
+  return (
+    <p className="text-sm mb-2 tracking-tight text-slate-600" {...props}>
+      {children}
+    </p>
+  );
+};
+
 H1.propTypes = {
+  children: PropTypes.node,
+};
+
+P.propTypes = {
   children: PropTypes.node,
 };

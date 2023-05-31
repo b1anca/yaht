@@ -1,17 +1,19 @@
 import React, { useSelector } from "react-redux";
+import withSideNavLayout from "../hoc/withSidenavLayout";
+import { H1, P } from "../components/Typography";
 
 const ProfileScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
   return (
-    <div>
-      <div>profile</div>
-      <span>
+    <>
+      <H1>Your profile</H1>
+      <P>
         Welcome <strong>{userInfo.name}!</strong> You can view this page because
         you&apos;re logged in
-      </span>
-    </div>
+      </P>
+    </>
   );
 };
 
-export default ProfileScreen;
+export default withSideNavLayout(ProfileScreen);

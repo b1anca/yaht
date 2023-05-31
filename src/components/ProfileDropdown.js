@@ -13,7 +13,7 @@ const ProfileDropdown = () => {
       options={[
         () => (
           <NavLink
-            className="w-full hover:bg-gray-100 whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-slate-600"
+            className="w-full hover:bg-gray-100 whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-slate-600 border-b border-slate-900/10"
             to="/user-profile"
           >
             Your profile
