@@ -15,7 +15,7 @@ const Button = ({
     <button
       type={type}
       className={classNames(
-        "button py-2 px-6 rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4",
+        "text-sm button py-2 px-6 rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4",
         {
           "text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
             !primary,
