@@ -1,20 +1,30 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
-export const H1 = ({ children, ...props }) => {
+export const H1 = ({ children, className, ...rest }) => {
   return (
     <h1
-      className="mb-4 text-4xl font-extrabold tracking-tight text-slate-700"
-      {...props}
+      className={classNames(
+        "mb-4 text-4xl font-extrabold tracking-tight text-slate-700",
+        className
+      )}
+      {...rest}
     >
       {children}
     </h1>
   );
 };
 
-export const P = ({ children, ...props }) => {
+export const P = ({ children, className, ...rest }) => {
   return (
-    <p className="text-sm mb-2 tracking-tight text-slate-600" {...props}>
+    <p
+      className={classNames(
+        "text-sm mb-2 tracking-tight text-slate-600",
+        className
+      )}
+      {...rest}
+    >
       {children}
     </p>
   );
@@ -22,8 +32,10 @@ export const P = ({ children, ...props }) => {
 
 H1.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 P.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
