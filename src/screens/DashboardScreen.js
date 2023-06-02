@@ -25,6 +25,10 @@ const DashboardScreen = () => {
 
   const handleDayTaskClick = useCallback(
     ({ day, habit, completedTaskForTheDay }) => {
+      if (day > currentDate) {
+        return;
+      }
+
       if (completedTaskForTheDay) {
         dispatch(
           deleteTask({ habitId: habit.id, id: completedTaskForTheDay.id })
@@ -83,7 +87,9 @@ const DashboardScreen = () => {
                             ? COLORS[i]
                             : "#F1F5F9",
                         }}
-                        className="rounded cursor-pointer w-6 h-6"
+                        className={classNames("rounded w-6 h-6", {
+                          "cursor-pointer": day <= currentDate,
+                        })}
                         onClick={() =>
                           handleDayTaskClick({
                             day,
