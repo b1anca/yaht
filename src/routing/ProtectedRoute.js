@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { NavLink, Outlet } from "react-router-dom";
+import PageLayout from "../layouts/PageLayout";
 
 const ProtectedRoute = () => {
   const { userInfo } = useSelector((state) => state.auth);
@@ -16,7 +17,11 @@ const ProtectedRoute = () => {
     );
   }
 
-  return <Outlet />;
+  return (
+    <PageLayout>
+      <Outlet />
+    </PageLayout>
+  );
 };
 
 export default ProtectedRoute;

@@ -1,5 +1,4 @@
 import React, { useSelector } from "react-redux";
-import withSideNavLayout from "../hoc/withSidenavLayout";
 import { H1, P } from "../components/Typography";
 
 const ProfileScreen = () => {
@@ -16,4 +15,4 @@ const ProfileScreen = () => {
   );
 };
 
-export default withSideNavLayout(ProfileScreen);
+export default ProfileScreen;

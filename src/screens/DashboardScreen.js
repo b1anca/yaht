@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
-import withSideNavLayout from "../hoc/withSidenavLayout";
 import { H1 } from "../components/Typography";
 import { fetchHabits } from "../features/habits/habitActions";
 import { P } from "../components/Typography";
@@ -110,4 +109,4 @@ const DashboardScreen = () => {
   );
 };
 
-export default withSideNavLayout(DashboardScreen);
+export default DashboardScreen;

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import NavLink from "../components/NavLink";
 import { fetchHabits } from "../features/habits/habitActions";
-import withSideNavLayout from "../hoc/withSidenavLayout";
 import { H1 } from "../components/Typography";
 
 const HabitsScreen = () => {
@@ -33,4 +32,4 @@ const HabitsScreen = () => {
 
 HabitsScreen.displayName = "HabitsScreen";
 
-export default withSideNavLayout(HabitsScreen);
+export default HabitsScreen;

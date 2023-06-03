@@ -6,7 +6,6 @@ import { createHabit } from "../features/habits/habitActions";
 import Error from "../components/Error";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import withSideNavLayout from "../hoc/withSidenavLayout";
 import { H1 } from "../components/Typography";
 
 const CreateHabitScreen = () => {
@@ -34,4 +33,4 @@ const CreateHabitScreen = () => {
   );
 };
 
-export default withSideNavLayout(CreateHabitScreen);
+export default CreateHabitScreen;
