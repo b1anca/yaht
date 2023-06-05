@@ -1,15 +1,32 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
-import { H1 } from "../../components/Typography";
+import PropTypes from "prop-types";
+import { H1, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
-import { P } from "../../components/Typography";
 import {
   getDaysInMonth,
-  formatDate,
   areDatesEqual,
+  monthNames,
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
+import HabitCard from "./HabitCard";
+
+const DayHeader = ({ day, currentDate }) => (
+  <th>
+    <P
+      className={classNames({
+        "text-slate-400 mb-1 font-medium": !areDatesEqual(day, currentDate),
+        "text-slate-700 text-base mb-0": areDatesEqual(day, currentDate),
+      })}
+    >
+      {day.getDate()}
+    </P>
+    {areDatesEqual(day, currentDate) && (
+      <P className="text-slate-700">{monthNames[day.getMonth()]}</P>
+    )}
+  </th>
+);
 
 const DashboardScreen = () => {
   const currentDate = new Date();
@@ -26,22 +43,22 @@ const DashboardScreen = () => {
 
   return (
     <div>
-      <H1>Today, {formatDate(currentDate)}</H1>
+      <H1>Habits</H1>
+      <div className="flex flex-wrap mb-8">
+        {habits.map((habit) => (
+          <HabitCard key={habit.id} {...habit} />
+        ))}
+      </div>
       <table>
         <thead>
           <tr>
-            <th></th>
-            {days.map((day, i) => (
-              <th key={day.toISOString()}>
-                <P
-                  className={classNames("mb-1", {
-                    "text-slate-400": !areDatesEqual(day, currentDate),
-                    "text-slate-900": areDatesEqual(day, currentDate),
-                  })}
-                >
-                  {i + 1}
-                </P>
-              </th>
+            <th />
+            {days.map((day) => (
+              <DayHeader
+                key={day.toISOString()}
+                day={day}
+                currentDate={currentDate}
+              />
             ))}
           </tr>
         </thead>
@@ -53,6 +70,11 @@ const DashboardScreen = () => {
       </table>
     </div>
   );
+};
+
+DayHeader.propTypes = {
+  day: PropTypes.object,
+  currentDate: PropTypes.object,
 };
 
 export default DashboardScreen;
