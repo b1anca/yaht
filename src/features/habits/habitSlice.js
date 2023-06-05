@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createHabit, fetchHabits } from "./habitActions";
+import { createHabit, fetchHabits, updateHabit } from "./habitActions";
 import { createTask, deleteTask } from "../tasks/taskActions";
 
 const initialState = {
@@ -45,6 +45,28 @@ const habitSlice = createSlice({
       });
     },
     [createTask.rejected]: (state, { payload }) => {
+      state.loading = false;
+      state.error = payload;
+    },
+    [updateHabit.pending]: (state) => {
+      state.loading = true;
+      state.error = null;
+    },
+    [updateHabit.fulfilled]: (state, { payload }) => {
+      state.loading = false;
+      state.success = true;
+      state.habits = state.habits.map((habit) => {
+        if (habit.id === payload.habit_id) {
+          return {
+            ...habit,
+            ...payload,
+          };
+        } else {
+          return habit;
+        }
+      });
+    },
+    [updateHabit.rejected]: (state, { payload }) => {
       state.loading = false;
       state.error = payload;
     },

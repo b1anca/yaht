@@ -29,6 +29,36 @@ export const createHabit = createAsyncThunk(
   }
 );
 
+export const updateHabit = createAsyncThunk(
+  "habits/updateHabit",
+  async ({ id, name }, { rejectWithValue, getState }) => {
+    try {
+      const state = getState();
+      const token = state.auth.userToken;
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      };
+
+      const { data } = await axios.put(
+        `${API_URL}/habits/${id}`,
+        { name },
+        config
+      );
+
+      return data;
+    } catch (error) {
+      if (error.response && error.response.data.message) {
+        return rejectWithValue(error.response.data.message);
+      } else {
+        return rejectWithValue(error.message);
+      }
+    }
+  }
+);
+
 export const fetchHabits = createAsyncThunk(
   "habits/fetchHabits",
   async (_, { rejectWithValue, getState }) => {
