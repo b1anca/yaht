@@ -1,15 +1,24 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import NavLink from "../components/NavLink";
 import { fetchHabits } from "../features/habits/habitActions";
-import { H1, H2, P } from "../components/Typography";
-import { COLORS } from "../constants";
+import { H1 } from "../components/Typography";
+import Table from "../components/Table";
 
 const HabitsScreen = () => {
   const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const habitsData = habits.map((h) => ({
+    Id: h.id,
+    Name: h.name,
+    "Overal progress": "50%",
+    "Days in a row": 2,
+    Record: 2,
+    Color: h.color,
+    "Created at": h.created_at,
+  }));
 
   useEffect(() => {
     dispatch(fetchHabits());
@@ -23,27 +32,12 @@ const HabitsScreen = () => {
           Create habit
         </NavLink>
       </div>
-      {habits.map((habit) => (
-        <div
-          className="w-full p-4 mr-2 mb-2 rounded-lg bg-gradient-to-br from-purple-400 to-slate-100"
-          key={habit.id}
-        >
-          <div className="flex justify-between">
-            <div className="p-2">
-              <H2 className="!mb-0">{habit.name}</H2>
-            </div>
-            <div>
-              <NavLink to={`/habits/${habit.id}/edit`}>
-                <FontAwesomeIcon
-                  icon={faPenToSquare}
-                  size="lg"
-                  style={{ color: COLORS.slate700 }}
-                />
-              </NavLink>
-            </div>
-          </div>
-        </div>
-      ))}
+      {habitsData.length && (
+        <Table
+          data={habitsData}
+          onRowClick={({ Id }) => navigate(`/habits/${Id}`)}
+        />
+      )}
     </>
   );
 };

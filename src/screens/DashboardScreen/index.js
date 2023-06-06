@@ -16,8 +16,8 @@ const DayHeader = ({ day, currentDate }) => (
   <th>
     <P
       className={classNames({
-        "text-slate-400 mb-1 font-medium": !areDatesEqual(day, currentDate),
-        "text-slate-700 text-base mb-0": areDatesEqual(day, currentDate),
+        "text-slate-400 font-medium": !areDatesEqual(day, currentDate),
+        "text-slate-700 text-base !mb-0": areDatesEqual(day, currentDate),
       })}
     >
       {day.getDate()}

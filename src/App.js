@@ -15,6 +15,7 @@ import HabitsScreen from "./screens/HabitsScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import CreateHabitScreen from "./screens/CreateHabitScreen";
 import EditHabitScreen from "./screens/EditHabitScreen";
+import HabitScreen from "./screens/HabitScreen";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/habits" element={<HabitsScreen />} />
           <Route path="/habits/new" element={<CreateHabitScreen />} />
           <Route path="/habits/:id/edit" element={<EditHabitScreen />} />
+          <Route path="/habits/:id" element={<HabitScreen />} />
           <Route path="/user-profile" element={<ProfileScreen />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />

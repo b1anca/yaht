@@ -34,7 +34,7 @@ export const P = ({ children, className, bold, ...rest }) => {
   return (
     <p
       className={classNames(
-        "text-sm mb-2 tracking-tight text-slate-600 ",
+        "text-sm mb-2 tracking-tight text-slate-600",
         { "font-extrabold": bold },
         className
       )}
