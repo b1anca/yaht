@@ -31,7 +31,7 @@ export const createHabit = createAsyncThunk(
 
 export const updateHabit = createAsyncThunk(
   "habits/updateHabit",
-  async ({ id, name }, { rejectWithValue, getState }) => {
+  async ({ id, name, color }, { rejectWithValue, getState }) => {
     try {
       const state = getState();
       const token = state.auth.userToken;
@@ -44,7 +44,7 @@ export const updateHabit = createAsyncThunk(
 
       const { data } = await axios.put(
         `${API_URL}/habits/${id}`,
-        { name },
+        { name, color },
         config
       );
 

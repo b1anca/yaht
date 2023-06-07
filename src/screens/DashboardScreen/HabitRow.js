@@ -6,6 +6,7 @@ import { P } from "../../components/Typography";
 import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { COLORS } from "../../constants";
+import NavLink from "../../components/NavLink";
 
 const Day = ({ tasks, day, habitId, habitColor }) => {
   const currentDate = new Date();
@@ -31,6 +32,13 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
   return (
     <td>
       <div
+        title={
+          day > currentDate
+            ? "This is a future date. You can't mark tasks as completed in advance."
+            : completedTaskForTheDay
+            ? "Click to unmark this day. Let's keep the streak going!"
+            : "Great job! Click to mark this day as successful."
+        }
         style={{
           backgroundColor: completedTaskForTheDay
             ? habitColor || COLORS.slate700
@@ -49,7 +57,11 @@ const HabitRow = ({ id, name, tasks, days, color }) => {
   return (
     <tr>
       <td>
-        <P className="whitespace-nowrap font-semibold mt-2 mr-2">{name}</P>
+        <P className="whitespace-nowrap font-semibold mt-2 mr-2">
+          <NavLink to={`/habits/${id}`} tetriary className="!p-0">
+            {name}
+          </NavLink>
+        </P>
       </td>
       {days.map((day, j) => (
         <Day key={j} day={day} tasks={tasks} habitId={id} habitColor={color} />

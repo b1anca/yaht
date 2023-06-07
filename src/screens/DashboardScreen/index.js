@@ -16,7 +16,7 @@ const DayHeader = ({ day, currentDate }) => (
   <th>
     <P
       className={classNames({
-        "text-slate-400 font-medium": !areDatesEqual(day, currentDate),
+        "text-slate-400 font-normal": !areDatesEqual(day, currentDate),
         "text-slate-700 text-base !mb-0": areDatesEqual(day, currentDate),
       })}
     >
@@ -43,12 +43,7 @@ const DashboardScreen = () => {
 
   return (
     <div>
-      <H1>Habits</H1>
-      <div className="flex flex-wrap mb-8">
-        {habits.map((habit) => (
-          <HabitCard key={habit.id} {...habit} />
-        ))}
-      </div>
+      <H1>Habits tracker</H1>
       <table>
         <thead>
           <tr>
@@ -68,6 +63,12 @@ const DashboardScreen = () => {
           ))}
         </tbody>
       </table>
+      <H1 className="mt-16">Your habits</H1>
+      <div className="flex flex-wrap">
+        {habits.map((habit) => (
+          <HabitCard key={habit.id} {...habit} />
+        ))}
+      </div>
     </div>
   );
 };

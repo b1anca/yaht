@@ -25,7 +25,11 @@ const Table = ({ data, onRowClick }) => {
           >
             {headers.map((header, j) => (
               <td key={j} className="border-b p-2 pl-8 pr-8">
-                <P className="mt-2">{row[header]}</P>
+                {React.isValidElement(row[header]) ? (
+                  row[header]
+                ) : (
+                  <P className="mt-2">{row[header]}</P>
+                )}
               </td>
             ))}
           </tr>

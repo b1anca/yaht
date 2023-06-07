@@ -16,12 +16,12 @@ const NavLink = ({
     <RRDNavLink
       to={to}
       className={classNames(
-        "whiespace-nowrap text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4",
+        "text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4",
         {
           "text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
             secondary,
           "bg-slate-900 text-white hover:bg-slate-700 w-full": primary,
-          "text-slate-600 hover:text-slate-700": tetriary,
+          "text-slate-700 hover:text-slate-500": tetriary,
         },
         className
       )}

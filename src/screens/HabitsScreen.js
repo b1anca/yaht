@@ -5,6 +5,7 @@ import NavLink from "../components/NavLink";
 import { fetchHabits } from "../features/habits/habitActions";
 import { H1 } from "../components/Typography";
 import Table from "../components/Table";
+import { COLORS } from "../constants";
 
 const HabitsScreen = () => {
   const { habits } = useSelector((state) => state.habits);
@@ -16,7 +17,12 @@ const HabitsScreen = () => {
     "Overal progress": "50%",
     "Days in a row": 2,
     Record: 2,
-    Color: h.color,
+    Color: (
+      <div
+        className="rounded w-6 h-6"
+        style={{ backgroundColor: h.color || COLORS.slate700 }}
+      />
+    ),
     "Created at": h.created_at,
   }));
 

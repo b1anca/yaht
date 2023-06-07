@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { unwrapResult } from "@reduxjs/toolkit";
-import { useForm } from "react-hook-form";
+import { useForm, Controller } from "react-hook-form";
+import { HexColorPicker } from "react-colorful";
 import { selectHabitById } from "../features/habits/habitSelectors";
 import { updateHabit } from "../features/habits/habitActions";
 import { H1 } from "../components/Typography";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Error from "../components/Error";
+import { COLORS } from "../constants";
 
 const EditHabitScreen = () => {
   const { id } = useParams();
@@ -16,7 +18,12 @@ const EditHabitScreen = () => {
   const habit = useSelector(selectHabitById(id));
   const dispatch = useDispatch();
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, control } = useForm({
+    defaultValues: {
+      name: habit.name,
+      color: habit.color || COLORS.slate700,
+    },
+  });
   const navigate = useNavigate();
 
   const submitForm = (data) =>
@@ -29,15 +36,15 @@ const EditHabitScreen = () => {
       <H1>Edit habit</H1>
       <form className="max-w-sm" onSubmit={handleSubmit(submitForm)}>
         {error && <Error>{error}</Error>}
-        <Input
-          type="name"
-          required
-          {...register("name")}
-          label="Name"
-          defaultValue={habit.name}
+        <Input type="name" required {...register("name")} label="Name" />
+        <Controller
+          name="color"
+          control={control}
+          render={({ field }) => (
+            <HexColorPicker color={field.value} onChange={field.onChange} />
+          )}
         />
-        {/* TODO: color selector */}
-        <Button primary type="submit">
+        <Button primary type="submit" className="mt-6">
           Save habit
         </Button>
       </form>
