@@ -32,12 +32,19 @@ function LoginScreen() {
       <div className="relative flex flex-1 flex-col items-center justify-center pb-16 pt-12">
         <form className="w-full max-w-sm" onSubmit={handleSubmit(submitForm)}>
           {error && <Error>{error}</Error>}
-          <Input type="email" required {...register("email")} label="Email" />
+          <Input
+            type="email"
+            required
+            {...register("email")}
+            label="Email"
+            autoComplete="username"
+          />
           <Input
             type="password"
             required
             {...register("password")}
             label="Password"
+            autoComplete="current-password"
           />
           <Button primary type="submit" loading={loading}>
             Sign in
