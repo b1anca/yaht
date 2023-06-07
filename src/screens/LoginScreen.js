@@ -20,7 +20,6 @@ function LoginScreen() {
     if (userInfo) {
       navigate("/dashboard");
     }
-    // TODO: fix habits not showing after login
   }, [navigate, userInfo]);
 
   const submitForm = (data) => {
