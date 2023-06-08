@@ -6,10 +6,14 @@ import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { H1 } from "../components/Typography";
 import NavLink from "../components/NavLink";
 import { selectHabitById } from "../features/habits/habitSelectors";
+import HabitHeatmap from "../components/HabitHeatmap";
 
 const HabitScreen = () => {
   const { id } = useParams();
   const habit = useSelector(selectHabitById(id));
+  const tasksSet = new Set(
+    habit.tasks.map((t) => new Date(t.completed_at).toISOString())
+  );
 
   return (
     <>
@@ -18,7 +22,9 @@ const HabitScreen = () => {
         <NavLink to={`/habits/${id}/edit`} className="!text-xl" tetriary>
           <FontAwesomeIcon icon={faEdit} />
         </NavLink>
-        {/* TODO: heatmap */}
+      </div>
+      <div>
+        <HabitHeatmap dataSet={tasksSet} habitColor={habit.color} />
       </div>
     </>
   );
