@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
@@ -7,10 +7,12 @@ import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { COLORS } from "../../constants";
 import NavLink from "../../components/NavLink";
+import Spinner from "../../components/Spinner";
 
 const Day = ({ tasks, day, habitId, habitColor }) => {
   const currentDate = new Date();
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState();
 
   const completedTaskForTheDay = useCallback(
     tasks.find((task) => areDatesEqual(new Date(task.completed_at), day)),
@@ -18,14 +20,19 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
   );
 
   const handleDayTaskClick = useCallback(() => {
-    if (day > currentDate) {
+    if (loading || day > currentDate) {
       return;
     }
 
+    setLoading(true);
     if (completedTaskForTheDay) {
-      dispatch(deleteTask({ habitId, id: completedTaskForTheDay.id }));
+      dispatch(deleteTask({ habitId, id: completedTaskForTheDay.id })).then(
+        () => setLoading(false)
+      );
     } else {
-      dispatch(createTask({ habitId, completed_at: day.toISOString() }));
+      dispatch(createTask({ habitId, completed_at: day.toISOString() })).then(
+        () => setLoading(false)
+      );
     }
   }, [day, currentDate, habitId]);
 
@@ -36,7 +43,7 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
           day > currentDate
             ? "This is a future date. You can't mark tasks as completed in advance."
             : completedTaskForTheDay
-            ? "Click to unmark this day. Let's keep the streak going!"
+            ? "Click to unmark this day."
             : "Great job! Click to mark this day as successful."
         }
         style={{
@@ -44,11 +51,14 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
             ? habitColor || COLORS.slate700
             : COLORS.slate100,
         }}
-        className={classNames("whitespace-nowrap rounded w-6 h-6", {
-          "cursor-pointer": day <= currentDate,
-        })}
+        className={classNames(
+          "whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center",
+          { "cursor-pointer": day <= currentDate }
+        )}
         onClick={handleDayTaskClick}
-      />
+      >
+        {loading && <Spinner />}
+      </div>
     </td>
   );
 };
@@ -57,14 +67,20 @@ const HabitRow = ({ id, name, tasks, days, color }) => {
   return (
     <tr>
       <td>
-        <P className="whitespace-nowrap font-semibold mt-2 mr-2">
+        <P className="whitespace-nowrap mt-2 mr-2">
           <NavLink to={`/habits/${id}`} tetriary className="!p-0">
             {name}
           </NavLink>
         </P>
       </td>
-      {days.map((day, j) => (
-        <Day key={j} day={day} tasks={tasks} habitId={id} habitColor={color} />
+      {days.map((day) => (
+        <Day
+          key={`day-${day.toISOString()}`}
+          day={day}
+          tasks={tasks}
+          habitId={id}
+          habitColor={color}
+        />
       ))}
     </tr>
   );
