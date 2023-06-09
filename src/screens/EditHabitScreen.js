@@ -14,7 +14,7 @@ import { COLORS } from "../constants";
 
 const EditHabitScreen = () => {
   const { id } = useParams();
-  const { error } = useSelector((state) => state.habits);
+  const { loading, error } = useSelector((state) => state.habits);
   const habit = useSelector(selectHabitById(id));
   const dispatch = useDispatch();
 
@@ -56,7 +56,7 @@ const EditHabitScreen = () => {
             <HexColorPicker color={field.value} onChange={field.onChange} />
           )}
         />
-        <Button primary type="submit" className="mt-6">
+        <Button primary type="submit" className="mt-6" loading={loading}>
           Save habit
         </Button>
       </form>

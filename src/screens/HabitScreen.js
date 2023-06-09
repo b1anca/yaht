@@ -19,7 +19,7 @@ const HabitScreen = () => {
     <>
       <div className="flex justify-between items-center mb-3">
         <div>
-          <H1 className="!mb-0">{habit.name}</H1>
+          <H1 className="!mb-1">{habit.name}</H1>
           <P>{habit.description}</P>
         </div>
         <NavLink to={`/habits/${id}/edit`} className="!text-xl" tetriary>
