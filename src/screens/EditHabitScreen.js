@@ -20,7 +20,7 @@ const EditHabitScreen = () => {
 
   const { register, handleSubmit, control } = useForm({
     defaultValues: {
-      name: habit.name,
+      ...habit,
       color: habit.color || COLORS.slate700,
     },
   });
@@ -37,6 +37,18 @@ const EditHabitScreen = () => {
       <form className="max-w-sm" onSubmit={handleSubmit(submitForm)}>
         {error && <Error>{error}</Error>}
         <Input type="name" required {...register("name")} label="Name" />
+        <Input
+          type="description"
+          required
+          {...register("description")}
+          label="Description"
+        />
+        <label
+          htmlFor="color"
+          className="block text-sm font-semibold leading-6 text-gray-700 mb-2"
+        >
+          Color
+        </label>
         <Controller
           name="color"
           control={control}
