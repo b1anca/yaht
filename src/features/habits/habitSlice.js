@@ -12,25 +12,25 @@ const initialState = {
 const habitSlice = createSlice({
   name: "habit",
   initialState,
-  extraReducers: {
-    [createHabit.pending]: (state) => {
+  extraReducers: (builder) => {
+    builder.addCase(createHabit.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [createHabit.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(createHabit.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
       state.habits = state.habits.concat(payload);
-    },
-    [createHabit.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(createHabit.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
-    [createTask.pending]: (state) => {
+    });
+    builder.addCase(createTask.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [createTask.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(createTask.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
       state.habits = state.habits.map((habit) => {
@@ -43,16 +43,16 @@ const habitSlice = createSlice({
           return habit;
         }
       });
-    },
-    [createTask.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(createTask.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
-    [updateHabit.pending]: (state) => {
+    });
+    builder.addCase(updateHabit.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [updateHabit.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(updateHabit.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
       state.habits = state.habits.map((habit) => {
@@ -65,29 +65,29 @@ const habitSlice = createSlice({
           return habit;
         }
       });
-    },
-    [updateHabit.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(updateHabit.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
-    [fetchHabits.pending]: (state) => {
+    });
+    builder.addCase(fetchHabits.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [fetchHabits.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(fetchHabits.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
       state.habits = payload;
-    },
-    [fetchHabits.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(fetchHabits.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
-    [deleteTask.pending]: (state) => {
+    });
+    builder.addCase(deleteTask.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [deleteTask.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(deleteTask.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
       state.habits = state.habits.map((habit) => {
@@ -100,11 +100,11 @@ const habitSlice = createSlice({
           return habit;
         }
       });
-    },
-    [deleteTask.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(deleteTask.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
+    });
   },
 });
 

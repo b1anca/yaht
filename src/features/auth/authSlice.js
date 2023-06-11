@@ -28,32 +28,32 @@ const authSlice = createSlice({
       state.userInfo = payload;
     },
   },
-  extraReducers: {
-    [userLogin.pending]: (state) => {
+  extraReducers: (builder) => {
+    builder.addCase(userLogin.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [userLogin.fulfilled]: (state, { payload }) => {
+    });
+    builder.addCase(userLogin.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.userInfo = payload;
       state.userToken = payload.token;
-    },
-    [userLogin.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(userLogin.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
-    [registerUser.pending]: (state) => {
+    });
+    builder.addCase(registerUser.pending, (state) => {
       state.loading = true;
       state.error = null;
-    },
-    [registerUser.fulfilled]: (state) => {
+    });
+    builder.addCase(registerUser.fulfilled, (state) => {
       state.loading = false;
       state.success = true;
-    },
-    [registerUser.rejected]: (state, { payload }) => {
+    });
+    builder.addCase(registerUser.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
-    },
+    });
   },
 });
 
