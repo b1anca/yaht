@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginScreen should render correctly 1`] = `
+<DocumentFragment>
+  <main
+    class="relative h-screen flex flex-1 flex-col overflow-hidden px-4 py-8 sm:px-6 lg:px-8"
+  >
+    <div
+      class="relative flex flex-1 flex-col items-center justify-center pb-16 pt-12"
+    >
+      <form
+        class="w-full max-w-sm"
+      >
+        <div
+          class="mb-6"
+        >
+          <label
+            class="block text-sm font-semibold leading-6 text-gray-700"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            autocomplete="username"
+            class="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            id="email"
+            name="email"
+            required=""
+            type="email"
+          />
+        </div>
+        <div
+          class="mb-6"
+        >
+          <label
+            class="block text-sm font-semibold leading-6 text-gray-700"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            autocomplete="current-password"
+            class="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            id="password"
+            name="password"
+            required=""
+            type="password"
+          />
+        </div>
+        <button
+          class="text-sm button py-2 px-6 rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 w-full"
+          type="submit"
+        >
+          Sign in
+        </button>
+      </form>
+    </div>
+    <footer
+      class="relative shrink-0"
+    >
+      <div
+        class="space-y-4 text-sm text-gray-700 sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0"
+      >
+        <p
+          class="text-center sm:text-left"
+        >
+          Don't have an account?
+        </p>
+        <a
+          class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
+          href="/register"
+        >
+          Register
+        </a>
+      </div>
+    </footer>
+  </main>
+</DocumentFragment>
+`;
