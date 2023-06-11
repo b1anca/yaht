@@ -14,9 +14,12 @@ describe("LoginScreen", () => {
 
   it("shows error message on server error", async () => {
     server.use(
-      rest.post("http://127.0.0.1:4000/auth/login", (_, res, ctx) => {
-        return res(ctx.json({ error: "unauthorized" }), ctx.status(401));
-      })
+      rest.post(
+        `${process.env.REACT_APP_YAHT_API_URL}/auth/login`,
+        (_, res, ctx) => {
+          return res(ctx.json({ error: "unauthorized" }), ctx.status(401));
+        }
+      )
     );
     renderWithProviders(<LoginScreen />);
 
