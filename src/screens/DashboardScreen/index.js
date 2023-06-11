@@ -11,7 +11,6 @@ import {
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
-import Spinner from "../../components/Spinner";
 
 const DayHeader = ({ day, currentDate }) => (
   <th>
@@ -31,7 +30,7 @@ const DayHeader = ({ day, currentDate }) => (
 
 const DashboardScreen = () => {
   const currentDate = new Date();
-  const { habits, loading } = useSelector((state) => state.habits);
+  const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
   const days = getDaysInMonth(
     currentDate.getMonth(),
@@ -45,36 +44,30 @@ const DashboardScreen = () => {
   return (
     <div>
       <H1>Habits tracker</H1>
-      {loading ? (
-        <Spinner />
-      ) : (
-        <table>
-          <thead>
-            <tr>
-              <th />
-              {days.map((day) => (
-                <DayHeader
-                  key={day.toISOString()}
-                  day={day}
-                  currentDate={currentDate}
-                />
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {habits.map((habit) => (
-              <HabitRow key={habit.id} {...habit} days={days} />
+      <table>
+        <thead>
+          <tr>
+            <th />
+            {days.map((day) => (
+              <DayHeader
+                key={day.toISOString()}
+                day={day}
+                currentDate={currentDate}
+              />
             ))}
-          </tbody>
-        </table>
-      )}
+          </tr>
+        </thead>
+        <tbody>
+          {habits.map((habit) => (
+            <HabitRow key={habit.id} {...habit} days={days} />
+          ))}
+        </tbody>
+      </table>
       <H1 className="mt-16">Your habits</H1>
       <div className="flex flex-wrap">
-        {loading ? (
-          <Spinner />
-        ) : (
-          habits.map((habit) => <HabitCard key={habit.id} {...habit} />)
-        )}
+        {habits.map((habit) => (
+          <HabitCard key={habit.id} {...habit} />
+        ))}
       </div>
     </div>
   );
