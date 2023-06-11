@@ -12,6 +12,7 @@ export function renderWithProviders(
     ...renderOptions
   } = {}
 ) {
+  // eslint-disable-next-line react/prop-types
   function Wrapper({ children }) {
     return (
       <Provider store={store}>
