@@ -44,15 +44,15 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
             ? "This is a future date. You can't mark tasks as completed in advance."
             : completedTaskForTheDay
             ? "Click to unmark this day."
-            : "Great job! Click to mark this day as successful."
+            : "Click to mark this day."
         }
         style={{
           backgroundColor: completedTaskForTheDay
             ? habitColor || COLORS.slate700
-            : COLORS.slate100,
+            : "unset",
         }}
         className={classNames(
-          "whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center",
+          "border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center",
           { "cursor-pointer": day <= currentDate }
         )}
         onClick={handleDayTaskClick}

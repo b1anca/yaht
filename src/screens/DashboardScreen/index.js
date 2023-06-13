@@ -17,13 +17,13 @@ const DayHeader = ({ day, currentDate }) => (
     <P
       className={classNames({
         "text-slate-400 font-normal": !areDatesEqual(day, currentDate),
-        "text-slate-700 text-base !mb-0": areDatesEqual(day, currentDate),
+        "text-slate-200 text-base !mb-0": areDatesEqual(day, currentDate),
       })}
     >
       {day.getDate()}
     </P>
     {areDatesEqual(day, currentDate) && (
-      <P className="text-slate-700">{monthNames[day.getMonth()]}</P>
+      <P className="text-slate-200">{monthNames[day.getMonth()]}</P>
     )}
   </th>
 );

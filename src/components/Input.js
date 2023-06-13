@@ -6,17 +6,14 @@ const Input = forwardRef((props, ref) => {
 
   return (
     <div className="mb-6">
-      <label
-        htmlFor={type}
-        className="block text-sm font-semibold leading-6 text-gray-700"
-      >
+      <label htmlFor={type} className="block text-sm font-semibold leading-6">
         {label}
       </label>
       <input
         id={type}
         name={type}
         type={type}
-        className="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+        className="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
         required={required}
         ref={ref}
         {...rest}

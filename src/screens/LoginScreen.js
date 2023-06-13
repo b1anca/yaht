@@ -51,7 +51,7 @@ function LoginScreen() {
         </form>
       </div>
       <footer className="relative shrink-0">
-        <div className="space-y-4 text-sm text-gray-700 sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
+        <div className="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
           <p className="text-center sm:text-left">
             Don&apos;t have an account?
           </p>

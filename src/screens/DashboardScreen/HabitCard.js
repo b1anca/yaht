@@ -6,7 +6,7 @@ import { H2, P } from "../../components/Typography";
 const HabitCard = ({ id, name }) => (
   <NavLink
     to={`/habits/${id}`}
-    className="w-64 p-2 mr-2 mb-2 rounded-lg border hover:bg-slate-100"
+    className="w-64 p-2 mr-2 mb-2 rounded-lg border border-slate-500 hover:text-slate-100"
   >
     <H2>{name}</H2>
     <div className="flex justify-between">

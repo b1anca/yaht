@@ -35,13 +35,13 @@ const HabitHeatmap = ({ dataSet, habitColor }) => {
                     {index < days.length && (
                       <div
                         title={formatDate(currentDate)}
-                        className="rounded w-6 h-6 bg-slate-100"
+                        className="rounded w-6 h-6 border border-slate-500 hover:border-slate-200"
                         style={{
                           backgroundColor: dataSet.has(
                             currentDate.toISOString()
                           )
-                            ? habitColor || COLORS.slate700
-                            : COLORS.slate100,
+                            ? habitColor || COLORS.slate100
+                            : "unset",
                         }}
                       />
                     )}

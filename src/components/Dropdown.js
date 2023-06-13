@@ -28,19 +28,15 @@ const Dropdown = ({ options, children }) => {
   }, []);
 
   return (
-    <div className="dropdown-container" ref={dropdownRef}>
-      <div className="dropdown-header" onClick={toggling}>
+    <div ref={dropdownRef}>
+      <div onClick={toggling}>
         {children ? children : selectedOption || "Select an Option"}
       </div>
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-          <div className="dropdown-list">
+        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-slate-300 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+          <div>
             {options.map((OptionComponent, index) => (
-              <div
-                onClick={onOptionClicked(OptionComponent)}
-                key={index}
-                className="dropdown-list-item"
-              >
+              <div onClick={onOptionClicked(OptionComponent)} key={index}>
                 <OptionComponent />
               </div>
             ))}

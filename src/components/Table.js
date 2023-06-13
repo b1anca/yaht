@@ -10,7 +10,10 @@ const Table = ({ data, onRowClick }) => {
       <thead>
         <tr className="mt-2">
           {headers.map((header, i) => (
-            <th key={i} className="border-b p-4 pl-8 pt-0 pb-2 text-left">
+            <th
+              key={i}
+              className="border-b border-slate-500 p-4 pl-8 pt-0 pb-2 text-left"
+            >
               <P bold>{header}</P>
             </th>
           ))}
@@ -20,11 +23,11 @@ const Table = ({ data, onRowClick }) => {
         {data.map((row, i) => (
           <tr
             key={i}
-            className="hover:bg-slate-100 cursor-pointer"
+            className="hover:text-slate-100 cursor-pointer"
             onClick={() => onRowClick(row)}
           >
             {headers.map((header, j) => (
-              <td key={j} className="border-b p-2 pl-8 pr-8">
+              <td key={j} className="border-b border-slate-500 p-2 pl-8 pr-8">
                 {React.isValidElement(row[header]) ? (
                   row[header]
                 ) : (

@@ -6,7 +6,7 @@ export const H1 = ({ children, className, ...rest }) => {
   return (
     <h1
       className={classNames(
-        "mb-4 text-4xl font-extrabold tracking-tight text-slate-700",
+        "mb-4 text-4xl font-extrabold tracking-tight",
         className
       )}
       {...rest}
@@ -20,7 +20,7 @@ export const H2 = ({ children, className, ...rest }) => {
   return (
     <h2
       className={classNames(
-        "mb-4 text-2xl font-extrabold tracking-tight text-slate-700",
+        "mb-4 text-2xl font-extrabold tracking-tight",
         className
       )}
       {...rest}
@@ -34,7 +34,7 @@ export const P = ({ children, className, bold, ...rest }) => {
   return (
     <p
       className={classNames(
-        "text-sm mb-2 tracking-tight text-slate-600",
+        "text-sm mb-2 tracking-tight",
         { "font-extrabold": bold },
         className
       )}

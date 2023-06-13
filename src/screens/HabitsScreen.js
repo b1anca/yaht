@@ -20,7 +20,7 @@ const HabitsScreen = () => {
     Color: (
       <div
         className="rounded w-6 h-6"
-        style={{ backgroundColor: h.color || COLORS.slate700 }}
+        style={{ backgroundColor: h.color || COLORS.slate100 }}
       />
     ),
     "Created at": h.created_at,

@@ -18,10 +18,9 @@ const NavLink = ({
       className={classNames(
         "text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4",
         {
-          "text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
-            secondary,
-          "bg-slate-900 text-white hover:bg-slate-700 w-full": primary,
-          "text-slate-700 hover:text-slate-500": tetriary,
+          "ring-1 ring-slate-300/10 hover:ring-slate-200/20": secondary,
+          "bg-slate-300 text-slate-900 hover:bg-slate-200 w-full": primary,
+          "hover:text-slate-200": tetriary,
         },
         className
       )}
