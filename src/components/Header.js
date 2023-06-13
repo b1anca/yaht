@@ -5,6 +5,7 @@ import { useGetDetailsQuery } from "../app/services/auth/authService";
 import { setCredentials } from "../features/auth/authSlice";
 import ProfileDropdown from "./ProfileDropdown";
 import NavLink from "./NavLink";
+import Spinner from "./Spinner";
 
 const PATHNAME_WITHOUT_HEADER = ["/login", "/register"];
 
@@ -32,11 +33,7 @@ const Header = () => {
         <div className="py-4 mx-4">
           <div className="relative flex items-center">
             <div className="relative hidden lg:flex items-center ml-auto">
-              {isFetching && (
-                <span className="whitespace-nowrap text-slate-600 px-5">
-                  Fetching your profile...
-                </span>
-              )}
+              {isFetching && <Spinner className="mr-2" />}
               {userInfo ? (
                 <ProfileDropdown />
               ) : (
