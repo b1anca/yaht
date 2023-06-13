@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { P } from "./Typography";
 import { monthNames, getDaysInMonth, formatDate } from "../utils/dateHelpers";
-import { COLORS } from "../constants";
+import { DEFAUL_HABIT_COLOR } from "../constants";
 
 const MAX_COLUMNS = 32;
 
@@ -40,7 +40,7 @@ const HabitHeatmap = ({ dataSet, habitColor }) => {
                           backgroundColor: dataSet.has(
                             currentDate.toISOString()
                           )
-                            ? habitColor || COLORS.slate100
+                            ? habitColor || DEFAUL_HABIT_COLOR
                             : "unset",
                         }}
                       />

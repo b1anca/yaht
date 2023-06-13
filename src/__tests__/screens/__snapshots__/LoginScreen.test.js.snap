@@ -15,14 +15,14 @@ exports[`LoginScreen should render correctly 1`] = `
           class="mb-6"
         >
           <label
-            class="block text-sm font-semibold leading-6 text-gray-700"
+            class="block text-sm font-semibold leading-6"
             for="email"
           >
             Email
           </label>
           <input
             autocomplete="username"
-            class="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            class="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
             id="email"
             name="email"
             required=""
@@ -33,14 +33,14 @@ exports[`LoginScreen should render correctly 1`] = `
           class="mb-6"
         >
           <label
-            class="block text-sm font-semibold leading-6 text-gray-700"
+            class="block text-sm font-semibold leading-6"
             for="password"
           >
             Password
           </label>
           <input
             autocomplete="current-password"
-            class="mt-2 appearance-none text-slate-900 bg-white rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-400 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            class="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
             id="password"
             name="password"
             required=""
@@ -48,7 +48,7 @@ exports[`LoginScreen should render correctly 1`] = `
           />
         </div>
         <button
-          class="text-sm button py-2 px-6 rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-900 text-white hover:bg-slate-700 w-full"
+          class="text-sm button py-2 px-6 rounded-full inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 bg-slate-300 text-slate-900 hover:bg-slate-200 w-full"
           type="submit"
         >
           Sign in
@@ -59,7 +59,7 @@ exports[`LoginScreen should render correctly 1`] = `
       class="relative shrink-0"
     >
       <div
-        class="space-y-4 text-sm text-gray-700 sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0"
+        class="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0"
       >
         <p
           class="text-center sm:text-left"
@@ -67,7 +67,7 @@ exports[`LoginScreen should render correctly 1`] = `
           Don't have an account?
         </p>
         <a
-          class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20"
+          class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 ring-1 ring-slate-300/10 hover:ring-slate-200/20"
           href="/register"
         >
           Register

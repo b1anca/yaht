@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { P } from "../../components/Typography";
 import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
-import { COLORS } from "../../constants";
+import { DEFAUL_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
 import Spinner from "../../components/Spinner";
 
@@ -48,7 +48,7 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
         }
         style={{
           backgroundColor: completedTaskForTheDay
-            ? habitColor || COLORS.slate700
+            ? habitColor || DEFAUL_HABIT_COLOR
             : "unset",
         }}
         className={classNames(

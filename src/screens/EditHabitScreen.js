@@ -10,7 +10,7 @@ import { H1 } from "../components/Typography";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import Error from "../components/Error";
-import { COLORS } from "../constants";
+import { DEFAUL_HABIT_COLOR } from "../constants";
 
 const EditHabitScreen = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const EditHabitScreen = () => {
   const { register, handleSubmit, control } = useForm({
     defaultValues: {
       ...habit,
-      color: habit.color || COLORS.slate700,
+      color: habit.color || DEFAUL_HABIT_COLOR,
     },
   });
   const navigate = useNavigate();
