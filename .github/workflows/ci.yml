@@ -1,4 +1,4 @@
-name: Test
+name: CI
 
 on:
   push:
@@ -26,5 +26,5 @@ jobs:
         run: npm run prettier -- --list-different
       - name: Eslint
         run: npm run lint -- --max-warnings 0
-      - name: Tests
+      - name: Test
         run: npm run test
