@@ -16,6 +16,7 @@ const Input = forwardRef((props, ref) => {
         className="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
         required={required}
         ref={ref}
+        aria-label={type}
         {...rest}
       />
     </div>

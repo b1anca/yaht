@@ -1,7 +1,8 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import userEvent from "@testing-library/user-event";
 import { setupStore } from "../app/store";
 
 export function renderWithProviders(
@@ -16,9 +17,13 @@ export function renderWithProviders(
   function Wrapper({ children }) {
     return (
       <Provider store={store}>
-        <Router>{children}</Router>
+        <BrowserRouter>{children}</BrowserRouter>
       </Provider>
     );
   }
-  return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };
+  return {
+    store,
+    user: userEvent.setup(),
+    ...render(ui, { wrapper: Wrapper, ...renderOptions }),
+  };
 }

@@ -9,10 +9,40 @@ describe("LoginScreen", () => {
   it("should render correctly", () => {
     const { asFragment } = renderWithProviders(<LoginScreen />);
 
-    expect(asFragment(<LoginScreen />)).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  it("shows error message on server error", async () => {
+  xit("should navigate to dashboard after form submit", async () => {
+    const { user } = renderWithProviders(<LoginScreen />);
+    const emailInput = screen.getByLabelText("email");
+    const passwordInput = screen.getByLabelText("password");
+    const email = "user@example.com";
+
+    fireEvent.change(emailInput, { target: { value: email } });
+    fireEvent.change(passwordInput, { target: { value: "examplePassword" } });
+    await user.click(screen.getByRole("button", { name: "Sign in" }));
+
+    screen.debug();
+    expect(await screen.getByText(/dashboard/i)).toBeInTheDocument();
+
+    // expect(navigate).toHaveBeenCalledWith("/dashboard");
+    // expect(getByText(/dashboard/i)).toBeInTheDocument();
+  });
+
+  it("should be able to submit form and save token to local storage", async () => {
+    const { user } = renderWithProviders(<LoginScreen />);
+    const emailInput = screen.getByLabelText("email");
+    const passwordInput = screen.getByLabelText("password");
+    const email = "user@example.com";
+
+    fireEvent.change(emailInput, { target: { value: email } });
+    fireEvent.change(passwordInput, { target: { value: "examplePassword" } });
+    await user.click(screen.getByRole("button", { name: "Sign in" }));
+
+    expect(window.localStorage.getItem("userToken")).toEqual(`token-${email}`);
+  });
+
+  it("should show error message on server error", async () => {
     server.use(
       rest.post(
         `${process.env.REACT_APP_YAHT_API_URL}/auth/login`,
@@ -21,9 +51,9 @@ describe("LoginScreen", () => {
         }
       )
     );
-    renderWithProviders(<LoginScreen />);
+    const { user } = renderWithProviders(<LoginScreen />);
 
-    fireEvent.click(screen.getByRole("button", { name: "Sign in" }));
+    user.click(screen.getByRole("button", { name: "Sign in" }));
     await screen.findByRole("alert");
 
     expect(screen.getByRole("alert")).toHaveTextContent(
