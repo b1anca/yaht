@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
@@ -19,7 +14,7 @@ import HabitScreen from "./screens/HabitScreen";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
@@ -35,7 +30,7 @@ function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

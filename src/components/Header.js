@@ -7,11 +7,10 @@ import ProfileDropdown from "./ProfileDropdown";
 import NavLink from "./NavLink";
 import LoadingDots from "./LoadingDots";
 
-const PATHNAME_WITHOUT_HEADER = ["/login", "/register"];
+const PATHNAMES_WITHOUT_HEADER = ["/login", "/register"];
 
 const Header = () => {
-  let location = useLocation();
-
+  const location = useLocation();
   const { userInfo } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
@@ -23,7 +22,7 @@ const Header = () => {
     if (data) dispatch(setCredentials(data));
   }, [data, dispatch]);
 
-  if (PATHNAME_WITHOUT_HEADER.includes(location.pathname)) {
+  if (PATHNAMES_WITHOUT_HEADER.includes(location.pathname)) {
     return null;
   }
 

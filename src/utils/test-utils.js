@@ -10,9 +10,12 @@ export function renderWithProviders(
   {
     preloadedState = {},
     store = setupStore(preloadedState),
+    route = "/",
     ...renderOptions
   } = {}
 ) {
+  window.history.pushState({}, "Test page", route);
+
   // eslint-disable-next-line react/prop-types
   function Wrapper({ children }) {
     return (

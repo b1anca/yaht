@@ -12,4 +12,7 @@ export const handlers = [
       );
     }
   ),
+  rest.get(`${process.env.REACT_APP_YAHT_API_URL}/users/me`, (_, res, ctx) => {
+    return res(ctx.status(401));
+  }),
 ];
