@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import Error from "../components/Error";
+import Alert from "../components/Alert";
 import { registerUser } from "../features/auth/authActions";
 import Input from "../components/Input";
 import Button from "../components/Button";
@@ -38,8 +38,8 @@ const RegisterScreen = () => {
     <main className="relative h-screen flex flex-1 flex-col overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
       <div className="relative flex flex-1 flex-col items-center justify-center pb-16 pt-12">
         <form className="w-full max-w-sm" onSubmit={handleSubmit(submitForm)}>
-          {error && <Error>{error}</Error>}
-          {customError && <Error>{customError}</Error>}
+          {error && <Alert>{error}</Alert>}
+          {customError && <Alert>{customError}</Alert>}
           <Input type="text" required {...register("name")} label="Name" />
           <Input type="email" required {...register("email")} label="Email" />
           <Input

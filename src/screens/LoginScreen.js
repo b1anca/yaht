@@ -1,24 +1,26 @@
 import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { userLogin } from "../features/auth/authActions";
-import Error from "../components/Error";
+import Alert from "../components/Alert";
 import Input from "../components/Input";
 import Button from "../components/Button";
 import NavLink from "../components/NavLink";
 
 function LoginScreen() {
-  const { loading, userInfo, error } = useSelector((state) => state.auth);
+  const { loading, userInfo, error, userToken } = useSelector(
+    (state) => state.auth
+  );
   const dispatch = useDispatch();
-
-  const { register, handleSubmit } = useForm();
-
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const { register, handleSubmit } = useForm();
 
   useEffect(() => {
     if (userInfo) {
-      navigate("/dashboard");
+      const redirectTo = searchParams.get("redirectTo") || "/habits";
+      navigate(redirectTo);
     }
   }, [navigate, userInfo]);
 
@@ -29,8 +31,16 @@ function LoginScreen() {
   return (
     <main className="relative h-screen flex flex-1 flex-col overflow-hidden px-4 py-8 sm:px-6 lg:px-8">
       <div className="relative flex flex-1 flex-col items-center justify-center pb-16 pt-12">
-        <form className="w-full max-w-sm" onSubmit={handleSubmit(submitForm)}>
-          {error && <Error>{error}</Error>}
+        {userToken && (
+          <Alert type="warning" className="mb-10 w-full max-w-sm">
+            Session expired. Please sign in again.
+          </Alert>
+        )}
+        <form
+          className="w-full max-w-sm bg-slate-300/5 rounded px-6 py-12"
+          onSubmit={handleSubmit(submitForm)}
+        >
+          {error && <Alert>{error}</Alert>}
           <Input
             type="email"
             required

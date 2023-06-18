@@ -6,10 +6,10 @@ import { useForm, Controller } from "react-hook-form";
 import { HexColorPicker } from "react-colorful";
 import { selectHabitById } from "../features/habits/habitSelectors";
 import { updateHabit } from "../features/habits/habitActions";
-import { H1 } from "../components/Typography";
+import { Heading } from "../components/Typography";
 import Input from "../components/Input";
 import Button from "../components/Button";
-import Error from "../components/Error";
+import Alert from "../components/Alert";
 import { DEFAUL_HABIT_COLOR } from "../constants";
 
 const EditHabitScreen = () => {
@@ -33,9 +33,9 @@ const EditHabitScreen = () => {
 
   return (
     <>
-      <H1>Edit habit</H1>
+      <Heading level="h2">Edit habit</Heading>
       <form className="max-w-sm" onSubmit={handleSubmit(submitForm)}>
-        {error && <Error>{error}</Error>}
+        {error && <Alert>{error}</Alert>}
         <Input type="name" required {...register("name")} label="Name" />
         <Input
           type="description"
