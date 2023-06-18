@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { H1, P } from "../../components/Typography";
+import { H2, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
   getDaysInMonth,
@@ -28,7 +28,7 @@ const DayHeader = ({ day, currentDate }) => (
   </th>
 );
 
-const DashboardScreen = () => {
+const HabitsScreen = () => {
   const currentDate = new Date();
   const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
@@ -43,27 +43,29 @@ const DashboardScreen = () => {
 
   return (
     <div>
-      <H1>Habits tracker</H1>
-      <table>
-        <thead>
-          <tr>
-            <th />
-            {days.map((day) => (
-              <DayHeader
-                key={day.toISOString()}
-                day={day}
-                currentDate={currentDate}
-              />
+      <H2>Habits tracker</H2>
+      <div className="bg-slate-400/5 rounded p-6">
+        <table className="m-auto">
+          <thead>
+            <tr>
+              <th />
+              {days.map((day) => (
+                <DayHeader
+                  key={day.toISOString()}
+                  day={day}
+                  currentDate={currentDate}
+                />
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {habits.map((habit) => (
+              <HabitRow key={habit.id} {...habit} days={days} />
             ))}
-          </tr>
-        </thead>
-        <tbody>
-          {habits.map((habit) => (
-            <HabitRow key={habit.id} {...habit} days={days} />
-          ))}
-        </tbody>
-      </table>
-      <H1 className="mt-16">Your habits</H1>
+          </tbody>
+        </table>
+      </div>
+      <H2 className="mt-16">Your habits</H2>
       <div className="flex flex-wrap">
         {habits.map((habit) => (
           <HabitCard key={habit.id} {...habit} />
@@ -78,4 +80,4 @@ DayHeader.propTypes = {
   currentDate: PropTypes.object,
 };
 
-export default DashboardScreen;
+export default HabitsScreen;

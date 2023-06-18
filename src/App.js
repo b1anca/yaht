@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header";
+import { useDispatch } from "react-redux";
+import { useGetDetailsQuery } from "./app/services/auth/authService";
+import { setCredentials } from "./features/auth/authSlice";
 import HomeScreen from "./screens/HomeScreen";
 import LoginScreen from "./screens/LoginScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import ProtectedRoute from "./routing/ProtectedRoute";
-import DashboardScreen from "./screens/DashboardScreen";
 import HabitsScreen from "./screens/HabitsScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import CreateHabitScreen from "./screens/CreateHabitScreen";
@@ -13,15 +14,23 @@ import EditHabitScreen from "./screens/EditHabitScreen";
 import HabitScreen from "./screens/HabitScreen";
 
 function App() {
+  const dispatch = useDispatch();
+
+  const { data } = useGetDetailsQuery("userDetails", {
+    pollingInterval: 900000,
+  });
+
+  useEffect(() => {
+    if (data) dispatch(setCredentials(data));
+  }, [data, dispatch]);
+
   return (
     <>
-      <Header />
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
         <Route element={<ProtectedRoute />}>
-          <Route path="/dashboard" element={<DashboardScreen />} />
           <Route path="/habits" element={<HabitsScreen />} />
           <Route path="/habits/new" element={<CreateHabitScreen />} />
           <Route path="/habits/:id/edit" element={<EditHabitScreen />} />

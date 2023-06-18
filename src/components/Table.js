@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import { P } from "./Typography";
 
-const Table = ({ data, onRowClick }) => {
+const Table = ({ data, onRowClick, className }) => {
   const headers = Object.keys(data[0]);
 
   return (
-    <table className="table-auto">
+    <table className={classNames("table-auto", className)}>
       <thead>
         <tr className="mt-2">
           {headers.map((header, i) => (
@@ -45,6 +46,7 @@ const Table = ({ data, onRowClick }) => {
 Table.propTypes = {
   data: PropTypes.array,
   onRowClick: PropTypes.func,
+  className: PropTypes.string,
 };
 
 export default Table;

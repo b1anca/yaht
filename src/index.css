@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  color: rgb(203 213 225);
+  color: rgba(203, 213, 225, 0.87);
   background: rgb(75, 75, 75);
   background: linear-gradient(
     0deg,
