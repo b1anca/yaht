@@ -10,7 +10,7 @@ const ProtectedRoute = () => {
     pollingInterval: 900000,
   });
 
-  if (isFetching) return null;
+  if (!data && isFetching) return null;
 
   if (!data) {
     return <Navigate to={`/login?redirectTo=${pathname}`} />;
