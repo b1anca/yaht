@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
-import { H1, P } from "../components/Typography";
+import { Heading, P } from "../components/Typography";
 import NavLink from "../components/NavLink";
 import { selectHabitById } from "../features/habits/habitSelectors";
 import HabitHeatmap from "../components/HabitHeatmap";
@@ -19,14 +19,16 @@ const HabitScreen = () => {
     <>
       <div className="flex justify-between items-center mb-3">
         <div>
-          <H1 className="!mb-1">{habit.name}</H1>
+          <Heading level="h2" className="!mb-1">
+            {habit.name}
+          </Heading>
           <P>{habit.description}</P>
         </div>
         <NavLink to={`/habits/${id}/edit`} className="!text-xl" tetriary>
           <FontAwesomeIcon icon={faEdit} />
         </NavLink>
       </div>
-      <div>
+      <div className="bg-slate-400/5 rounded p-6">
         <HabitHeatmap dataSet={tasksSet} habitColor={habit.color} />
       </div>
     </>

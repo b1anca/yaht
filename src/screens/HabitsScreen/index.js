@@ -45,7 +45,7 @@ const HabitsScreen = () => {
     <div>
       <H2>Habits tracker</H2>
       <div className="bg-slate-400/5 rounded p-6">
-        <table className="m-auto">
+        <table className="">
           <thead>
             <tr>
               <th />

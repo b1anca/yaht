@@ -2,6 +2,32 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
+const TEXT_CLASS = {
+  h1: "text-4xl",
+  h2: "text-2xl",
+  h3: "text-xl",
+  h4: "text-lg",
+};
+
+export const Heading = ({ level = "h1", children, className, ...rest }) => {
+  const Element = level;
+  const textClass = TEXT_CLASS[level];
+
+  return (
+    <Element
+      level="h4"
+      className={classNames(
+        "mb-4 font-extrabold tracking-tight",
+        textClass,
+        className
+      )}
+      {...rest}
+    >
+      {children}
+    </Element>
+  );
+};
+
 export const H1 = ({ children, className, ...rest }) => {
   return (
     <h1
@@ -51,6 +77,12 @@ H1.propTypes = {
 };
 
 H2.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+};
+
+Heading.propTypes = {
+  level: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
 };

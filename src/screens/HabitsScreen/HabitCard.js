@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
-import { H2, P } from "../../components/Typography";
+import { P, Heading } from "../../components/Typography";
+import ProgressChart from "./ProgressChart";
 
-const HabitCard = ({ id, name, overall_progress }) => (
+const HabitCard = ({ id, name, overall_progress, color }) => (
   <NavLink to={`/habits/${id}`} className="basis-1/4">
     <div className="p-4 m-1 rounded hover:text-slate-100 bg-slate-300/5">
-      <H2>{name}</H2>
+      <Heading level="h3">{name}</Heading>
       <div className="flex justify-between">
         <div className="flex-col flex-1">
-          <P>Overall progress</P>
           {/* TODO: completion rate */}
-          <P className="!text-4xl">{overall_progress}%</P>
+          <ProgressChart value={Number(overall_progress)} color={color} />
         </div>
         <div className="flex-col flex-1">
           <P>Days in a row</P>
@@ -27,6 +27,7 @@ const HabitCard = ({ id, name, overall_progress }) => (
 HabitCard.propTypes = {
   id: PropTypes.number,
   name: PropTypes.string,
+  color: PropTypes.string,
   overall_progress: PropTypes.string,
 };
 
