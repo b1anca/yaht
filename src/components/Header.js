@@ -13,7 +13,12 @@ const Header = () => {
           <div className="relative flex items-center">
             <div className="relative hidden lg:flex items-center ml-auto">
               {userInfo ? (
-                <ProfileDropdown />
+                <>
+                  <NavLink tetriary to="/habits">
+                    Habits
+                  </NavLink>
+                  <ProfileDropdown />
+                </>
               ) : (
                 <>
                   <NavLink tetriary to="/login">
