@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HabitsScreen should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h2
+      class="mb-4 text-2xl font-extrabold tracking-tight"
+    >
+      Habits tracker
+    </h2>
+    <div
+      class="bg-slate-400/5 rounded p-6"
+    >
+      <table>
+        <thead>
+          <tr>
+            <th />
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-200 text-base !mb-0"
+              >
+                1
+              </p>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-200"
+              >
+                Jun
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                2
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                3
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                4
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                5
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                6
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                7
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                8
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                9
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                10
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                11
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                12
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                13
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                14
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                15
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                16
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                17
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                18
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                19
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                20
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                21
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                22
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                23
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                24
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                25
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                26
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                27
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                28
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                29
+              </p>
+            </th>
+            <th>
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                30
+              </p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p
+                class="text-sm mb-2 tracking-tight whitespace-nowrap mt-2 mr-2"
+              >
+                <a
+                  class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200 !p-0"
+                  href="/habits/1"
+                >
+                  Reading
+                </a>
+              </p>
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                style="background-color: rgb(117, 171, 116);"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+            <td>
+              <div
+                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center"
+                title="This is a future date. You can't mark tasks as completed in advance."
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2
+      class="mb-4 text-2xl font-extrabold tracking-tight mt-16"
+    >
+      Your habits
+    </h2>
+    <div
+      class="flex flex-wrap"
+    >
+      <a
+        class="basis-1/4"
+        href="/habits/1"
+      >
+        <div
+          class="p-4 m-1 rounded hover:text-slate-100 bg-slate-300/5"
+        >
+          <h3
+            class="mb-4 font-extrabold tracking-tight text-xl"
+            level="h4"
+          >
+            Reading
+          </h3>
+          <div
+            class="flex justify-between"
+          >
+            <div
+              class="flex-col flex-1"
+            >
+              <div
+                class="h-[130px] w-[130px] mr-4"
+              >
+                <div
+                  class="recharts-responsive-container"
+                  style="width: 100%; height: 100%; min-width: 0;"
+                />
+              </div>
+            </div>
+            <div
+              class="flex-col flex-1"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight"
+              >
+                Days in a row
+              </p>
+              <p
+                class="text-sm mb-2 tracking-tight font-extrabold"
+              >
+                02
+              </p>
+              <p
+                class="text-sm mb-2 tracking-tight"
+              >
+                Record
+              </p>
+              <p
+                class="text-sm mb-2 tracking-tight font-extrabold"
+              >
+                02
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;

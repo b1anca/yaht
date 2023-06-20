@@ -5,6 +5,13 @@ import { renderWithProviders } from "../../utils/test-utils";
 import { server } from "../../mocks/server";
 import LoginScreen from "../../screens/LoginScreen";
 
+const mockedNavigate = jest.fn();
+
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useNavigate: () => mockedNavigate,
+}));
+
 describe("LoginScreen", () => {
   it("should render correctly", () => {
     const { asFragment } = renderWithProviders(<LoginScreen />);
@@ -12,21 +19,16 @@ describe("LoginScreen", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  xit("should navigate to dashboard after form submit", async () => {
+  it("should navigate to habits after form submit", async () => {
     const { user } = renderWithProviders(<LoginScreen />);
     const emailInput = screen.getByLabelText("email");
     const passwordInput = screen.getByLabelText("password");
-    const email = "user@example.com";
 
-    fireEvent.change(emailInput, { target: { value: email } });
+    fireEvent.change(emailInput, { target: { value: "user@example.com" } });
     fireEvent.change(passwordInput, { target: { value: "examplePassword" } });
     await user.click(screen.getByRole("button", { name: "Sign in" }));
 
-    screen.debug();
-    expect(await screen.getByText(/dashboard/i)).toBeInTheDocument();
-
-    // expect(navigate).toHaveBeenCalledWith("/dashboard");
-    // expect(getByText(/dashboard/i)).toBeInTheDocument();
+    expect(mockedNavigate).toHaveBeenCalledWith("/habits");
   });
 
   it("should be able to submit form and save token to local storage", async () => {

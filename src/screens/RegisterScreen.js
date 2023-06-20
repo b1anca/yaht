@@ -11,17 +11,15 @@ import Header from "../components/Header";
 
 const RegisterScreen = () => {
   const [customError, setCustomError] = useState(null);
-
   const { loading, userInfo, error, success } = useSelector(
     (state) => state.auth
   );
   const dispatch = useDispatch();
-
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (userInfo) navigate("/user-profile"); // TODO: check this
+    if (userInfo) navigate("/habits");
     if (success) navigate("/login");
   }, [navigate, userInfo, success]);
 

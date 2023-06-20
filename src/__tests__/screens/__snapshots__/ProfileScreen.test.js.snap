@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileScreen should render correctly 1`] = `
+<DocumentFragment>
+  <h1
+    class="mb-4 text-4xl font-extrabold tracking-tight"
+  >
+    Your profile
+  </h1>
+  <p
+    class="text-sm mb-2 tracking-tight"
+  >
+    Welcome 
+    <strong>
+      User name!
+    </strong>
+     You can view this page because you're logged in
+  </p>
+</DocumentFragment>
+`;

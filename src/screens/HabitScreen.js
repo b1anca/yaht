@@ -12,8 +12,9 @@ const HabitScreen = () => {
   const { id } = useParams();
   const habit = useSelector(selectHabitById(id));
   const tasksSet = new Set(
-    habit.tasks.map((t) => new Date(t.completed_at).toISOString())
+    habit.tasks.map((t) => new Date(t.completed_at).toLocaleDateString())
   );
+  console.log("debug tasksSet", tasksSet);
 
   return (
     <>

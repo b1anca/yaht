@@ -38,7 +38,7 @@ const HabitHeatmap = ({ dataSet, habitColor }) => {
                         className="rounded w-6 h-6 border border-slate-500 hover:border-slate-200"
                         style={{
                           backgroundColor: dataSet.has(
-                            currentDate.toISOString()
+                            currentDate.toLocaleDateString()
                           )
                             ? habitColor || DEFAUL_HABIT_COLOR
                             : "unset",
