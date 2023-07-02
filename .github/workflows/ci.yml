@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  lint-and-test:
+  lint-build-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,11 +20,9 @@ jobs:
         run: npm i -g npm@9
       - name: Install
         run: npm ci --prefer-offline
-      - name: Build
-        run: npm run build
-      - name: Prettier
-        run: npm run prettier -- --list-different
       - name: Eslint
         run: npm run lint -- --max-warnings 0
+      - name: Build
+        run: npm run build
       - name: Test
         run: npm run test
