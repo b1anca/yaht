@@ -6,7 +6,7 @@ import { DEFAULT_HABIT_COLOR } from "../constants";
 
 const MAX_COLUMNS = 32;
 
-const HabitHeatmap = ({ dataSet, habitColor }) => {
+const HabitYearView = ({ dataSet, habitColor }) => {
   return (
     <table>
       <thead>
@@ -56,9 +56,9 @@ const HabitHeatmap = ({ dataSet, habitColor }) => {
   );
 };
 
-HabitHeatmap.propTypes = {
+HabitYearView.propTypes = {
   dataSet: PropTypes.instanceOf(Set).isRequired,
   habitColor: PropTypes.string,
 };
 
-export default HabitHeatmap;
+export default HabitYearView;

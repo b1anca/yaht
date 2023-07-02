@@ -51,7 +51,7 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
             : "unset",
         }}
         className={classNames(
-          "border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center",
+          "mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center",
           { "cursor-pointer": day <= currentDate }
         )}
         onClick={handleDayTaskClick}
@@ -65,8 +65,12 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
 const HabitRow = ({ id, name, tasks, days, color }) => {
   return (
     <tr>
-      <td className="flex max-w-[200px]">
-        <NavLink to={`/habits/${id}`} tetriary className="!p-0 truncate">
+      <td className="flex">
+        <NavLink
+          to={`/habits/${id}`}
+          tetriary
+          className="!p-0 truncate absolute max-w-[200px] sm:static"
+        >
           {name}
         </NavLink>
       </td>

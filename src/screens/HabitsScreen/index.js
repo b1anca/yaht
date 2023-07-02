@@ -5,16 +5,16 @@ import PropTypes from "prop-types";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
-  getDaysInMonth,
   areDatesEqual,
   monthNames,
+  createDateRange,
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
 import NavLink from "../../components/NavLink";
 
 const DayHeader = ({ day, currentDate }) => (
-  <th>
+  <th title={day.toDateString()}>
     <P
       className={classNames({
         "text-slate-400 font-normal": !areDatesEqual(day, currentDate),
@@ -32,27 +32,33 @@ const DayHeader = ({ day, currentDate }) => (
 // TODO:
 // - refresh habit don't break
 // - mobile views
-// - error tracking for the react app>
+// - error tracking, monitoring for the react app
 // - tests for the other components (meet coverage threshold)
 // - show formatted date (with weekday) on tracker hover
 // - delete habit
 // - notes for habits
-// - description not required, color label color
-// - home should have a link to the dashboard/habits
-// - not really a heatmap - rename
 // - loading state when loading habist (habits screen)
-// - header not aligned with protected screen header
-// - warning message in the login screen is quickly showing right after login
 // - allow changing month (habits screen)
 // - allow changing year (habit screen)
 const HabitsScreen = () => {
   const currentDate = new Date();
   const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
-  const days = getDaysInMonth(
-    currentDate.getMonth(),
-    currentDate.getFullYear()
-  );
+  const viewportWidth = window.innerWidth;
+
+  let range;
+
+  if (viewportWidth <= 600) {
+    range = 3;
+  } else {
+    range = 10;
+  }
+
+  const start = new Date();
+  start.setDate(currentDate.getDate() - range * 2);
+  const end = new Date();
+  end.setDate(currentDate.getDate() + range / 2);
+  const days = createDateRange(start, end);
 
   useEffect(() => {
     dispatch(fetchHabits());

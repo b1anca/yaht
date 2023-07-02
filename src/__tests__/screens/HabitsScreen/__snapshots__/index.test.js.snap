@@ -18,7 +18,189 @@ exports[`HabitsScreen should render correctly 1`] = `
         <thead>
           <tr>
             <th />
-            <th>
+            <th
+              title="Fri May 12 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                12
+              </p>
+            </th>
+            <th
+              title="Sat May 13 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                13
+              </p>
+            </th>
+            <th
+              title="Sun May 14 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                14
+              </p>
+            </th>
+            <th
+              title="Mon May 15 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                15
+              </p>
+            </th>
+            <th
+              title="Tue May 16 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                16
+              </p>
+            </th>
+            <th
+              title="Wed May 17 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                17
+              </p>
+            </th>
+            <th
+              title="Thu May 18 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                18
+              </p>
+            </th>
+            <th
+              title="Fri May 19 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                19
+              </p>
+            </th>
+            <th
+              title="Sat May 20 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                20
+              </p>
+            </th>
+            <th
+              title="Sun May 21 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                21
+              </p>
+            </th>
+            <th
+              title="Mon May 22 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                22
+              </p>
+            </th>
+            <th
+              title="Tue May 23 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                23
+              </p>
+            </th>
+            <th
+              title="Wed May 24 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                24
+              </p>
+            </th>
+            <th
+              title="Thu May 25 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                25
+              </p>
+            </th>
+            <th
+              title="Fri May 26 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                26
+              </p>
+            </th>
+            <th
+              title="Sat May 27 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                27
+              </p>
+            </th>
+            <th
+              title="Sun May 28 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                28
+              </p>
+            </th>
+            <th
+              title="Mon May 29 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                29
+              </p>
+            </th>
+            <th
+              title="Tue May 30 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                30
+              </p>
+            </th>
+            <th
+              title="Wed May 31 2023"
+            >
+              <p
+                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
+              >
+                31
+              </p>
+            </th>
+            <th
+              title="Thu Jun 01 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-200 text-base !mb-0"
               >
@@ -30,207 +212,49 @@ exports[`HabitsScreen should render correctly 1`] = `
                 Jun
               </p>
             </th>
-            <th>
+            <th
+              title="Fri Jun 02 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
               >
                 2
               </p>
             </th>
-            <th>
+            <th
+              title="Sat Jun 03 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
               >
                 3
               </p>
             </th>
-            <th>
+            <th
+              title="Sun Jun 04 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
               >
                 4
               </p>
             </th>
-            <th>
+            <th
+              title="Mon Jun 05 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
               >
                 5
               </p>
             </th>
-            <th>
+            <th
+              title="Tue Jun 06 2023"
+            >
               <p
                 class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
               >
                 6
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                7
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                8
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                9
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                10
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                11
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                12
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                13
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                14
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                15
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                16
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                17
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                18
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                19
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                20
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                21
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                22
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                23
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                24
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                25
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                26
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                27
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                28
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                29
-              </p>
-            </th>
-            <th>
-              <p
-                class="text-sm mb-2 tracking-tight text-slate-400 font-normal"
-              >
-                30
               </p>
             </th>
           </tr>
@@ -238,10 +262,10 @@ exports[`HabitsScreen should render correctly 1`] = `
         <tbody>
           <tr>
             <td
-              class="flex max-w-[200px]"
+              class="flex"
             >
               <a
-                class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200 !p-0 truncate"
+                class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200 !p-0 truncate absolute max-w-[200px] sm:static"
                 href="/habits/1"
               >
                 Reading
@@ -249,182 +273,158 @@ exports[`HabitsScreen should render correctly 1`] = `
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
                 title="Click to mark this day."
               />
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center cursor-pointer"
+                title="Click to mark this day."
+              />
+            </td>
+            <td>
+              <div
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
                 style="background-color: rgb(117, 171, 116);"
                 title="This is a future date. You can't mark tasks as completed in advance."
               />
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
                 title="This is a future date. You can't mark tasks as completed in advance."
               />
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
                 title="This is a future date. You can't mark tasks as completed in advance."
               />
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
                 title="This is a future date. You can't mark tasks as completed in advance."
               />
             </td>
             <td>
               <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
-                title="This is a future date. You can't mark tasks as completed in advance."
-              />
-            </td>
-            <td>
-              <div
-                class="border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
+                class="mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center"
                 title="This is a future date. You can't mark tasks as completed in advance."
               />
             </td>

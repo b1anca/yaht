@@ -8,6 +8,21 @@ export const getDaysInMonth = (month, year) => {
   return days;
 };
 
+export const createDateRange = (start, end) => {
+  var startDate = new Date(start);
+  var endDate = new Date(end);
+
+  var dateArray = [];
+  var currentDate = startDate;
+
+  while (currentDate <= endDate) {
+    dateArray.push(new Date(currentDate));
+    currentDate.setDate(currentDate.getDate() + 1);
+  }
+
+  return dateArray;
+};
+
 export const monthNames = [
   "Jan",
   "Feb",

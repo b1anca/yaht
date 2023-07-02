@@ -6,7 +6,7 @@ import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { Heading, P } from "../components/Typography";
 import NavLink from "../components/NavLink";
 import { selectHabitById } from "../features/habits/habitSelectors";
-import HabitHeatmap from "../components/HabitHeatmap";
+import HabitYearView from "../components/HabitYearView";
 
 const HabitScreen = () => {
   const { id } = useParams();
@@ -29,7 +29,7 @@ const HabitScreen = () => {
         </NavLink>
       </div>
       <div className="bg-slate-300/5 rounded p-6">
-        <HabitHeatmap dataSet={tasksSet} habitColor={habit.color} />
+        <HabitYearView dataSet={tasksSet} habitColor={habit.color} />
       </div>
     </>
   );
