@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { H2, P } from "../../components/Typography";
+import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
   getDaysInMonth,
@@ -11,6 +11,7 @@ import {
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
+import NavLink from "../../components/NavLink";
 
 const DayHeader = ({ day, currentDate }) => (
   <th>
@@ -28,6 +29,22 @@ const DayHeader = ({ day, currentDate }) => (
   </th>
 );
 
+// TODO:
+// - refresh habit don't break
+// - mobile views
+// - error tracking for the react app>
+// - tests for the other components (meet coverage threshold)
+// - show formatted date (with weekday) on tracker hover
+// - delete habit
+// - notes for habits
+// - description not required, color label color
+// - home should have a link to the dashboard/habits
+// - not really a heatmap - rename
+// - loading state when loading habist (habits screen)
+// - header not aligned with protected screen header
+// - warning message in the login screen is quickly showing right after login
+// - allow changing month (habits screen)
+// - allow changing year (habit screen)
 const HabitsScreen = () => {
   const currentDate = new Date();
   const { habits } = useSelector((state) => state.habits);
@@ -43,9 +60,9 @@ const HabitsScreen = () => {
 
   return (
     <div>
-      <H2>Habits tracker</H2>
-      <div className="bg-slate-400/5 rounded p-6">
-        <table>
+      <Heading level="h2">Habits tracker</Heading>
+      <div className="bg-slate-300/5 rounded p-6">
+        <table className="table-fixed">
           <thead>
             <tr>
               <th />
@@ -65,7 +82,14 @@ const HabitsScreen = () => {
           </tbody>
         </table>
       </div>
-      <H2 className="mt-16">Your habits</H2>
+      <div className="flex justify-between items-center mt-12 mb-4">
+        <Heading level="h2" className="!mb-0">
+          Your habits
+        </Heading>
+        <NavLink className="!w-min h-min" primary to="/habits/new">
+          Create habit
+        </NavLink>
+      </div>
       <div className="flex flex-wrap">
         {habits.map((habit) => (
           <HabitCard key={habit.id} {...habit} />

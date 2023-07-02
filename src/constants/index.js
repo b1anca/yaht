@@ -8,4 +8,4 @@ export const COLORS = {
   slate700: "#334155",
 };
 
-export const DEFAUL_HABIT_COLOR = COLORS.slate300;
+export const DEFAULT_HABIT_COLOR = COLORS.slate300;

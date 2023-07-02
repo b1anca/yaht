@@ -33,7 +33,7 @@ describe("RegisterScreen", () => {
       target: { value: "examplePassword" },
     });
     await user.click(
-      screen.getByRole("button", { name: "Register", type: "submit" })
+      screen.getByRole("button", { name: "Create account", type: "submit" })
     );
 
     expect(mockedNavigate).toHaveBeenCalledWith("/login");
@@ -50,7 +50,7 @@ describe("RegisterScreen", () => {
     );
     const { user } = renderWithProviders(<RegisterScreen />);
 
-    user.click(screen.getByRole("button", { name: "Register" }));
+    user.click(screen.getByRole("button", { name: "Create account" }));
     await screen.findByRole("alert");
 
     expect(screen.getByRole("alert")).toHaveTextContent(

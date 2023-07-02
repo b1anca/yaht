@@ -19,7 +19,7 @@ const Button = ({
         {
           "text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
             !primary,
-          "bg-slate-300 text-slate-900 hover:bg-slate-200 w-full": primary,
+          "bg-slate-300 text-slate-900 hover:bg-slate-200": primary,
         },
         className
       )}

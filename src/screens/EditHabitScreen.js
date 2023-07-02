@@ -7,10 +7,10 @@ import { HexColorPicker } from "react-colorful";
 import { selectHabitById } from "../features/habits/habitSelectors";
 import { updateHabit } from "../features/habits/habitActions";
 import { Heading } from "../components/Typography";
-import Input from "../components/Input";
+import Input, { Label } from "../components/Input";
 import Button from "../components/Button";
 import Alert from "../components/Alert";
-import { DEFAUL_HABIT_COLOR } from "../constants";
+import { DEFAULT_HABIT_COLOR } from "../constants";
 
 const EditHabitScreen = () => {
   const { id } = useParams();
@@ -21,7 +21,7 @@ const EditHabitScreen = () => {
   const { register, handleSubmit, control } = useForm({
     defaultValues: {
       ...habit,
-      color: habit.color || DEFAUL_HABIT_COLOR,
+      color: habit.color || DEFAULT_HABIT_COLOR,
     },
   });
   const navigate = useNavigate();
@@ -32,23 +32,19 @@ const EditHabitScreen = () => {
       .then(() => navigate("/habits"));
 
   return (
-    <>
-      <Heading level="h2">Edit habit</Heading>
-      <form className="max-w-sm" onSubmit={handleSubmit(submitForm)}>
+    <div className="max-w-md m-auto">
+      <Heading level="h2" className="text-center">
+        Edit habit
+      </Heading>
+      <form onSubmit={handleSubmit(submitForm)}>
         {error && <Alert>{error}</Alert>}
         <Input type="name" required {...register("name")} label="Name" />
         <Input
           type="description"
-          required
           {...register("description")}
           label="Description"
         />
-        <label
-          htmlFor="color"
-          className="block text-sm font-semibold leading-6 text-gray-700 mb-2"
-        >
-          Color
-        </label>
+        <Label type="color" text="Color" />
         <Controller
           name="color"
           control={control}
@@ -56,11 +52,11 @@ const EditHabitScreen = () => {
             <HexColorPicker color={field.value} onChange={field.onChange} />
           )}
         />
-        <Button primary type="submit" className="mt-6" loading={loading}>
+        <Button primary type="submit" className="w-full mt-6" loading={loading}>
           Save habit
         </Button>
       </form>
-    </>
+    </div>
   );
 };
 

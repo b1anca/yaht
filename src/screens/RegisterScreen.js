@@ -8,6 +8,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import NavLink from "../components/NavLink";
 import Header from "../components/Header";
+import { Heading } from "../components/Typography";
 
 const RegisterScreen = () => {
   const [customError, setCustomError] = useState(null);
@@ -39,9 +40,12 @@ const RegisterScreen = () => {
         <Header />
         <div className="relative flex flex-1 flex-col items-center justify-center">
           <form
-            className="w-full max-w-sm bg-slate-300/5 rounded px-5 py-12"
+            className="w-full max-w-md p-6"
             onSubmit={handleSubmit(submitForm)}
           >
+            <Heading level="h2" className="text-center">
+              Create an account
+            </Heading>
             {error && <Alert>{error}</Alert>}
             {customError && <Alert>{customError}</Alert>}
             <Input type="text" required {...register("name")} label="Name" />
@@ -59,11 +63,11 @@ const RegisterScreen = () => {
               label="Confirm password"
             />
             <Button primary type="sumit" loading={loading} className="w-full">
-              Register
+              Create account
             </Button>
           </form>
         </div>
-        <footer className="relative shrink-0 mb-8">
+        <footer className="relative shrink-0 my-8">
           <div className="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
             <p className="text-center sm:text-left">Already have an account?</p>
             <NavLink secondary to="/login">

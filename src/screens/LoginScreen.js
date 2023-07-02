@@ -8,6 +8,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import NavLink from "../components/NavLink";
 import Header from "../components/Header";
+import { Heading } from "../components/Typography";
 
 function LoginScreen() {
   const { loading, userInfo, error, userToken } = useSelector(
@@ -34,15 +35,18 @@ function LoginScreen() {
       <div className="relative h-screen flex flex-1 flex-col overflow-hidden">
         <Header />
         <div className="relative flex flex-1 flex-col items-center justify-center">
-          {userToken && (
+          {!loading && userToken && (
             <Alert type="warning" className="mb-10 w-full max-w-sm">
               Session expired. Please sign in again.
             </Alert>
           )}
           <form
-            className="w-full max-w-sm bg-slate-300/5 rounded px-6 py-12"
+            className="w-full max-w-md p-6"
             onSubmit={handleSubmit(submitForm)}
           >
+            <Heading level="h2" className="text-center">
+              Sign in
+            </Heading>
             {error && <Alert>{error}</Alert>}
             <Input
               type="email"
@@ -58,12 +62,12 @@ function LoginScreen() {
               label="Password"
               autoComplete="current-password"
             />
-            <Button primary type="submit" loading={loading}>
+            <Button primary type="submit" loading={loading} className="w-full">
               Sign in
             </Button>
           </form>
         </div>
-        <footer className="relative shrink-0 mb-8">
+        <footer className="relative shrink-0 my-8">
           <div className="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
             <p className="text-center sm:text-left">
               Don&apos;t have an account?

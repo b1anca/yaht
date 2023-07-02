@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { PieChart, Pie, ResponsiveContainer, Cell, Tooltip } from "recharts";
-import { COLORS, DEFAUL_HABIT_COLOR } from "../../constants";
+import { COLORS, DEFAULT_HABIT_COLOR } from "../../constants";
 
 const ProgressChart = ({ value, color }) => {
   const data = [
@@ -24,7 +24,9 @@ const ProgressChart = ({ value, color }) => {
             {data.map((_, index) => (
               <Cell
                 key={`cell-${index}`}
-                fill={index === 0 ? color || DEFAUL_HABIT_COLOR : "transparent"}
+                fill={
+                  index === 0 ? color || DEFAULT_HABIT_COLOR : "transparent"
+                }
               />
             ))}
           </Pie>

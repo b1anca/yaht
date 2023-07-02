@@ -16,7 +16,7 @@ const NavLink = ({
     <RRDNavLink
       to={to}
       className={classNames(
-        "text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4",
+        "text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4",
         {
           "ring-1 ring-slate-300/10 hover:ring-slate-200/20": secondary,
           "bg-slate-300 text-slate-900 hover:bg-slate-200 w-full": primary,

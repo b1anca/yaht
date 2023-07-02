@@ -28,34 +28,6 @@ export const Heading = ({ level = "h1", children, className, ...rest }) => {
   );
 };
 
-export const H1 = ({ children, className, ...rest }) => {
-  return (
-    <h1
-      className={classNames(
-        "mb-4 text-4xl font-extrabold tracking-tight",
-        className
-      )}
-      {...rest}
-    >
-      {children}
-    </h1>
-  );
-};
-
-export const H2 = ({ children, className, ...rest }) => {
-  return (
-    <h2
-      className={classNames(
-        "mb-4 text-2xl font-extrabold tracking-tight",
-        className
-      )}
-      {...rest}
-    >
-      {children}
-    </h2>
-  );
-};
-
 export const P = ({ children, className, bold, ...rest }) => {
   return (
     <p
@@ -69,16 +41,6 @@ export const P = ({ children, className, bold, ...rest }) => {
       {children}
     </p>
   );
-};
-
-H1.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-};
-
-H2.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
 };
 
 Heading.propTypes = {

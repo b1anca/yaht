@@ -2,10 +2,9 @@ import React, { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { P } from "../../components/Typography";
 import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
-import { DEFAUL_HABIT_COLOR } from "../../constants";
+import { DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
 import Spinner from "../../components/Spinner";
 
@@ -48,11 +47,11 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
         }
         style={{
           backgroundColor: completedTaskForTheDay
-            ? habitColor || DEFAUL_HABIT_COLOR
+            ? habitColor || DEFAULT_HABIT_COLOR
             : "unset",
         }}
         className={classNames(
-          "border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-6 h-6 items-center inline-flex justify-center",
+          "border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center",
           { "cursor-pointer": day <= currentDate }
         )}
         onClick={handleDayTaskClick}
@@ -66,12 +65,10 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
 const HabitRow = ({ id, name, tasks, days, color }) => {
   return (
     <tr>
-      <td>
-        <P className="whitespace-nowrap mt-2 mr-2">
-          <NavLink to={`/habits/${id}`} tetriary className="!p-0">
-            {name}
-          </NavLink>
-        </P>
+      <td className="flex max-w-[200px]">
+        <NavLink to={`/habits/${id}`} tetriary className="!p-0 truncate">
+          {name}
+        </NavLink>
       </td>
       {days.map((day) => (
         <Day

@@ -5,7 +5,7 @@ const API_URL = process.env.REACT_APP_YAHT_API_URL;
 
 export const createHabit = createAsyncThunk(
   "habits/createHabit",
-  async ({ name }, { rejectWithValue, getState }) => {
+  async (habit, { rejectWithValue, getState }) => {
     try {
       const state = getState();
       const token = state.auth.userToken;
@@ -16,7 +16,7 @@ export const createHabit = createAsyncThunk(
         },
       };
 
-      const { data } = await axios.post(`${API_URL}/habits`, { name }, config);
+      const { data } = await axios.post(`${API_URL}/habits`, habit, config);
 
       return data;
     } catch (error) {
@@ -42,11 +42,7 @@ export const updateHabit = createAsyncThunk(
         },
       };
 
-      const { data } = await axios.put(
-        `${API_URL}/habits/${id}`,
-        { ...rest },
-        config
-      );
+      const { data } = await axios.put(`${API_URL}/habits/${id}`, rest, config);
 
       return data;
     } catch (error) {

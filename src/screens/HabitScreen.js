@@ -14,7 +14,6 @@ const HabitScreen = () => {
   const tasksSet = new Set(
     habit.tasks.map((t) => new Date(t.completed_at).toLocaleDateString())
   );
-  console.log("debug tasksSet", tasksSet);
 
   return (
     <>
@@ -29,7 +28,7 @@ const HabitScreen = () => {
           <FontAwesomeIcon icon={faEdit} />
         </NavLink>
       </div>
-      <div className="bg-slate-400/5 rounded p-6">
+      <div className="bg-slate-300/5 rounded p-6">
         <HabitHeatmap dataSet={tasksSet} habitColor={habit.color} />
       </div>
     </>

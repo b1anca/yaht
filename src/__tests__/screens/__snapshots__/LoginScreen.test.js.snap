@@ -9,25 +9,25 @@ exports[`LoginScreen should render correctly 1`] = `
       class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 border-b border-slate-900/10 text-sm font-semibold leading-6 bg-slate-300/5"
     >
       <div
-        class="max-w-7xl mx-auto"
+        class="max-w-6xl mx-auto"
       >
         <div
-          class="py-4 mx-4"
+          class="py-4 px-6"
         >
           <div
             class="relative flex items-center"
           >
             <div
-              class="relative hidden lg:flex items-center ml-auto"
+              class="relative flex items-center ml-auto"
             >
               <a
-                class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200"
+                class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200"
                 href="/login"
               >
                 Sign in
               </a>
               <a
-                class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 bg-slate-300 text-slate-900 hover:bg-slate-200 w-full"
+                class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 bg-slate-300 text-slate-900 hover:bg-slate-200 w-full"
                 href="/register"
               >
                 Register
@@ -41,13 +41,19 @@ exports[`LoginScreen should render correctly 1`] = `
       class="relative flex flex-1 flex-col items-center justify-center"
     >
       <form
-        class="w-full max-w-sm bg-slate-300/5 rounded px-6 py-12"
+        class="w-full max-w-md p-6"
       >
+        <h2
+          class="mb-4 font-extrabold tracking-tight text-2xl text-center"
+          level="h4"
+        >
+          Sign in
+        </h2>
         <div
           class="mb-6"
         >
           <label
-            class="block text-sm font-semibold leading-6"
+            class="block text-sm font-semibold leading-6 mb-2"
             for="email"
           >
             Email
@@ -55,7 +61,7 @@ exports[`LoginScreen should render correctly 1`] = `
           <input
             aria-label="email"
             autocomplete="username"
-            class="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            class="bg-transparent appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
             id="email"
             name="email"
             required=""
@@ -66,7 +72,7 @@ exports[`LoginScreen should render correctly 1`] = `
           class="mb-6"
         >
           <label
-            class="block text-sm font-semibold leading-6"
+            class="block text-sm font-semibold leading-6 mb-2"
             for="password"
           >
             Password
@@ -74,7 +80,7 @@ exports[`LoginScreen should render correctly 1`] = `
           <input
             aria-label="password"
             autocomplete="current-password"
-            class="bg-transparent mt-2 appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
+            class="bg-transparent appearance-none text-slate-100 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-500 ring-1 ring-slate-200"
             id="password"
             name="password"
             required=""
@@ -90,7 +96,7 @@ exports[`LoginScreen should render correctly 1`] = `
       </form>
     </div>
     <footer
-      class="relative shrink-0 mb-8"
+      class="relative shrink-0 my-8"
     >
       <div
         class="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0"
@@ -101,7 +107,7 @@ exports[`LoginScreen should render correctly 1`] = `
           Don't have an account?
         </p>
         <a
-          class="text-sm whitespace-nowrap py-2 px-6 rounded-full inline-flex justify-center rounded-lg font-semibold py-2.5 px-4 ring-1 ring-slate-300/10 hover:ring-slate-200/20"
+          class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 ring-1 ring-slate-300/10 hover:ring-slate-200/20"
           href="/register"
         >
           Register

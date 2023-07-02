@@ -2,11 +2,12 @@
 
 exports[`ProfileScreen should render correctly 1`] = `
 <DocumentFragment>
-  <h1
-    class="mb-4 text-4xl font-extrabold tracking-tight"
+  <h2
+    class="mb-4 font-extrabold tracking-tight text-2xl"
+    level="h4"
   >
     Your profile
-  </h1>
+  </h2>
   <p
     class="text-sm mb-2 tracking-tight"
   >
