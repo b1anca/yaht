@@ -6,17 +6,11 @@ import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
-import Spinner from "../../components/Spinner";
 
-const Day = ({ tasks, day, habitId, habitColor }) => {
+const Day = ({ task, day, habitId, habitColor }) => {
   const currentDate = new Date();
   const dispatch = useDispatch();
   const [loading, setLoading] = useState();
-
-  const completedTaskForTheDay = useCallback(
-    tasks.find((task) => areDatesEqual(new Date(task.completed_at), day)),
-    [tasks, habitId]
-  );
 
   const handleDayTaskClick = useCallback(() => {
     if (loading || day > currentDate) {
@@ -24,16 +18,16 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
     }
 
     setLoading(true);
-    if (completedTaskForTheDay) {
-      dispatch(deleteTask({ habitId, id: completedTaskForTheDay.id })).then(
-        () => setLoading(false)
+    if (task) {
+      dispatch(deleteTask({ habitId, id: task.id })).then(() =>
+        setLoading(false)
       );
     } else {
       dispatch(createTask({ habitId, completed_at: day.toISOString() })).then(
         () => setLoading(false)
       );
     }
-  }, [day, currentDate, habitId]);
+  }, [day, currentDate, habitId, loading]);
 
   return (
     <td>
@@ -41,23 +35,20 @@ const Day = ({ tasks, day, habitId, habitColor }) => {
         title={
           day > currentDate
             ? "This is a future date. You can't mark tasks as completed in advance."
-            : completedTaskForTheDay
+            : task
             ? "Click to unmark this day."
             : "Click to mark this day."
         }
         style={{
-          backgroundColor: completedTaskForTheDay
-            ? habitColor || DEFAULT_HABIT_COLOR
-            : "unset",
+          backgroundColor:
+            task || loading ? habitColor || DEFAULT_HABIT_COLOR : "unset",
         }}
         className={classNames(
           "mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center",
-          { "cursor-pointer": day <= currentDate }
+          { "cursor-pointer": day <= currentDate, "animate-pulse": loading }
         )}
         onClick={handleDayTaskClick}
-      >
-        {loading && <Spinner />}
-      </div>
+      />
     </td>
   );
 };
@@ -74,22 +65,28 @@ const HabitRow = ({ id, name, tasks, days, color }) => {
           {name}
         </NavLink>
       </td>
-      {days.map((day) => (
-        <Day
-          key={`day-${day.toISOString()}`}
-          day={day}
-          tasks={tasks}
-          habitId={id}
-          habitColor={color}
-        />
-      ))}
+      {days.map((day) => {
+        const completedTaskForTheDay = tasks.find((task) =>
+          areDatesEqual(new Date(task.completed_at), day)
+        );
+
+        return (
+          <Day
+            key={`day-${day.toISOString()}`}
+            day={day}
+            task={completedTaskForTheDay}
+            habitId={id}
+            habitColor={color}
+          />
+        );
+      })}
     </tr>
   );
 };
 
 Day.propTypes = {
   day: PropTypes.object,
-  tasks: PropTypes.array,
+  task: PropTypes.object,
   habitId: PropTypes.number,
   habitColor: PropTypes.string,
 };

@@ -1,5 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { createHabit, fetchHabits, updateHabit } from "./habitActions";
+import {
+  createHabit,
+  fetchHabits,
+  fetchHabit,
+  updateHabit,
+} from "./habitActions";
 import { createTask, deleteTask } from "../tasks/taskActions";
 
 const initialState = {
@@ -80,6 +85,19 @@ const habitSlice = createSlice({
       state.habits = payload;
     });
     builder.addCase(fetchHabits.rejected, (state, { payload }) => {
+      state.loading = false;
+      state.error = payload;
+    });
+    builder.addCase(fetchHabit.pending, (state) => {
+      state.loading = true;
+      state.error = null;
+    });
+    builder.addCase(fetchHabit.fulfilled, (state, { payload }) => {
+      state.loading = false;
+      state.success = true;
+      state.habits = state.habits.concat(payload);
+    });
+    builder.addCase(fetchHabit.rejected, (state, { payload }) => {
       state.loading = false;
       state.error = payload;
     });

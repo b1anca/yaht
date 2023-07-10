@@ -6,31 +6,45 @@ import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
   areDatesEqual,
-  monthNames,
   createDateRange,
+  monthNames,
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
 import NavLink from "../../components/NavLink";
+import { getRangeFromViewportWidth } from "../../utils";
 
-const DayHeader = ({ day, currentDate }) => (
-  <th title={day.toDateString()}>
-    <P
-      className={classNames({
-        "text-slate-400 font-normal": !areDatesEqual(day, currentDate),
-        "text-slate-200 text-base !mb-0": areDatesEqual(day, currentDate),
-      })}
-    >
-      {day.getDate()}
-    </P>
-    {areDatesEqual(day, currentDate) && (
-      <P className="text-slate-200">{monthNames[day.getMonth()]}</P>
-    )}
-  </th>
-);
+const RANGE = getRangeFromViewportWidth();
+
+const currentDate = new Date();
+
+const start = new Date();
+start.setDate(currentDate.getDate() - RANGE * 2);
+const end = new Date();
+end.setDate(currentDate.getDate() + RANGE / 2);
+
+export const DATE_RANGE = createDateRange(start, end);
+
+const DayHeader = ({ day }) => {
+  const currentDate = new Date();
+  return (
+    <th title={day.toDateString()}>
+      <P
+        className={classNames({
+          "text-slate-400 font-normal": !areDatesEqual(day, currentDate),
+          "text-slate-200 text-base !mb-0": areDatesEqual(day, currentDate),
+        })}
+      >
+        {day.getDate()}
+      </P>
+      {areDatesEqual(day, currentDate) && (
+        <P className="text-slate-200">{monthNames[day.getMonth()]}</P>
+      )}
+    </th>
+  );
+};
 
 // TODO:
-// - refresh habit don't break
 // - mobile views
 // - error tracking, monitoring for the react app
 // - tests for the other components (meet coverage threshold)
@@ -41,24 +55,8 @@ const DayHeader = ({ day, currentDate }) => (
 // - allow changing month (habits screen)
 // - allow changing year (habit screen)
 const HabitsScreen = () => {
-  const currentDate = new Date();
   const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
-  const viewportWidth = window.innerWidth;
-
-  let range;
-
-  if (viewportWidth <= 600) {
-    range = 3;
-  } else {
-    range = 10;
-  }
-
-  const start = new Date();
-  start.setDate(currentDate.getDate() - range * 2);
-  const end = new Date();
-  end.setDate(currentDate.getDate() + range / 2);
-  const days = createDateRange(start, end);
 
   useEffect(() => {
     dispatch(fetchHabits());
@@ -72,18 +70,14 @@ const HabitsScreen = () => {
           <thead>
             <tr>
               <th />
-              {days.map((day) => (
-                <DayHeader
-                  key={day.toISOString()}
-                  day={day}
-                  currentDate={currentDate}
-                />
+              {DATE_RANGE.map((day) => (
+                <DayHeader key={day.toISOString()} day={day} />
               ))}
             </tr>
           </thead>
           <tbody>
             {habits.map((habit) => (
-              <HabitRow key={habit.id} {...habit} days={days} />
+              <HabitRow key={habit.id} {...habit} days={DATE_RANGE} />
             ))}
           </tbody>
         </table>
@@ -107,7 +101,6 @@ const HabitsScreen = () => {
 
 DayHeader.propTypes = {
   day: PropTypes.object,
-  currentDate: PropTypes.object,
 };
 
 export default HabitsScreen;

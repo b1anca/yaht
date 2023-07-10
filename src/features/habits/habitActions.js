@@ -80,3 +80,29 @@ export const fetchHabits = createAsyncThunk(
     }
   }
 );
+
+export const fetchHabit = createAsyncThunk(
+  "habits/fetchHabit",
+  async (id, { rejectWithValue, getState }) => {
+    try {
+      const state = getState();
+      const token = state.auth.userToken;
+      const config = {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      };
+
+      const { data } = await axios.get(`${API_URL}/habits/${id}`, config);
+
+      return data;
+    } catch (error) {
+      if (error.response && error.response.data.message) {
+        return rejectWithValue(error.response.data.message);
+      } else {
+        return rejectWithValue(error.message);
+      }
+    }
+  }
+);
