@@ -4,7 +4,14 @@ import { NavLink } from "react-router-dom";
 import { P, Heading } from "../../components/Typography";
 import ProgressChart from "./ProgressChart";
 
-const HabitCard = ({ id, name, overall_progress, color }) => (
+const HabitCard = ({
+  id,
+  name,
+  overall_progress,
+  color,
+  current_streak,
+  record_streak,
+}) => (
   <NavLink
     to={`/habits/${id}`}
     className="w-full max-w-[100%] lg:basis-1/4 lg:max-w-[25%]"
@@ -20,9 +27,9 @@ const HabitCard = ({ id, name, overall_progress, color }) => (
         </div>
         <div className="flex-col flex-1">
           <P>Days in a row</P>
-          <P bold>02</P>
+          <P bold>{current_streak}</P>
           <P>Record</P>
-          <P bold>02</P>
+          <P bold>{record_streak}</P>
         </div>
       </div>
     </div>
@@ -34,6 +41,8 @@ HabitCard.propTypes = {
   name: PropTypes.string,
   color: PropTypes.string,
   overall_progress: PropTypes.string,
+  current_streak: PropTypes.number,
+  record_streak: PropTypes.number,
 };
 
 export default HabitCard;

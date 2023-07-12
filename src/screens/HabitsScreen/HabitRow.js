@@ -60,7 +60,7 @@ const HabitRow = ({ id, name, tasks, days, color }) => {
         <NavLink
           to={`/habits/${id}`}
           tetriary
-          className="!p-0 truncate absolute max-w-[200px] sm:static"
+          className="!p-0 truncate absolute max-w-[200px] sm:static mr-2"
         >
           {name}
         </NavLink>
