@@ -10,7 +10,7 @@ exports[`HabitsScreen should render correctly 1`] = `
       Habits tracker
     </h2>
     <div
-      class="bg-slate-300/5 rounded p-6"
+      class="bg-slate-300/5 rounded p-6 mb-4"
     >
       <table
         class="table-fixed"
@@ -456,6 +456,1481 @@ exports[`HabitsScreen should render correctly 1`] = `
           </div>
         </div>
       </a>
+    </div>
+    <h2
+      class="mb-4 font-extrabold tracking-tight text-2xl mt-12"
+      level="h4"
+    >
+      Contributions
+    </h2>
+    <div
+      class="bg-slate-300/5 rounded p-6"
+    >
+      <div
+        class="flex flex-wrap"
+      >
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Jan 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Feb 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Mar 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Apr 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 May 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          style="background-color: rgb(203, 213, 225);"
+          title="1 tasks completed - 2 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Jun 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Jul 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Aug 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Sep 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Oct 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Nov 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 1 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 2 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 3 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 4 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 5 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 6 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 7 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 8 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 9 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 10 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 11 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 12 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 13 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 14 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 15 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 16 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 17 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 18 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 19 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 20 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 21 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 22 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 23 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 24 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 25 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 26 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 27 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 28 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 29 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 30 Dec 2023"
+        />
+        <div
+          class="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+          title="no tasks completed - 31 Dec 2023"
+        />
+      </div>
     </div>
   </div>
 </DocumentFragment>

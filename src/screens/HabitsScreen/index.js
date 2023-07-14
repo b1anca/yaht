@@ -13,6 +13,7 @@ import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
 import NavLink from "../../components/NavLink";
 import { getRangeFromViewportWidth } from "../../utils";
+import Heatmap from "../../components/Heatmap";
 
 const DayHeader = ({ day }) => {
   const currentDate = new Date();
@@ -64,10 +65,22 @@ const HabitsScreen = () => {
     setDateRange(calculateDateRange());
   }, []);
 
+  const data = habits.reduce((h, habit) => {
+    habit.tasks.forEach((t) => {
+      const date = new Date(t.completed_at).toLocaleDateString();
+      if (h[date]) {
+        h[date] += 1;
+      } else {
+        h[date] = 1;
+      }
+    });
+    return h;
+  }, {});
+
   return (
     <div>
       <Heading level="h2">Habits tracker</Heading>
-      <div className="bg-slate-300/5 rounded p-6">
+      <div className="bg-slate-300/5 rounded p-6 mb-4">
         <table className="table-fixed">
           <thead>
             <tr>
@@ -96,6 +109,12 @@ const HabitsScreen = () => {
         {habits.map((habit) => (
           <HabitCard key={habit.id} {...habit} />
         ))}
+      </div>
+      <Heading level="h2" className="mt-12">
+        Contributions
+      </Heading>
+      <div className="bg-slate-300/5 rounded p-6">
+        <Heatmap data={data} />
       </div>
     </div>
   );
