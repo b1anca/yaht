@@ -3,7 +3,7 @@ import { screen, waitFor } from "@testing-library/react";
 import { renderWithProviders } from "../../../utils/test-utils";
 import HabitsScreen from "../../../screens/HabitsScreen";
 
-jest.useFakeTimers().setSystemTime(new Date("2023-06-01"));
+jest.useFakeTimers().setSystemTime(new Date("2023-01-10"));
 
 global.ResizeObserver = require("resize-observer-polyfill");
 

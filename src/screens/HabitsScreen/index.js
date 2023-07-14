@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
@@ -13,17 +13,6 @@ import HabitRow from "./HabitRow";
 import HabitCard from "./HabitCard";
 import NavLink from "../../components/NavLink";
 import { getRangeFromViewportWidth } from "../../utils";
-
-const RANGE = getRangeFromViewportWidth();
-
-const currentDate = new Date();
-
-const start = new Date();
-start.setDate(currentDate.getDate() - RANGE * 2);
-const end = new Date();
-end.setDate(currentDate.getDate() + RANGE / 2);
-
-export const DATE_RANGE = createDateRange(start, end);
 
 const DayHeader = ({ day }) => {
   const currentDate = new Date();
@@ -54,12 +43,25 @@ const DayHeader = ({ day }) => {
 // - loading state when loading habist (habits screen)
 // - allow changing month (habits screen)
 // - allow changing year (habit screen)
+
+const RANGE = getRangeFromViewportWidth();
+
+const calculateDateRange = () => {
+  const start = new Date();
+  start.setDate(start.getDate() - RANGE * 2);
+  const end = new Date();
+  end.setDate(end.getDate() + RANGE / 2);
+  return createDateRange(start, end);
+};
+
 const HabitsScreen = () => {
+  const [dateRange, setDateRange] = useState([]);
   const { habits } = useSelector((state) => state.habits);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchHabits());
+    setDateRange(calculateDateRange());
   }, []);
 
   return (
@@ -70,14 +72,14 @@ const HabitsScreen = () => {
           <thead>
             <tr>
               <th />
-              {DATE_RANGE.map((day) => (
+              {dateRange.map((day) => (
                 <DayHeader key={day.toISOString()} day={day} />
               ))}
             </tr>
           </thead>
           <tbody>
             {habits.map((habit) => (
-              <HabitRow key={habit.id} {...habit} days={DATE_RANGE} />
+              <HabitRow key={habit.id} {...habit} days={dateRange} />
             ))}
           </tbody>
         </table>
