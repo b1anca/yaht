@@ -7,39 +7,39 @@ const Table = ({ data, onRowClick, className }) => {
   const headers = Object.keys(data[0]);
 
   return (
-    <table className={classNames("table-auto", className)}>
-      <thead>
-        <tr className="mt-2">
+    <div className={classNames(className)}>
+      <div>
+        <div className="mt-2">
           {headers.map((header, i) => (
-            <th
+            <div
               key={i}
               className="border-b border-slate-500 p-4 pl-8 pt-0 pb-2 text-left"
             >
               <P bold>{header}</P>
-            </th>
+            </div>
           ))}
-        </tr>
-      </thead>
-      <tbody>
+        </div>
+      </div>
+      <div>
         {data.map((row, i) => (
-          <tr
+          <div
             key={i}
-            className="hover:text-slate-100 cursor-pointer"
+            className="cursor-pointer"
             onClick={() => onRowClick(row)}
           >
             {headers.map((header, j) => (
-              <td key={j} className="border-b border-slate-500 p-2 pl-8 pr-8">
+              <div key={j} className="border-b border-slate-500 p-2 pl-8 pr-8">
                 {React.isValidElement(row[header]) ? (
                   row[header]
                 ) : (
                   <P className="mt-2">{row[header]}</P>
                 )}
-              </td>
+              </div>
             ))}
-          </tr>
+          </div>
         ))}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 };
 

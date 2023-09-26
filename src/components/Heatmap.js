@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
-import { monthNames, getDaysInMonth, formatDate } from "../utils/dateHelpers";
+import { MONTH_NAMES, getDaysInMonth, formatDate } from "../utils/dateHelpers";
 import { COLORS } from "../constants";
 
 const MAX_COLUMNS = 32;
@@ -41,7 +41,7 @@ const Heatmap = ({ data }) => {
 
   return (
     <div className="flex flex-wrap">
-      {monthNames.map((_, monthIndex) => {
+      {MONTH_NAMES.map((_, monthIndex) => {
         const days = getDaysInMonth(monthIndex, 2023);
 
         return (

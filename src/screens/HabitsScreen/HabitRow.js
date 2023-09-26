@@ -41,10 +41,10 @@ const Day = ({ task, day, habitId, habitColor }) => {
         }
         style={{
           backgroundColor:
-            task || loading ? habitColor || DEFAULT_HABIT_COLOR : "unset",
+            task || loading ? habitColor || DEFAULT_HABIT_COLOR : "#dce2ed",
         }}
         className={classNames(
-          "mt-6 sm:mt-0 border border-slate-500 hover:border-slate-200 whitespace-nowrap rounded w-7 h-7 items-center inline-flex justify-center",
+          "mr-2 ml-2 mt-6 sm:mt-0 border hover:border-zinc-400 whitespace-nowrap rounded w-9 h-9 items-center inline-flex justify-center",
           { "cursor-pointer": day <= currentDate, "animate-pulse": loading }
         )}
         onClick={handleDayTaskClick}

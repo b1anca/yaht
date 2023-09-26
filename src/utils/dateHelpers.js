@@ -23,7 +23,7 @@ export const createDateRange = (start, end) => {
   return dateArray;
 };
 
-export const monthNames = [
+export const MONTH_NAMES = [
   "Jan",
   "Feb",
   "Mar",
@@ -38,12 +38,14 @@ export const monthNames = [
   "Dec",
 ];
 
+const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
 export const formatDate = (date) => {
   const day = date.getDate();
   const monthIndex = date.getMonth();
   const year = date.getFullYear();
 
-  return day + " " + monthNames[monthIndex] + " " + year;
+  return day + " " + MONTH_NAMES[monthIndex] + " " + year;
 };
 
 export const areDatesEqual = (date1, date2) => {
@@ -53,3 +55,7 @@ export const areDatesEqual = (date1, date2) => {
     date1.getDate() === date2.getDate()
   );
 };
+
+export const getWeekName = (date) => WEEKDAY_NAMES[date.getDay()];
+
+export const getMonthName = (date) => MONTH_NAMES[date.getMonth()];

@@ -6,6 +6,7 @@ export const COLORS = {
   slate500: "#64748B",
   slate600: "#475569",
   slate700: "#334155",
+  green: "#80A568",
 };
 
 export const DEFAULT_HABIT_COLOR = COLORS.slate300;

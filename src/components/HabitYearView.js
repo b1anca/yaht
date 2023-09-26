@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { P } from "./Typography";
-import { monthNames, getDaysInMonth, formatDate } from "../utils/dateHelpers";
+import { MONTH_NAMES, getDaysInMonth, formatDate } from "../utils/dateHelpers";
 import { DEFAULT_HABIT_COLOR } from "../constants";
 
 const MAX_COLUMNS = 32;
@@ -9,7 +9,7 @@ const MAX_COLUMNS = 32;
 const HabitYearView = ({ dataSet, habitColor }) => {
   return (
     <>
-      {monthNames.map((month, monthIndex) => {
+      {MONTH_NAMES.map((month, monthIndex) => {
         const days = getDaysInMonth(monthIndex, 2023);
 
         return (

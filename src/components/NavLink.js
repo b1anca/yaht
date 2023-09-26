@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { NavLink as RRDNavLink } from "react-router-dom";
+import { COLORS } from "../constants";
 
 const NavLink = ({
   to,
@@ -16,14 +17,16 @@ const NavLink = ({
     <RRDNavLink
       to={to}
       className={classNames(
-        "text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4",
+        "text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4",
         {
           "ring-1 ring-slate-300/10 hover:ring-slate-200/20": secondary,
-          "bg-slate-300 text-slate-900 hover:bg-slate-200 w-full": primary,
-          "hover:text-slate-200": tetriary,
+          "w-full text-zinc-100 rounded-full opacity-90 hover:opacity-100":
+            primary,
+          "text-zinc-600": tetriary,
         },
         className
       )}
+      style={{ ...(primary && { backgroundColor: COLORS.green }) }}
       {...rest}
     >
       {children}
