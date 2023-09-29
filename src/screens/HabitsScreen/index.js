@@ -14,23 +14,33 @@ import NavLink from "../../components/NavLink";
 import { COLORS } from "../../constants";
 
 const ProgressBar = ({ value = 100 }) => (
-  <div
-    className="px-4 py-1 rounded-lg shadow-lg hidden sm:block"
-    style={{ backgroundColor: COLORS.green, width: `${value}%` }}
-  />
+  <div className="rounded-lg bg-slate-200">
+    <div
+      className="py-1 rounded-lg shadow-lg"
+      style={{ backgroundColor: COLORS.green, width: `${value}%` }}
+    />
+  </div>
 );
 
 const DayHeader = ({ day }) => {
   return (
     <th title={day.toDateString()}>
-      <P className="!mb-0">{day.getDate()}</P>
-      <P>{getWeekName(day)}</P>
+      <div
+        className="rounded-lg py-1 mb-2"
+        style={{
+          ...(areDatesEqual(day, new Date()) && {
+            border: `1px solid ${COLORS.green}`,
+          }),
+        }}
+      >
+        <P className="!mb-0">{day.getDate()}</P>
+        <P className="!mb-0">{getWeekName(day)}</P>
+      </div>
     </th>
   );
 };
 
 // TODO:
-// - mobile views
 // - error tracking, monitoring for the react app
 // - tests for the other components (meet coverage threshold)
 // - show formatted date (with weekday) on tracker hover
@@ -52,13 +62,17 @@ function getEndOfWeek(date) {
   return new Date(date.setDate(diff));
 }
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 const HabitsScreen = () => {
   const [dateRange, setDateRange] = useState([]);
   const { habits } = useSelector((state) => state.habits);
   const { userInfo } = useSelector((state) => state.auth);
   const currentDate = new Date();
 
-  const completedHabits = habits.reduce((sum, habit) => {
+  const completedCount = habits.reduce((sum, habit) => {
     if (
       habit.tasks.some((t) =>
         areDatesEqual(new Date(t.completed_at), new Date())
@@ -68,7 +82,10 @@ const HabitsScreen = () => {
     }
     return sum;
   }, 0);
-  const habitsPercentage = (completedHabits / habits.length) * 100;
+
+  const habitsPercentage = !habits.length
+    ? 0
+    : (completedCount / habits.length) * 100;
 
   const dispatch = useDispatch();
 
@@ -96,29 +113,23 @@ const HabitsScreen = () => {
 
   return (
     <div>
-      <Heading level="h1">Hello, {userInfo?.name}</Heading>
+      <Heading level="h1">
+        Hello, {userInfo && capitalizeFirstLetter(userInfo.name)}
+      </Heading>
       <div className="flex justify-between items-center mb-4">
-        <div className="flex items-center">
-          <Heading level="h2" className="mb-0">
-            {`Today, ${getMonthName(
-              currentDate
-            )} ${currentDate.getDate()} ${getWeekName(currentDate)}`}
-          </Heading>
-          <Heading
-            level="h6"
-            className="mb-0 ml-4"
-            style={{ color: COLORS.green }}
-          >
-            {habitsPercentage}% completed
-          </Heading>
-        </div>
+        <Heading level="h2" className="!mb-0">
+          {`Today, ${getMonthName(
+            currentDate
+          )} ${currentDate.getDate()} ${getWeekName(currentDate)}`}
+        </Heading>
         <NavLink className="!w-min h-min" primary to="/habits/new">
           Add habit
         </NavLink>
       </div>
-
       <ProgressBar value={habitsPercentage} />
-      <br />
+      <P bold className="mt-1" style={{ color: COLORS.green }}>
+        {habitsPercentage}% completed
+      </P>
       <table className="table-fixed">
         <thead>
           <tr>
