@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Spinner from "./Spinner";
-import { COLORS } from "../constants";
 
 const Button = ({
   type = "text",
@@ -20,11 +19,10 @@ const Button = ({
         {
           "text-zinc-100 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
             !primary,
-          "text-zinc-100 hover:bg-slate-200": primary,
+          "shadow text-zinc-100 hover:bg-slate-200 bg-lime-600": primary,
         },
         className
       )}
-      style={{ ...(primary && { backgroundColor: COLORS.green }) }}
       disabled={loading}
       {...rest}
     >

@@ -46,7 +46,7 @@ const Day = ({ task, day, habitId, habitColor }) => {
               : COLORS.slate200,
         }}
         className={classNames(
-          "mr-2 ml-2 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-9 h-9 items-center inline-flex justify-center",
+          "mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center",
           { "cursor-pointer": day <= currentDate, "animate-pulse": loading }
         )}
         onClick={handleDayTaskClick}

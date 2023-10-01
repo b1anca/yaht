@@ -1,15 +1,21 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
-import { MONTH_NAMES, getDaysInMonth, formatDate } from "../utils/dateHelpers";
+import {
+  MONTH_NAMES,
+  getDaysInMonth,
+  formatDate,
+  areDatesEqual,
+} from "../utils/dateHelpers";
 import { COLORS } from "../constants";
+import classNames from "classnames";
 
 const MAX_COLUMNS = 32;
 
 const AVAILABLE_COLORS = [
-  COLORS.slate600,
-  COLORS.slate500,
-  COLORS.slate400,
-  COLORS.slate300,
+  COLORS.lime300,
+  COLORS.lime400,
+  COLORS.lime500,
+  COLORS.lime600,
 ];
 
 export const calculateThresholds = (data) => {
@@ -48,6 +54,8 @@ const Heatmap = ({ data }) => {
           <>
             {Array.from({ length: MAX_COLUMNS - 1 }, (_, index) => {
               const currentDate = new Date(2023, monthIndex, index + 1);
+              const isCurrentDate = areDatesEqual(currentDate, new Date());
+
               const tasks = data[currentDate.toLocaleDateString()];
               const title = `${tasks || "no"} tasks completed - ${formatDate(
                 currentDate
@@ -58,9 +66,13 @@ const Heatmap = ({ data }) => {
                   <div
                     key={index}
                     title={title}
-                    className="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
+                    className={classNames("w-4 h-4 mr-0.5 mb-0.5 border", {
+                      "border-slate-400": isCurrentDate,
+                    })}
                     style={{
-                      backgroundColor: tasks ? getColor(tasks) : "unset",
+                      backgroundColor: tasks
+                        ? getColor(tasks)
+                        : COLORS.slate200,
                     }}
                   />
                 );

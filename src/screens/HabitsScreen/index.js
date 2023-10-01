@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import PropTypes from "prop-types";
+import classNames from "classnames";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
@@ -11,27 +12,26 @@ import {
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import NavLink from "../../components/NavLink";
-import { COLORS } from "../../constants";
+import Heatmap from "../../components/Heatmap";
 
 const ProgressBar = ({ value = 100 }) => (
   <div className="rounded-lg bg-slate-200">
     <div
-      className="py-1 rounded-lg shadow-lg"
-      style={{ backgroundColor: COLORS.green, width: `${value}%` }}
+      className="ease-in duration-300 py-1 rounded-lg bg-lime-600"
+      style={{ width: `${value}%` }}
     />
   </div>
 );
 
 const DayHeader = ({ day }) => {
+  const isCurrentDate = areDatesEqual(day, new Date());
+
   return (
     <th title={day.toDateString()}>
       <div
-        className="rounded-lg py-1 mb-2"
-        style={{
-          ...(areDatesEqual(day, new Date()) && {
-            border: `1px solid ${COLORS.green}`,
-          }),
-        }}
+        className={classNames("rounded-lg py-1 mb-2", {
+          "border border-slate-900/10": isCurrentDate,
+        })}
       >
         <P className="!mb-0">{day.getDate()}</P>
         <P className="!mb-0">{getWeekName(day)}</P>
@@ -99,17 +99,17 @@ const HabitsScreen = () => {
     );
   }, []);
 
-  // const data = habits.reduce((h, habit) => {
-  //   habit.tasks.forEach((t) => {
-  //     const date = new Date(t.completed_at).toLocaleDateString();
-  //     if (h[date]) {
-  //       h[date] += 1;
-  //     } else {
-  //       h[date] = 1;
-  //     }
-  //   });
-  //   return h;
-  // }, {});
+  const data = habits.reduce((h, habit) => {
+    habit.tasks.forEach((t) => {
+      const date = new Date(t.completed_at).toLocaleDateString();
+      if (h[date]) {
+        h[date] += 1;
+      } else {
+        h[date] = 1;
+      }
+    });
+    return h;
+  }, {});
 
   return (
     <div>
@@ -127,7 +127,7 @@ const HabitsScreen = () => {
         </NavLink>
       </div>
       <ProgressBar value={habitsPercentage} />
-      <P bold className="mt-1" style={{ color: COLORS.green }}>
+      <P bold className="mt-1 text-lime-600">
         {habitsPercentage}% completed
       </P>
       <table className="table-fixed">
@@ -145,6 +145,7 @@ const HabitsScreen = () => {
           ))}
         </tbody>
       </table>
+      <div className="border-b border-slate-900/10 my-6" />
       {/* <div className="flex justify-between items-center mt-12 mb-4">
         <Heading level="h2" className="!mb-0">
           Your habits
@@ -161,7 +162,8 @@ const HabitsScreen = () => {
       <Heading level="h2" className="mt-12">
         Contributions
       </Heading>
-      <Heatmap data={data} /> */}
+      */}
+      <Heatmap data={data} />
     </div>
   );
 };
