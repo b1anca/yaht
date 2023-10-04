@@ -8,6 +8,18 @@ export const getDaysInMonth = (month, year) => {
   return days;
 };
 
+const getBeginningOfWeek = (date) => {
+  const day = date.getDay() || 7;
+  const diff = date.getDate() - day + 1;
+  return new Date(date.setDate(diff));
+};
+
+const getEndOfWeek = (date) => {
+  const day = date.getDay();
+  const diff = date.getDate() - day + 7;
+  return new Date(date.setDate(diff));
+};
+
 export const createDateRange = (start, end) => {
   var startDate = new Date(start);
   var endDate = new Date(end);
@@ -22,6 +34,9 @@ export const createDateRange = (start, end) => {
 
   return dateArray;
 };
+
+export const createWeekRange = (date) =>
+  createDateRange(getBeginningOfWeek(date), getEndOfWeek(date));
 
 export const MONTH_NAMES = [
   "Jan",

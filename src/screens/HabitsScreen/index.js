@@ -2,26 +2,24 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import {
-  createDateRange,
   getWeekName,
   getMonthName,
   areDatesEqual,
+  createWeekRange,
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import NavLink from "../../components/NavLink";
 import Heatmap from "../../components/Heatmap";
-
-const ProgressBar = ({ value = 100 }) => (
-  <div className="rounded-lg bg-slate-200">
-    <div
-      className="ease-in duration-300 py-1 rounded-lg bg-lime-600"
-      style={{ width: `${value}%` }}
-    />
-  </div>
-);
+import ProgressBar from "../../components/ProgressBar";
+import { COLORS } from "../../constants";
 
 const DayHeader = ({ day }) => {
   const isCurrentDate = areDatesEqual(day, new Date());
@@ -50,29 +48,18 @@ const DayHeader = ({ day }) => {
 // - allow changing month (habits screen)
 // - allow changing year (habit screen)
 
-function getBeginningOfWeek(date) {
-  const day = date.getDay() || 7;
-  const diff = date.getDate() - day + 1;
-  return new Date(date.setDate(diff));
-}
-
-function getEndOfWeek(date) {
-  const day = date.getDay();
-  const diff = date.getDate() - day + 7;
-  return new Date(date.setDate(diff));
-}
-
 function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 const HabitsScreen = () => {
+  const dispatch = useDispatch();
   const [dateRange, setDateRange] = useState([]);
   const { habits } = useSelector((state) => state.habits);
   const { userInfo } = useSelector((state) => state.auth);
   const currentDate = new Date();
 
-  const completedCount = habits.reduce((sum, habit) => {
+  const completedTodayCount = habits.reduce((sum, habit) => {
     if (
       habit.tasks.some((t) =>
         areDatesEqual(new Date(t.completed_at), new Date())
@@ -85,18 +72,11 @@ const HabitsScreen = () => {
 
   const habitsPercentage = !habits.length
     ? 0
-    : (completedCount / habits.length) * 100;
-
-  const dispatch = useDispatch();
+    : (completedTodayCount / habits.length) * 100;
 
   useEffect(() => {
     dispatch(fetchHabits());
-    setDateRange(
-      createDateRange(
-        getBeginningOfWeek(currentDate),
-        getEndOfWeek(currentDate)
-      )
-    );
+    setDateRange(createWeekRange(currentDate));
   }, []);
 
   const data = habits.reduce((h, habit) => {
@@ -110,6 +90,18 @@ const HabitsScreen = () => {
     });
     return h;
   }, {});
+
+  const onClickLeft = () => {
+    const previousWeekDay = dateRange[0];
+    previousWeekDay.setDate(previousWeekDay.getDate() - 1);
+    setDateRange(createWeekRange(previousWeekDay));
+  };
+
+  const onClickRight = () => {
+    const nextWeekDay = dateRange[6];
+    nextWeekDay.setDate(nextWeekDay.getDate() + 1);
+    setDateRange(createWeekRange(nextWeekDay));
+  };
 
   return (
     <div>
@@ -130,6 +122,38 @@ const HabitsScreen = () => {
       <P bold className="mt-1 text-lime-600">
         {habitsPercentage}% completed
       </P>
+      <div className="flex mt-6">
+        <div
+          onClick={onClickLeft}
+          className="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+        >
+          <FontAwesomeIcon
+            size="sm"
+            icon={faChevronLeft}
+            style={{ color: COLORS.zinc600 }}
+          />
+        </div>
+        <div
+          onClick={onClickRight}
+          className="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+        >
+          <FontAwesomeIcon
+            size="sm"
+            icon={faChevronRight}
+            style={{ color: COLORS.zinc600 }}
+          />
+        </div>
+        <Heading level="h4" className="!mb-0">
+          {dateRange[0] &&
+            `${getWeekName(
+              dateRange[0]
+            )} ${dateRange[0].getMonth()}/${dateRange[0].getDate()}`}
+          {dateRange[6] &&
+            ` - ${getWeekName(
+              dateRange[6]
+            )} ${dateRange[6].getMonth()}/${dateRange[6].getDate()}`}
+        </Heading>
+      </div>
       <table className="table-fixed">
         <thead>
           <tr>
@@ -170,10 +194,6 @@ const HabitsScreen = () => {
 
 DayHeader.propTypes = {
   day: PropTypes.object,
-};
-
-ProgressBar.propTypes = {
-  value: PropTypes.number,
 };
 
 export default HabitsScreen;

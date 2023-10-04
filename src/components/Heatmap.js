@@ -86,7 +86,7 @@ const Heatmap = ({ data }) => {
 };
 
 Heatmap.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 export default Heatmap;
