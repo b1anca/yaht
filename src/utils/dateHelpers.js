@@ -1,3 +1,20 @@
+export const MONTH_NAMES = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+
+export const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
 export const getDaysInMonth = (month, year) => {
   const date = new Date(year, month, 1);
   const days = [];
@@ -28,6 +45,25 @@ export const getDaysBetweenDates = (date1, date2) => {
   return Math.round(Math.abs((firstDate - secondDate) / oneDay));
 };
 
+export const getMonthsBetweenDates = (date1, date2) => {
+  if (date1 > date2) {
+    [date1, date2] = [date2, date1];
+  }
+
+  let startMonth = date1.getMonth();
+  const endMonth =
+    date2.getMonth() + (date2.getFullYear() - date1.getFullYear()) * 12;
+
+  const months = [];
+
+  while (startMonth <= endMonth) {
+    months.push(MONTH_NAMES[startMonth % 12]);
+    startMonth++;
+  }
+
+  return months;
+};
+
 export const createDateRange = (start, end) => {
   var startDate = new Date(start);
   var endDate = new Date(end);
@@ -45,23 +81,6 @@ export const createDateRange = (start, end) => {
 
 export const createWeekRange = (date) =>
   createDateRange(getBeginningOfWeek(date), getEndOfWeek(date));
-
-export const MONTH_NAMES = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec",
-];
-
-export const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 export const formatDate = (date) => {
   const day = date.getDate();

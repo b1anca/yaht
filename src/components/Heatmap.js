@@ -8,6 +8,7 @@ import {
   getWeekName,
   getBeginningOfWeek,
   getDaysBetweenDates,
+  getMonthsBetweenDates,
 } from "../utils/dateHelpers";
 import { COLORS } from "../constants";
 import { P } from "./Typography";
@@ -49,45 +50,56 @@ const Heatmap = ({ data }) => {
   const startDate = new Date(endDate.getTime() - 365 * 24 * 60 * 60 * 1000);
   const startSunDate = getBeginningOfWeek(startDate, 0);
   const length = getDaysBetweenDates(startSunDate, endDate) + 1;
+  const months = getMonthsBetweenDates(startSunDate, endDate);
 
   return (
-    <div className="flex">
-      <div className="grid grid-rows-7 items-center">
-        {WEEKDAY_NAMES.map((dayName) => (
-          <P bold key={dayName} className="text-center !mb-0 mr-2">
-            {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
+    <>
+      <div className="flex ml-9 justify-between">
+        {months.map((monthName) => (
+          <P bold key={monthName}>
+            {monthName}
           </P>
         ))}
       </div>
-      <div className="grid grid-cols-54 gap-0.5 w-full">
-        {Array.from({ length }, (_, day) => {
-          const date = new Date(startDate);
-          date.setDate(startDate.getDate() + day);
+      <div className="flex">
+        <div className="grid grid-rows-7 items-center">
+          {WEEKDAY_NAMES.map((dayName) => (
+            <P bold key={dayName} className="text-center !mb-0 mr-2">
+              {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
+            </P>
+          ))}
+        </div>
 
-          const isCurrentDate = areDatesEqual(date, new Date());
-          const tasks = data[date.toLocaleDateString()];
-          const title = `${tasks || "no"} tasks completed - ${getWeekName(
-            date
-          )}, ${formatDate(date)}`;
-          const rowStart = (day % 7) + 1;
+        <div className="grid grid-cols-54 gap-0.5 w-full">
+          {Array.from({ length }, (_, day) => {
+            const date = new Date(startDate);
+            date.setDate(startDate.getDate() + day);
 
-          return (
-            <div
-              key={day}
-              title={title}
-              className={classNames("h-4 border", {
-                "border-zinc-400": isCurrentDate,
-              })}
-              style={{
-                backgroundColor: tasks ? getColor(tasks) : COLORS.slate200,
-                gridRowStart: rowStart,
-                gridRowEnd: rowStart + 1,
-              }}
-            />
-          );
-        })}
+            const isCurrentDate = areDatesEqual(date, new Date());
+            const tasks = data[date.toLocaleDateString()];
+            const title = `${tasks || "no"} tasks completed - ${getWeekName(
+              date
+            )}, ${formatDate(date)}`;
+            const rowStart = (day % 7) + 1;
+
+            return (
+              <div
+                key={day}
+                title={title}
+                className={classNames("h-4 border", {
+                  "border-zinc-400": isCurrentDate,
+                })}
+                style={{
+                  backgroundColor: tasks ? getColor(tasks) : COLORS.slate200,
+                  gridRowStart: rowStart,
+                  gridRowEnd: rowStart + 1,
+                }}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
