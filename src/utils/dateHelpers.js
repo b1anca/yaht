@@ -8,16 +8,24 @@ export const getDaysInMonth = (month, year) => {
   return days;
 };
 
-const getBeginningOfWeek = (date) => {
+export const getBeginningOfWeek = (date, startIndex = 1) => {
   const day = date.getDay() || 7;
-  const diff = date.getDate() - day + 1;
+  const diff = date.getDate() - day + startIndex;
   return new Date(date.setDate(diff));
 };
 
-const getEndOfWeek = (date) => {
+const getEndOfWeek = (date, endIndex = 7) => {
   const day = date.getDay();
-  const diff = date.getDate() - day + 7;
+  const diff = date.getDate() - day + endIndex;
   return new Date(date.setDate(diff));
+};
+
+export const getDaysBetweenDates = (date1, date2) => {
+  const oneDay = 24 * 60 * 60 * 1000;
+  const firstDate = new Date(date1);
+  const secondDate = new Date(date2);
+
+  return Math.round(Math.abs((firstDate - secondDate) / oneDay));
 };
 
 export const createDateRange = (start, end) => {
@@ -53,7 +61,7 @@ export const MONTH_NAMES = [
   "Dec",
 ];
 
-const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+export const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 export const formatDate = (date) => {
   const day = date.getDate();

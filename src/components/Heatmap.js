@@ -1,8 +1,16 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
-import { formatDate, areDatesEqual } from "../utils/dateHelpers";
-import { COLORS } from "../constants";
 import classNames from "classnames";
+import {
+  formatDate,
+  areDatesEqual,
+  WEEKDAY_NAMES,
+  getWeekName,
+  getBeginningOfWeek,
+  getDaysBetweenDates,
+} from "../utils/dateHelpers";
+import { COLORS } from "../constants";
+import { P } from "./Typography";
 
 const AVAILABLE_COLORS = [
   COLORS.lime300,
@@ -35,39 +43,50 @@ export const useColorForTasks = (data, AVAILABLE_COLORS) => {
   };
 };
 
-const getDateForDayOfYear = (dayOfYear, year = new Date().getFullYear()) => {
-  const date = new Date(year, 0);
-  date.setDate(dayOfYear + 1);
-  return date;
-};
-
 const Heatmap = ({ data }) => {
   const getColor = useColorForTasks(data, AVAILABLE_COLORS);
+  const endDate = new Date();
+  const startDate = new Date(endDate.getTime() - 365 * 24 * 60 * 60 * 1000);
+  const startSunDate = getBeginningOfWeek(startDate, 0);
+  const length = getDaysBetweenDates(startSunDate, endDate) + 1;
 
   return (
-    <div className="grid grid-cols-53 gap-0.5">
-      {Array.from({ length: 365 }, (_, day) => {
-        const date = getDateForDayOfYear(day);
-        const isCurrentDate = areDatesEqual(date, new Date());
-        const tasks = data[date.toLocaleDateString()];
-        const title = `${tasks || "no"} tasks completed - ${formatDate(date)}`;
-        const rowStart = (day % 7) + 1;
+    <div className="flex">
+      <div className="grid grid-rows-7 items-center">
+        {WEEKDAY_NAMES.map((dayName) => (
+          <P bold key={dayName} className="text-center !mb-0 mr-2">
+            {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
+          </P>
+        ))}
+      </div>
+      <div className="grid grid-cols-54 gap-0.5 w-full">
+        {Array.from({ length }, (_, day) => {
+          const date = new Date(startDate);
+          date.setDate(startDate.getDate() + day);
 
-        return (
-          <div
-            key={day}
-            title={title}
-            className={classNames("h-4 border", {
-              "border-slate-400": isCurrentDate,
-            })}
-            style={{
-              backgroundColor: tasks ? getColor(tasks) : COLORS.slate200,
-              gridRowStart: rowStart,
-              gridRowEnd: rowStart + 1,
-            }}
-          />
-        );
-      })}
+          const isCurrentDate = areDatesEqual(date, new Date());
+          const tasks = data[date.toLocaleDateString()];
+          const title = `${tasks || "no"} tasks completed - ${getWeekName(
+            date
+          )}, ${formatDate(date)}`;
+          const rowStart = (day % 7) + 1;
+
+          return (
+            <div
+              key={day}
+              title={title}
+              className={classNames("h-4 border", {
+                "border-zinc-400": isCurrentDate,
+              })}
+              style={{
+                backgroundColor: tasks ? getColor(tasks) : COLORS.slate200,
+                gridRowStart: rowStart,
+                gridRowEnd: rowStart + 1,
+              }}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };
