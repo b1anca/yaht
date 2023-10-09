@@ -82,6 +82,12 @@ export const createDateRange = (start, end) => {
 export const createWeekRange = (date) =>
   createDateRange(getBeginningOfWeek(date), getEndOfWeek(date));
 
+export const getPreviousWeekRange = (date) => {
+  const weekStart = getBeginningOfWeek(new Date(date));
+  weekStart.setDate(weekStart.getDate() - 1);
+  return createWeekRange(weekStart);
+};
+
 export const formatDate = (date) => {
   const day = date.getDate();
   const monthIndex = date.getMonth();

@@ -55,8 +55,8 @@ const Heatmap = ({ data }) => {
   return (
     <>
       <div className="flex ml-9 justify-between">
-        {months.map((monthName) => (
-          <P bold key={monthName}>
+        {months.map((monthName, index) => (
+          <P bold key={`${monthName}-${index}`}>
             {monthName}
           </P>
         ))}
@@ -84,7 +84,7 @@ const Heatmap = ({ data }) => {
 
             return (
               <div
-                key={day}
+                key={title}
                 title={title}
                 className={classNames("h-4 border", {
                   "border-zinc-400": isCurrentDate,

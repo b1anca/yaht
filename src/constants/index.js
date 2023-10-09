@@ -12,6 +12,7 @@ export const COLORS = {
   lime600: "rgb(101 163 13)",
   lime700: "rgb(77 124 15)",
   zinc600: "rgb(82 82 91)",
+  red500: "rgb(239 68 68)",
 };
 
 export const DEFAULT_HABIT_COLOR = COLORS.slate300;
