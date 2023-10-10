@@ -58,14 +58,16 @@ const Day = ({ task, day, habitId, habitColor }) => {
 const HabitRow = ({ id, name, tasks, days, color }) => {
   return (
     <tr>
-      <td className="flex">
-        <NavLink
-          to={`/habits/${id}`}
-          tetriary
-          className="!p-0 truncate absolute max-w-[200px] sm:static mr-2"
-        >
-          {name}
-        </NavLink>
+      <td>
+        <div className="flex">
+          <NavLink
+            to={`/habits/${id}`}
+            tetriary
+            className="!p-0 truncate absolute max-w-[200px] sm:static mr-2"
+          >
+            {name}
+          </NavLink>
+        </div>
       </td>
       {days.map((day) => {
         const completedTaskForTheDay = tasks.find((task) =>

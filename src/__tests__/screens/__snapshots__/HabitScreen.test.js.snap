@@ -7,19 +7,19 @@ exports[`HabitScreen should render correctly 1`] = `
   >
     <div>
       <h2
-        class="mb-4 font-extrabold tracking-tight text-2xl !mb-1"
+        class="mb-4 font-extrabold tracking-tight text-zinc-600 text-2xl !mb-1"
         level="h4"
       >
         Reading
       </h2>
       <p
-        class="text-sm mb-2 tracking-tight"
+        class="text-sm mb-2 tracking-tight text-zinc-600"
       >
         Reading 10 pages
       </p>
     </div>
     <a
-      class="text-sm whitespace-nowrap py-2 px-6 rounded-full justify-center rounded-lg font-semibold py-2.5 px-4 hover:text-slate-200 !text-xl"
+      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 !text-xl"
       href="/habits/1/edit"
     >
       <svg
@@ -46,7 +46,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Jan
       </p>
@@ -183,7 +183,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Feb
       </p>
@@ -308,7 +308,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Mar
       </p>
@@ -445,7 +445,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Apr
       </p>
@@ -578,7 +578,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         May
       </p>
@@ -715,7 +715,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Jun
       </p>
@@ -849,7 +849,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Jul
       </p>
@@ -986,7 +986,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Aug
       </p>
@@ -1123,7 +1123,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Sep
       </p>
@@ -1256,7 +1256,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Oct
       </p>
@@ -1393,7 +1393,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Nov
       </p>
@@ -1526,7 +1526,7 @@ exports[`HabitScreen should render correctly 1`] = `
       class="flex mb-1 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold whitespace-nowrap font-semibold mt-2 mr-2 min-w-[25px]"
       >
         Dec
       </p>

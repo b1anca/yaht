@@ -16,7 +16,6 @@ import {
   getMonthName,
   areDatesEqual,
   createWeekRange,
-  getPreviousWeekRange,
 } from "../../utils/dateHelpers";
 import HabitRow from "./HabitRow";
 import NavLink from "../../components/NavLink";
@@ -113,6 +112,10 @@ const HabitsScreen = () => {
     }, 0);
   }, [habits, dateRange]);
 
+  const completedWeekPercentage = habits.length
+    ? (currentWeekSum / (habits.length * 7)) * 100
+    : 0;
+
   const weekPercentageChange = (
     lastWeekSum === 0 ? 0 : ((currentWeekSum - lastWeekSum) / lastWeekSum) * 100
   ).toFixed(2);
@@ -160,7 +163,7 @@ const HabitsScreen = () => {
       </div>
       <ProgressBar value={completedTodayPercentage} className="mb-1" />
       <P bold className="text-lime-600">
-        {completedTodayPercentage}% completed
+        {completedTodayPercentage.toFixed(2)}% achieved today
       </P>
       <div className="flex items-center mt-6 mb-2">
         <div
@@ -194,21 +197,19 @@ const HabitsScreen = () => {
             )} ${dateRange[6].getMonth()}/${dateRange[6].getDate()}`}
         </Heading>
       </div>
-      <ProgressBar value={30} className="mb-1" />
+      <ProgressBar value={completedWeekPercentage} className="mb-1" />
       <div className="flex justify-between mb-4 items-center">
         <div className="flex items-center">{getDisplayMessage()}</div>
         <P bold className="!mb-0">
-          {(habits.length
-            ? (currentWeekSum / (habits.length * 7)) * 100
-            : 0
-          ).toFixed(2)}
-          % achieved
+          {completedWeekPercentage.toFixed(2)}% achieved
         </P>
       </div>
       <table className="table-fixed">
         <thead>
           <tr>
-            <div />
+            <th>
+              <div />
+            </th>
             {dateRange.map((day) => (
               <DayHeader key={day.toISOString()} day={day} />
             ))}
