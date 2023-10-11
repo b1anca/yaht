@@ -3,12 +3,9 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 
 const ProgressBar = ({ value = 100, className = "" }) => (
-  <div className="rounded-lg bg-slate-200">
+  <div className={classNames("rounded-lg bg-slate-200", className)}>
     <div
-      className={classNames(
-        "ease-in duration-300 py-1 rounded-lg bg-lime-600",
-        className
-      )}
+      className="ease-in duration-300 py-1 rounded-lg bg-lime-600"
       style={{ width: `${value}%` }}
     />
   </div>

@@ -8,6 +8,8 @@ jest.mock("react-router-dom", () => ({
   useParams: () => ({ id: 1 }),
 }));
 
+global.ResizeObserver = require("resize-observer-polyfill");
+
 describe("HabitScreen", () => {
   it("should render correctly", async () => {
     const preloadedState = {

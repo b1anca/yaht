@@ -13,6 +13,21 @@ export const MONTH_NAMES = [
   "Dec",
 ];
 
+export const FULL_MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 export const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 export const getDaysInMonth = (month, year) => {
@@ -93,7 +108,7 @@ export const formatDate = (date) => {
   const monthIndex = date.getMonth();
   const year = date.getFullYear();
 
-  return day + " " + MONTH_NAMES[monthIndex] + " " + year;
+  return `${FULL_MONTH_NAMES[monthIndex]} ${day}, ${year}`;
 };
 
 export const areDatesEqual = (date1, date2) => {

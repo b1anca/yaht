@@ -54,7 +54,7 @@ const Heatmap = ({ data }) => {
 
   return (
     <>
-      <div className="flex ml-9 justify-between">
+      <div className="flex ml-9 justify-around">
         {months.map((monthName, index) => (
           <P bold key={`${monthName}-${index}`}>
             {monthName}
@@ -70,7 +70,7 @@ const Heatmap = ({ data }) => {
           ))}
         </div>
 
-        <div className="grid grid-cols-54 gap-0.5 w-full">
+        <div className="grid grid-cols-53 gap-0.5 w-full">
           {Array.from({ length }, (_, day) => {
             const date = new Date(startDate);
             date.setDate(startDate.getDate() + day);

@@ -34,8 +34,10 @@ const DayHeader = ({ day }) => {
           "border-zinc-400": isCurrentDate,
         })}
       >
-        <P className="!mb-0">{day.getDate()}</P>
-        <P className="!mb-0">{getWeekName(day)}</P>
+        <P className="!mb-0">
+          {day.getDate()} <br />
+          {getWeekName(day)}
+        </P>
       </div>
     </th>
   );
@@ -51,6 +53,8 @@ const DayHeader = ({ day }) => {
 // - allow changing month (habits screen)
 // - allow changing year (habit screen)
 
+// - perfect days
+
 const HabitsScreen = () => {
   const dispatch = useDispatch();
   const [dateRange, setDateRange] = useState([]);
@@ -62,19 +66,26 @@ const HabitsScreen = () => {
     setDateRange(createWeekRange(currentDate));
   }, []);
 
-  const data = useMemo(() => {
-    return habits.reduce((h, habit) => {
-      habit.tasks.forEach((t) => {
-        const date = new Date(t.completed_at).toLocaleDateString();
-        if (h[date]) {
-          h[date] += 1;
-        } else {
-          h[date] = 1;
-        }
-      });
-      return h;
-    }, {});
-  }, [habits]);
+  const data = useMemo(
+    () =>
+      habits.reduce((h, habit) => {
+        habit.tasks.forEach((t) => {
+          const date = new Date(t.completed_at).toLocaleDateString();
+          if (h[date]) {
+            h[date] += 1;
+          } else {
+            h[date] = 1;
+          }
+        });
+        return h;
+      }, {}),
+    [habits]
+  );
+
+  const completedTasksSum = useMemo(
+    () => Object.values(data).reduce((s, v) => (s += v), 0),
+    [habits]
+  );
 
   const completedTodayCount = data[new Date().toLocaleDateString()] || 0;
   const completedTodayPercentage =
@@ -162,9 +173,7 @@ const HabitsScreen = () => {
         </NavLink>
       </div>
       <ProgressBar value={completedTodayPercentage} className="mb-1" />
-      <P bold className="text-lime-600">
-        {completedTodayPercentage.toFixed(2)}% achieved today
-      </P>
+      <P bold>{completedTodayPercentage.toFixed(2)}% achieved</P>
       <div className="flex items-center mt-6 mb-2">
         <div
           onClick={onClickLeft}
@@ -213,6 +222,22 @@ const HabitsScreen = () => {
             {dateRange.map((day) => (
               <DayHeader key={day.toISOString()} day={day} />
             ))}
+            <th>
+              <div className="py-1 mb-2">
+                <P bold className="py-1 !mb-0 mr-2">
+                  current <br />
+                  streak
+                </P>
+              </div>
+            </th>
+            <th>
+              <div className="py-1 mb-2">
+                <P bold className="py-1 !mb-0 mr-2">
+                  longest <br />
+                  streak
+                </P>
+              </div>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -239,6 +264,7 @@ const HabitsScreen = () => {
         Contributions
       </Heading>
       */}
+      <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
     </div>
   );

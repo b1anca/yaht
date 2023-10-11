@@ -6,6 +6,7 @@ import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { COLORS, DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
+import { P } from "../../components/Typography";
 
 const Day = ({ task, day, habitId, habitColor }) => {
   const currentDate = new Date();
@@ -55,7 +56,15 @@ const Day = ({ task, day, habitId, habitColor }) => {
   );
 };
 
-const HabitRow = ({ id, name, tasks, days, color }) => {
+const HabitRow = ({
+  id,
+  name,
+  tasks,
+  days,
+  color,
+  current_streak,
+  record_streak,
+}) => {
   return (
     <tr>
       <td>
@@ -84,6 +93,24 @@ const HabitRow = ({ id, name, tasks, days, color }) => {
           />
         );
       })}
+      <td>
+        <div
+          className={classNames(
+            "mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+          )}
+        >
+          <P bold className="!mb-0">
+            {current_streak}
+          </P>
+        </div>
+      </td>
+      <td>
+        <div className="mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center">
+          <P bold className="!mb-0">
+            {record_streak}
+          </P>
+        </div>
+      </td>
     </tr>
   );
 };
@@ -101,6 +128,8 @@ HabitRow.propTypes = {
   color: PropTypes.string,
   tasks: PropTypes.array,
   days: PropTypes.array,
+  current_streak: PropTypes.number,
+  record_streak: PropTypes.number,
 };
 
 export default HabitRow;
