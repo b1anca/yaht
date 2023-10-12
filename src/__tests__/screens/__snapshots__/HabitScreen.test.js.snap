@@ -19,7 +19,7 @@ exports[`HabitScreen should render correctly 1`] = `
       </p>
     </div>
     <a
-      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 !text-xl px-0"
+      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 hover:text-lime-600 !text-xl px-0"
       href="/habits/1/edit"
     >
       <svg
@@ -2073,9 +2073,14 @@ exports[`HabitScreen should render correctly 1`] = `
         title="no tasks completed - Tue, October 10, 2023"
       />
       <div
-        class="h-4 border border-zinc-400"
+        class="h-4 border"
         style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 11, 2023"
+      />
+      <div
+        class="h-4 border border-zinc-400"
+        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        title="no tasks completed - Thu, October 12, 2023"
       />
     </div>
   </div>

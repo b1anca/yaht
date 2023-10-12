@@ -106,231 +106,134 @@ exports[`HabitsScreen should render correctly 1`] = `
         0.00% achieved
       </p>
     </div>
-    <table
-      class="table-fixed"
+    <div
+      class="grid gap-2"
+      style="grid-template-columns: minmax(auto, 300px) repeat(10, 1fr);"
     >
-      <thead>
-        <tr>
-          <th>
-            <div />
-          </th>
-          <th
-            title="Mon Jan 09 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                9 
-                <br />
-                Mon
-              </p>
-            </div>
-          </th>
-          <th
-            title="Tue Jan 10 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-400"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                10 
-                <br />
-                Tue
-              </p>
-            </div>
-          </th>
-          <th
-            title="Wed Jan 11 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                11 
-                <br />
-                Wed
-              </p>
-            </div>
-          </th>
-          <th
-            title="Thu Jan 12 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                12 
-                <br />
-                Thu
-              </p>
-            </div>
-          </th>
-          <th
-            title="Fri Jan 13 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                13 
-                <br />
-                Fri
-              </p>
-            </div>
-          </th>
-          <th
-            title="Sat Jan 14 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                14 
-                <br />
-                Sat
-              </p>
-            </div>
-          </th>
-          <th
-            title="Sun Jan 15 2023"
-          >
-            <div
-              class="rounded-lg py-1 mb-2 border border-zinc-100"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 !mb-0"
-              >
-                15 
-                <br />
-                Sun
-              </p>
-            </div>
-          </th>
-          <th>
-            <div
-              class="py-1 mb-2"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold py-1 !mb-0 mr-2"
-              >
-                current 
-                <br />
-                streak
-              </p>
-            </div>
-          </th>
-          <th>
-            <div
-              class="py-1 mb-2"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold py-1 !mb-0 mr-2"
-              >
-                longest 
-                <br />
-                streak
-              </p>
-            </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <div
-              class="flex"
-            >
-              <a
-                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 !p-0 truncate absolute max-w-[200px] sm:static mr-2"
-                href="/habits/1"
-              >
-                Reading
-              </a>
-            </div>
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center cursor-pointer"
-              style="background-color: rgb(226, 232, 240);"
-              title="Click to mark this day."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center cursor-pointer"
-              style="background-color: rgb(226, 232, 240);"
-              title="Click to mark this day."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-              style="background-color: rgb(226, 232, 240);"
-              title="This is a future date. You can't mark tasks as completed in advance."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-              style="background-color: rgb(226, 232, 240);"
-              title="This is a future date. You can't mark tasks as completed in advance."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-              style="background-color: rgb(226, 232, 240);"
-              title="This is a future date. You can't mark tasks as completed in advance."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-              style="background-color: rgb(226, 232, 240);"
-              title="This is a future date. You can't mark tasks as completed in advance."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-              style="background-color: rgb(226, 232, 240);"
-              title="This is a future date. You can't mark tasks as completed in advance."
-            />
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0"
-              />
-            </div>
-          </td>
-          <td>
-            <div
-              class="mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-            >
-              <p
-                class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0"
-              />
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+      <div />
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        9 
+        <br />
+        Mon
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-400"
+      >
+        10 
+        <br />
+        Tue
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        11 
+        <br />
+        Wed
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        12 
+        <br />
+        Thu
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        13 
+        <br />
+        Fri
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        14 
+        <br />
+        Sat
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center rounded-lg border border-zinc-100"
+      >
+        15 
+        <br />
+        Sun
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center"
+      >
+        current 
+        <br />
+        streak
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center"
+      >
+        longest 
+        <br />
+        streak
+      </p>
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 p-1 text-center"
+      >
+        overall 
+        <br />
+        progress
+      </p>
+      <a
+        class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 hover:text-lime-600 !p-0 truncate absolute sm:static mr-2 !text-base"
+        href="/habits/1"
+      >
+        Reading
+      </a>
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center cursor-pointer hover:border-zinc-500"
+        style="background-color: rgb(226, 232, 240);"
+        title="Click to mark this day."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center cursor-pointer hover:border-zinc-500"
+        style="background-color: rgb(226, 232, 240);"
+        title="Click to mark this day."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+        style="background-color: rgb(226, 232, 240);"
+        title="This is a future date. You can't mark tasks as completed in advance."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+        style="background-color: rgb(226, 232, 240);"
+        title="This is a future date. You can't mark tasks as completed in advance."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+        style="background-color: rgb(226, 232, 240);"
+        title="This is a future date. You can't mark tasks as completed in advance."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+        style="background-color: rgb(226, 232, 240);"
+        title="This is a future date. You can't mark tasks as completed in advance."
+      />
+      <div
+        class="m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
+        style="background-color: rgb(226, 232, 240);"
+        title="This is a future date. You can't mark tasks as completed in advance."
+      />
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 text-center"
+      />
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 text-center"
+      />
+      <p
+        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold !mb-0 text-center"
+      >
+        90.0%
+      </p>
+    </div>
     <div
       class="border-b border-slate-900/10 my-6"
     />

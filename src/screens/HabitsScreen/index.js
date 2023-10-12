@@ -27,19 +27,16 @@ const DayHeader = ({ day }) => {
   const isCurrentDate = areDatesEqual(day, new Date());
 
   return (
-    <th title={day.toDateString()}>
-      <div
-        className={classNames("rounded-lg py-1 mb-2 border", {
-          "border-zinc-100": !isCurrentDate,
-          "border-zinc-400": isCurrentDate,
-        })}
-      >
-        <P className="!mb-0">
-          {day.getDate()} <br />
-          {getWeekName(day)}
-        </P>
-      </div>
-    </th>
+    <P
+      bold
+      className={classNames("!mb-0 p-1 text-center rounded-lg border", {
+        "border-zinc-100": !isCurrentDate,
+        "border-zinc-400": isCurrentDate,
+      })}
+    >
+      {day.getDate()} <br />
+      {getWeekName(day)}
+    </P>
   );
 };
 
@@ -213,57 +210,31 @@ const HabitsScreen = () => {
           {completedWeekPercentage.toFixed(2)}% achieved
         </P>
       </div>
-      <table className="table-fixed">
-        <thead>
-          <tr>
-            <th>
-              <div />
-            </th>
-            {dateRange.map((day) => (
-              <DayHeader key={day.toISOString()} day={day} />
-            ))}
-            <th>
-              <div className="py-1 mb-2">
-                <P bold className="py-1 !mb-0 mr-2">
-                  current <br />
-                  streak
-                </P>
-              </div>
-            </th>
-            <th>
-              <div className="py-1 mb-2">
-                <P bold className="py-1 !mb-0 mr-2">
-                  longest <br />
-                  streak
-                </P>
-              </div>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {habits.map((habit) => (
-            <HabitRow key={habit.id} {...habit} days={dateRange} />
-          ))}
-        </tbody>
-      </table>
-      <div className="border-b border-slate-900/10 my-6" />
-      {/* <div className="flex justify-between items-center mt-12 mb-4">
-        <Heading level="h2" className="!mb-0">
-          Your habits
-        </Heading>
-        <NavLink className="!w-min h-min" primary to="/habits/new">
-          Create habit
-        </NavLink>
-      </div>
-      <div className="flex flex-wrap">
+      <div
+        className="grid gap-2"
+        style={{ gridTemplateColumns: "minmax(auto, 300px) repeat(10, 1fr)" }}
+      >
+        <div />
+        {dateRange.map((day) => (
+          <DayHeader key={day.toISOString()} day={day} />
+        ))}
+        <P bold className="!mb-0 p-1 text-center">
+          current <br />
+          streak
+        </P>
+        <P bold className="!mb-0 p-1 text-center">
+          longest <br />
+          streak
+        </P>
+        <P bold className="!mb-0 p-1 text-center">
+          overall <br />
+          progress
+        </P>
         {habits.map((habit) => (
-          <HabitCard key={habit.id} {...habit} />
+          <HabitRow key={habit.id} {...habit} days={dateRange} />
         ))}
       </div>
-      <Heading level="h2" className="mt-12">
-        Contributions
-      </Heading>
-      */}
+      <div className="border-b border-slate-900/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
     </div>

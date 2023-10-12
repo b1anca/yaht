@@ -31,28 +31,27 @@ const Day = ({ task, day, habitId, habitColor }) => {
   }, [day, currentDate, habitId, loading]);
 
   return (
-    <td>
-      <div
-        title={
-          day > currentDate
-            ? "This is a future date. You can't mark tasks as completed in advance."
-            : task
-            ? "Click to unmark this day."
-            : "Click to mark this day."
+    <div
+      title={
+        day > currentDate
+          ? "This is a future date. You can't mark tasks as completed in advance."
+          : task
+          ? "Click to unmark this day."
+          : "Click to mark this day."
+      }
+      style={{
+        backgroundColor:
+          task || loading ? habitColor || DEFAULT_HABIT_COLOR : COLORS.slate200,
+      }}
+      className={classNames(
+        "m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center",
+        {
+          "cursor-pointer hover:border-zinc-500": day <= currentDate,
+          "animate-pulse": loading,
         }
-        style={{
-          backgroundColor:
-            task || loading
-              ? habitColor || DEFAULT_HABIT_COLOR
-              : COLORS.slate200,
-        }}
-        className={classNames(
-          "mr-3 ml-3 mt-6 sm:mt-0 hover:border hover:border-zinc-200 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center",
-          { "cursor-pointer": day <= currentDate, "animate-pulse": loading }
-        )}
-        onClick={handleDayTaskClick}
-      />
-    </td>
+      )}
+      onClick={handleDayTaskClick}
+    />
   );
 };
 
@@ -64,20 +63,17 @@ const HabitRow = ({
   color,
   current_streak,
   record_streak,
+  overall_progress,
 }) => {
   return (
-    <tr>
-      <td>
-        <div className="flex">
-          <NavLink
-            to={`/habits/${id}`}
-            tetriary
-            className="!p-0 truncate absolute max-w-[200px] sm:static mr-2"
-          >
-            {name}
-          </NavLink>
-        </div>
-      </td>
+    <>
+      <NavLink
+        to={`/habits/${id}`}
+        tetriary
+        className="!p-0 truncate absolute sm:static mr-2 !text-base"
+      >
+        {name}
+      </NavLink>
       {days.map((day) => {
         const completedTaskForTheDay = tasks.find((task) =>
           areDatesEqual(new Date(task.completed_at), day)
@@ -93,25 +89,16 @@ const HabitRow = ({
           />
         );
       })}
-      <td>
-        <div
-          className={classNames(
-            "mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center"
-          )}
-        >
-          <P bold className="!mb-0">
-            {current_streak}
-          </P>
-        </div>
-      </td>
-      <td>
-        <div className="mr-3 ml-3 mt-6 mb-1 sm:mt-0 border border-slate-900/10 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center">
-          <P bold className="!mb-0">
-            {record_streak}
-          </P>
-        </div>
-      </td>
-    </tr>
+      <P bold className="!mb-0 text-center">
+        {current_streak}
+      </P>
+      <P bold className="!mb-0 text-center">
+        {record_streak}
+      </P>
+      <P bold className="!mb-0 text-center">
+        {overall_progress}%
+      </P>
+    </>
   );
 };
 
@@ -130,6 +117,7 @@ HabitRow.propTypes = {
   days: PropTypes.array,
   current_streak: PropTypes.number,
   record_streak: PropTypes.number,
+  overall_progress: PropTypes.string,
 };
 
 export default HabitRow;

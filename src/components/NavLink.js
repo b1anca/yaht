@@ -22,7 +22,7 @@ const NavLink = ({
             secondary,
           "w-full shadow text-zinc-100 rounded-full opacity-90 hover:opacity-100 bg-lime-600":
             primary,
-          "text-zinc-600": tetriary,
+          "text-zinc-600 hover:text-lime-600": tetriary,
         },
         className
       )}
