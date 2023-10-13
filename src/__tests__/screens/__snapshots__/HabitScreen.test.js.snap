@@ -7,19 +7,19 @@ exports[`HabitScreen should render correctly 1`] = `
   >
     <div>
       <h2
-        class="mb-4 font-extrabold tracking-tight text-zinc-600 text-2xl !mb-1"
+        class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl !mb-1"
         level="h4"
       >
         Reading
       </h2>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
       >
         Reading 10 pages
       </p>
     </div>
     <a
-      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 hover:text-lime-600 !text-xl px-0"
+      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-[#5498ff] dark:hover:text-[#5498ff] !text-xl px-0"
       href="/habits/1/edit"
     >
       <svg
@@ -43,10 +43,10 @@ exports[`HabitScreen should render correctly 1`] = `
     class="flex"
   >
     <div
-      class="border border-slate-900/10 py-2 px-4 mr-4"
+      class="border border-slate-900/10 dark:border-slate-100/10 py-2 px-4 mr-4"
     >
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
       >
         Overall progress
       </p>
@@ -54,7 +54,7 @@ exports[`HabitScreen should render correctly 1`] = `
         class="h-[130px] w-[130px] relative"
       >
         <p
-          class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+          class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           90%
         </p>
@@ -65,7 +65,7 @@ exports[`HabitScreen should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="flex flex-col border border-slate-900/10 py-2 px-4"
+      class="flex flex-col border border-slate-900/10 dark:border-slate-100/10 py-2 px-4"
     >
       <div
         class="flex"
@@ -77,16 +77,16 @@ exports[`HabitScreen should render correctly 1`] = `
             class="flex items-baseline"
           >
             <div
-              class="bg-lime-600 p-1 mr-1"
+              class="bg-[#5498ff] p-1 mr-1"
             />
             <p
-              class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+              class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
             >
               Current streak
             </p>
           </div>
           <h2
-            class="mb-4 font-extrabold tracking-tight text-zinc-600 text-2xl"
+            class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl"
             level="h4"
           />
         </div>
@@ -98,36 +98,36 @@ exports[`HabitScreen should render correctly 1`] = `
               class="bg-slate-200 p-1 mr-1"
             />
             <p
-              class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+              class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
             >
               Longest streak
             </p>
           </div>
           <h2
-            class="mb-4 font-extrabold tracking-tight text-zinc-600 text-2xl"
+            class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl"
             level="h4"
           />
         </div>
       </div>
       <div
-        class="rounded-lg bg-slate-200"
+        class="rounded-lg bg-slate-200 dark:bg-zinc-600"
       >
         <div
-          class="ease-in duration-300 py-1 rounded-lg bg-lime-600"
+          class="ease-in duration-300 py-1 rounded-lg bg-[#5498ff]"
         />
       </div>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold mt-auto"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold mt-auto"
       >
         Started on undefined NaN, NaN
       </p>
     </div>
   </div>
   <div
-    class="border-b border-slate-900/10 my-6"
+    class="border-b border-slate-900/10 dark:border-slate-100/10 my-6"
   />
   <p
-    class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+    class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
   >
     1 tasks completed in the last year
   </p>
@@ -135,67 +135,67 @@ exports[`HabitScreen should render correctly 1`] = `
     class="flex ml-9 justify-around"
   >
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Oct
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Nov
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Dec
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Jan
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Feb
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Mar
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Apr
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       May
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Jun
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Jul
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Aug
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Sep
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
     >
       Oct
     </p>
@@ -207,1880 +207,1885 @@ exports[`HabitScreen should render correctly 1`] = `
       class="grid grid-rows-7 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       >
         Mon
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       >
         Wed
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       >
         Fri
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
       />
     </div>
     <div
       class="grid grid-cols-53 gap-0.5 w-full"
     >
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 9, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 10, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 11, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 12, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 13, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 14, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 15, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 16, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 17, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 18, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 19, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 20, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 21, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 22, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 23, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 24, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 25, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 26, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 27, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 28, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 29, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 30, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 31, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 1, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 2, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 3, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 4, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 5, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 6, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 7, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 8, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 9, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 10, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 11, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 12, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 13, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 14, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 15, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 16, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 17, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 18, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 19, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 20, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 21, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 22, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 23, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 24, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 25, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 26, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 27, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 28, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 29, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 30, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 1, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 2, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 3, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 4, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 5, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 6, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 7, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 8, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 9, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 10, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 11, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 12, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 13, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 14, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 15, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 16, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 17, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 18, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 19, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 20, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 21, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 22, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 23, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 24, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 25, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 26, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 27, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 28, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 29, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 30, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 31, 2022"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 31, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 31, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 31, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800"
+        style="background-color: rgb(35, 127, 255); grid-row-start: 6; grid-row-end: 7;"
         title="1 tasks completed - Fri, June 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 31, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 31, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 11, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 12, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 13, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 14, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 15, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 16, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 17, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 18, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 19, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 20, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 21, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 22, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 23, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 24, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 25, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 26, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 27, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 28, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 29, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 30, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 1, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 2, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 3, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 4, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 5, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 6, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 7; grid-row-end: 8;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 7, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 1; grid-row-end: 2;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 8, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 2; grid-row-end: 3;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 9, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 3; grid-row-end: 4;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 10, 2023"
       />
       <div
-        class="h-4 border"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 4; grid-row-end: 5;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 11, 2023"
       />
       <div
-        class="h-4 border border-zinc-400"
-        style="background-color: rgb(226, 232, 240); grid-row-start: 5; grid-row-end: 6;"
+        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 12, 2023"
+      />
+      <div
+        class="h-4 border dark:border-zinc-800 border-zinc-400 bg-slate-200 dark:!bg-zinc-600"
+        style="grid-row-start: 6; grid-row-end: 7;"
+        title="no tasks completed - Fri, October 13, 2023"
       />
     </div>
   </div>

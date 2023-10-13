@@ -32,7 +32,7 @@ const EditHabitScreen = () => {
       .then(() => navigate("/habits"));
 
   return (
-    <div className="max-w-md m-auto">
+    <div>
       <Heading level="h2" className="text-center">
         Edit habit
       </Heading>
@@ -52,9 +52,16 @@ const EditHabitScreen = () => {
             <HexColorPicker color={field.value} onChange={field.onChange} />
           )}
         />
-        <Button primary type="submit" className="w-full mt-6" loading={loading}>
-          Save habit
-        </Button>
+        <div className="mt-6 flex flex-col items-center">
+          <Button
+            primary
+            type="submit"
+            className="max-w-md w-full mt-6"
+            loading={loading}
+          >
+            Save habit
+          </Button>
+        </div>
       </form>
     </div>
   );

@@ -20,12 +20,18 @@ function App() {
     pollingInterval: 900000,
   });
 
+  if (localStorage.theme === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+
   useEffect(() => {
     if (data) dispatch(setCredentials(data));
   }, [data, dispatch]);
 
   return (
-    <>
+    <div className="dark:bg-[#23272F] min-h-screen">
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />
@@ -39,7 +45,7 @@ function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

@@ -2,11 +2,9 @@
 
 exports[`EditHabitScreen should render correctly 1`] = `
 <DocumentFragment>
-  <div
-    class="max-w-md m-auto"
-  >
+  <div>
     <h2
-      class="mb-4 font-extrabold tracking-tight text-zinc-600 text-2xl text-center"
+      class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl text-center"
       level="h4"
     >
       Edit habit
@@ -16,14 +14,14 @@ exports[`EditHabitScreen should render correctly 1`] = `
         class="mb-6"
       >
         <label
-          class="block text-sm font-semibold leading-6 mb-2 text-zinc-600"
+          class="block text-sm font-semibold leading-6 mb-2 text-zinc-600 dark:text-zinc-200"
           for="name"
         >
           Name
         </label>
         <input
           aria-label="name"
-          class="bg-transparent appearance-none text-zinc-600 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-lime-600 ring-1 ring-slate-200"
+          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
           id="name"
           name="name"
           required=""
@@ -34,21 +32,21 @@ exports[`EditHabitScreen should render correctly 1`] = `
         class="mb-6"
       >
         <label
-          class="block text-sm font-semibold leading-6 mb-2 text-zinc-600"
+          class="block text-sm font-semibold leading-6 mb-2 text-zinc-600 dark:text-zinc-200"
           for="description"
         >
           Description
         </label>
         <input
           aria-label="description"
-          class="bg-transparent appearance-none text-zinc-600 rounded-md block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-lime-600 ring-1 ring-slate-200"
+          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
           id="description"
           name="description"
           type="description"
         />
       </div>
       <label
-        class="block text-sm font-semibold leading-6 mb-2 text-zinc-600"
+        class="block text-sm font-semibold leading-6 mb-2 text-zinc-600 dark:text-zinc-200"
         for="color"
       >
         Color
@@ -102,12 +100,16 @@ exports[`EditHabitScreen should render correctly 1`] = `
           </div>
         </div>
       </div>
-      <button
-        class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 hover:bg-slate-200 bg-lime-600 w-full mt-6"
-        type="submit"
+      <div
+        class="mt-6 flex flex-col items-center"
       >
-        Save habit
-      </button>
+        <button
+          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 hover:bg-[#3a89ff] bg-[#5498ff] max-w-md w-full mt-6"
+          type="submit"
+        >
+          Save habit
+        </button>
+      </div>
     </form>
   </div>
 </DocumentFragment>

@@ -31,11 +31,11 @@ const ProfileDropdown = () => {
       ]}
     >
       <div className="cursor-pointer inline-flex justify-center items-center">
-        <div className="shadow bg-lime-600 text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
+        <div className="shadow bg-[#5498ff] text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
           {userInfo.name && userInfo.name[0].toUpperCase()}
         </div>
         <svg
-          className="ml-1 h-5 w-5"
+          className="ml-1 h-5 w-5 dark:text-zinc-200"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"

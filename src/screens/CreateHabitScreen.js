@@ -24,7 +24,7 @@ const CreateHabitScreen = () => {
   };
 
   return (
-    <div className="max-w-md m-auto">
+    <div>
       <Heading level="h2" className="text-center">
         Create habit
       </Heading>
@@ -44,12 +44,12 @@ const CreateHabitScreen = () => {
             <HexColorPicker color={field.value} onChange={field.onChange} />
           )}
         />
-        <div className="flex flex-col items-center">
+        <div className="mt-6 flex flex-col items-center">
           <Button
             primary
             type="submit"
             loading={loading}
-            className="w-full mt-6"
+            className="max-w-md w-full mt-6"
           >
             Create habit
           </Button>

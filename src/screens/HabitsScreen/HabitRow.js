@@ -4,7 +4,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import { areDatesEqual } from "../../utils/dateHelpers";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
-import { COLORS, DEFAULT_HABIT_COLOR } from "../../constants";
+import { DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
 import { P } from "../../components/Typography";
 
@@ -41,13 +41,14 @@ const Day = ({ task, day, habitId, habitColor }) => {
       }
       style={{
         backgroundColor:
-          task || loading ? habitColor || DEFAULT_HABIT_COLOR : COLORS.slate200,
+          task || loading ? habitColor || DEFAULT_HABIT_COLOR : "unset",
       }}
       className={classNames(
         "m-auto hover:border-2 whitespace-nowrap rounded w-8 h-8 items-center inline-flex justify-center",
         {
           "cursor-pointer hover:border-zinc-500": day <= currentDate,
           "animate-pulse": loading,
+          "dark:!bg-zinc-600 !bg-slate-200": !(task || loading),
         }
       )}
       onClick={handleDayTaskClick}

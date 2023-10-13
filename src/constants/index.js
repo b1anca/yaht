@@ -1,4 +1,9 @@
 export const COLORS = {
+  blue600: "#237fff",
+  blue500: "#549bff",
+  blue400: "#99c1ff",
+  blue300: "#aaccff",
+  // tailwind
   slate100: "#F1F5F9",
   slate200: "#E2E8F0",
   slate300: "#CBD5E1",

@@ -30,8 +30,8 @@ const DayHeader = ({ day }) => {
     <P
       bold
       className={classNames("!mb-0 p-1 text-center rounded-lg border", {
-        "border-zinc-100": !isCurrentDate,
-        "border-zinc-400": isCurrentDate,
+        "border-zinc-100 dark:border-zinc-800": !isCurrentDate,
+        "border-zinc-400 dark:border-zinc-200": isCurrentDate,
       })}
     >
       {day.getDate()} <br />
@@ -234,7 +234,7 @@ const HabitsScreen = () => {
           <HabitRow key={habit.id} {...habit} days={dateRange} />
         ))}
       </div>
-      <div className="border-b border-slate-900/10 my-6" />
+      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
     </div>

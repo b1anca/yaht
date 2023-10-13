@@ -55,18 +55,18 @@ const HabitScreen = () => {
         </NavLink>
       </div>
       <div className="flex">
-        <div className="border border-slate-900/10 py-2 px-4 mr-4">
+        <div className="border border-slate-900/10 dark:border-slate-100/10 py-2 px-4 mr-4">
           <P bold>Overall progress</P>
           <ProgressChart
             value={Number(habit.overall_progress)}
-            color={COLORS.lime600}
+            color={COLORS.blue500}
           />
         </div>
-        <div className="flex flex-col border border-slate-900/10 py-2 px-4">
+        <div className="flex flex-col border border-slate-900/10 dark:border-slate-100/10 py-2 px-4">
           <div className="flex">
             <div className="mr-4">
               <div className="flex items-baseline">
-                <div className="bg-lime-600 p-1 mr-1" />
+                <div className="bg-[#5498ff] p-1 mr-1" />
                 <P bold>Current streak</P>
               </div>
               <Heading level="h2">{habit.current_streak}</Heading>
@@ -87,7 +87,7 @@ const HabitScreen = () => {
           </P>
         </div>
       </div>
-      <div className="border-b border-slate-900/10 my-6" />
+      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
     </>

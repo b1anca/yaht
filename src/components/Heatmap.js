@@ -14,10 +14,10 @@ import { COLORS } from "../constants";
 import { P } from "./Typography";
 
 const AVAILABLE_COLORS = [
-  COLORS.lime300,
-  COLORS.lime400,
-  COLORS.lime500,
-  COLORS.lime600,
+  COLORS.blue300,
+  COLORS.blue400,
+  COLORS.blue500,
+  COLORS.blue600,
 ];
 
 export const calculateThresholds = (data) => {
@@ -86,11 +86,12 @@ const Heatmap = ({ data }) => {
               <div
                 key={title}
                 title={title}
-                className={classNames("h-4 border", {
+                className={classNames("h-4 border dark:border-zinc-800", {
                   "border-zinc-400": isCurrentDate,
+                  "bg-slate-200 dark:!bg-zinc-600": !tasks,
                 })}
                 style={{
-                  backgroundColor: tasks ? getColor(tasks) : COLORS.slate200,
+                  ...(tasks && { backgroundColor: getColor(tasks) }),
                   gridRowStart: rowStart,
                   gridRowEnd: rowStart + 1,
                 }}

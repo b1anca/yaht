@@ -3,7 +3,7 @@
 exports[`HomeScreen should render correctly 1`] = `
 <DocumentFragment>
   <header
-    class="sticky top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 text-sm font-semibold leading-6"
+    class="sticky top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-100/10 text-sm font-semibold leading-6"
   >
     <div
       class="max-w-6xl mx-auto"
@@ -18,13 +18,13 @@ exports[`HomeScreen should render correctly 1`] = `
             class="relative flex items-center ml-auto"
           >
             <a
-              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 text-zinc-600 hover:text-lime-600"
+              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-[#5498ff] dark:hover:text-[#5498ff]"
               href="/login"
             >
               Sign in
             </a>
             <a
-              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full opacity-90 hover:opacity-100 bg-lime-600"
+              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full bg-[#5498ff] hover:bg-[#3a89ff]"
               href="/register"
             >
               Register
@@ -38,7 +38,7 @@ exports[`HomeScreen should render correctly 1`] = `
     class="relative mx-auto mt-16 grid w-full max-w-container grid-cols-1 px-4 sm:mt-20 sm:px-6 lg:px-8 xl:mt-32"
   >
     <h1
-      class="text-lime-600 col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight sm:text-7xl xl:max-w-[43.5rem]"
+      class="text-[#5498ff] col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight sm:text-7xl xl:max-w-[43.5rem]"
     >
       Yet Another Habits Tracker
     </h1>
