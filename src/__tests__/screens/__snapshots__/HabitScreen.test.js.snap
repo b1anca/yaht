@@ -1419,7 +1419,7 @@ exports[`HabitScreen should render correctly 1`] = `
       />
       <div
         class="h-4 border dark:border-zinc-800"
-        style="background-color: rgb(35, 127, 255); grid-row-start: 6; grid-row-end: 7;"
+        style="background-color: rgb(84, 155, 255); grid-row-start: 6; grid-row-end: 7;"
         title="1 tasks completed - Fri, June 2, 2023"
       />
       <div

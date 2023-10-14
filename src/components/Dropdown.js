@@ -33,7 +33,7 @@ const Dropdown = ({ options, children }) => {
         {children ? children : selectedOption || "Select an Option"}
       </div>
       {isOpen && (
-        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-slate-100 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+        <div className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-slate-100 dark:bg-[#23272F] shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none border border-slate-100/10">
           <div>
             {options.map((OptionComponent, index) => (
               <div onClick={onOptionClicked(OptionComponent)} key={index}>

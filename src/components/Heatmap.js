@@ -44,7 +44,7 @@ export const useColorForTasks = (data, AVAILABLE_COLORS) => {
   };
 };
 
-const Heatmap = ({ data }) => {
+const Heatmap = ({ data, oneColor = false }) => {
   const getColor = useColorForTasks(data, AVAILABLE_COLORS);
   const endDate = new Date();
   const startDate = new Date(endDate.getTime() - 365 * 24 * 60 * 60 * 1000);
@@ -91,7 +91,11 @@ const Heatmap = ({ data }) => {
                   "bg-slate-200 dark:!bg-zinc-600": !tasks,
                 })}
                 style={{
-                  ...(tasks && { backgroundColor: getColor(tasks) }),
+                  ...(tasks && {
+                    backgroundColor: oneColor
+                      ? COLORS.blue500
+                      : getColor(tasks),
+                  }),
                   gridRowStart: rowStart,
                   gridRowEnd: rowStart + 1,
                 }}
@@ -106,6 +110,7 @@ const Heatmap = ({ data }) => {
 
 Heatmap.propTypes = {
   data: PropTypes.object.isRequired,
+  oneColor: PropTypes.bool,
 };
 
 export default Heatmap;

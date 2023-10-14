@@ -9,9 +9,8 @@ import { selectHabitById } from "../features/habits/habitSelectors";
 import { fetchHabit } from "../features/habits/habitActions";
 import Heatmap from "../components/Heatmap";
 import ProgressBar from "../components/ProgressBar";
-import { COLORS } from "../constants";
-import ProgressChart from "./HabitsScreen/ProgressChart";
 import { formatDate } from "../utils/dateHelpers";
+import PieChart from "../components/PieChart";
 
 const HabitScreen = () => {
   const { id } = useParams();
@@ -57,9 +56,12 @@ const HabitScreen = () => {
       <div className="flex">
         <div className="border border-slate-900/10 dark:border-slate-100/10 py-2 px-4 mr-4">
           <P bold>Overall progress</P>
-          <ProgressChart
-            value={Number(habit.overall_progress)}
-            color={COLORS.blue500}
+          <PieChart
+            data={[
+              { value: Number(habit.overall_progress) },
+              { value: Number(100 - Number(habit.overall_progress)) },
+            ]}
+            innerLabel={`${Number(habit.overall_progress)}%`}
           />
         </div>
         <div className="flex flex-col border border-slate-900/10 dark:border-slate-100/10 py-2 px-4">
@@ -89,7 +91,7 @@ const HabitScreen = () => {
       </div>
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
-      <Heatmap data={data} />
+      <Heatmap data={data} oneColor />
     </>
   );
 };

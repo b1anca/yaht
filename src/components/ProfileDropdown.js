@@ -13,7 +13,7 @@ const ProfileDropdown = () => {
       options={[
         () => (
           <NavLink
-            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-slate-700 hover:text-slate-900 border-b border-slate-900/10"
+            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-zinc-600 dark:text-zinc-200 hover:text-[#549bff] dark:hover:text-[#549bff] border-b border-slate-900/10 dark:border-slate-100/10"
             to="/user-profile"
           >
             Your profile
@@ -23,7 +23,7 @@ const ProfileDropdown = () => {
           <a
             href="/"
             onClick={() => dispatch(logout())}
-            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-slate-700 hover:text-slate-900"
+            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-zinc-600 dark:text-zinc-200 hover:text-[#549bff] dark:hover:text-[#549bff]"
           >
             Sign out
           </a>
@@ -31,7 +31,7 @@ const ProfileDropdown = () => {
       ]}
     >
       <div className="cursor-pointer inline-flex justify-center items-center">
-        <div className="shadow bg-[#5498ff] text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
+        <div className="shadow bg-[#5498ff] hover:bg-[#3a89ff] text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
           {userInfo.name && userInfo.name[0].toUpperCase()}
         </div>
         <svg

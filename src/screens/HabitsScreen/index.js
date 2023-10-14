@@ -22,6 +22,7 @@ import NavLink from "../../components/NavLink";
 import Heatmap from "../../components/Heatmap";
 import ProgressBar from "../../components/ProgressBar";
 import { COLORS } from "../../constants";
+import RadarChart from "../../components/RadarChart";
 
 const DayHeader = ({ day }) => {
   const isCurrentDate = areDatesEqual(day, new Date());
@@ -76,6 +77,19 @@ const HabitsScreen = () => {
         });
         return h;
       }, {}),
+    [habits]
+  );
+
+  const progressPerHabit = useMemo(
+    () =>
+      habits.reduce(
+        (arr, habit) =>
+          arr.concat({
+            subject: habit.name,
+            A: Number(habit.overall_progress),
+          }),
+        []
+      ),
     [habits]
   );
 
@@ -237,6 +251,10 @@ const HabitsScreen = () => {
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
+      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
+      <P bold>Your stats</P>
+      <RadarChart data={progressPerHabit} legend="Overall progress %" />
+      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
     </div>
   );
 };
