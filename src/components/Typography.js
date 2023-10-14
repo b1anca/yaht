@@ -17,7 +17,7 @@ export const Heading = ({ level = "h1", children, className, ...rest }) => {
     <Element
       level="h4"
       className={classNames(
-        "mb-4 font-extrabold tracking-tight dark:text-zinc-200",
+        "mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200",
         textClass,
         className
       )}

@@ -4,7 +4,7 @@ exports[`CreateHabitScreen should render correctly 1`] = `
 <DocumentFragment>
   <div>
     <h2
-      class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl text-center"
+      class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl text-center"
       level="h4"
     >
       Create habit

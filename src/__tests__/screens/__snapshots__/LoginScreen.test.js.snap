@@ -44,7 +44,7 @@ exports[`LoginScreen should render correctly 1`] = `
         class="w-full max-w-md p-6"
       >
         <h2
-          class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl text-center"
+          class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl text-center"
           level="h4"
         >
           Sign in
@@ -96,18 +96,18 @@ exports[`LoginScreen should render correctly 1`] = `
       </form>
     </div>
     <footer
-      class="relative shrink-0 my-8"
+      class="relative my-8"
     >
       <div
-        class="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0"
+        class="flex justify-center items-center"
       >
         <p
-          class="text-center sm:text-left"
+          class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 text-center mr-4 !mb-0"
         >
           Don't have an account?
         </p>
         <a
-          class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 ring-1 ring-slate-300/10 hover:ring-slate-200/20 shadow rounded-full"
+          class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 ring-1 ring-slate-300/10 dark:ring-zinc-200 dark:text-zinc-200 hover:ring-slate-200/20 shadow rounded-full"
           href="/register"
         >
           Register

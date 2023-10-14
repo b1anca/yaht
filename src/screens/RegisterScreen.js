@@ -8,7 +8,7 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import NavLink from "../components/NavLink";
 import Header from "../components/Header";
-import { Heading } from "../components/Typography";
+import { Heading, P } from "../components/Typography";
 
 const RegisterScreen = () => {
   const [customError, setCustomError] = useState(null);
@@ -68,8 +68,8 @@ const RegisterScreen = () => {
           </form>
         </div>
         <footer className="relative shrink-0 my-8">
-          <div className="space-y-4 text-sm sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
-            <p className="text-center sm:text-left">Already have an account?</p>
+          <div className="flex justify-center items-center">
+            <P className="text-center mr-4 !mb-0">Already have an account?</P>
             <NavLink secondary to="/login">
               Sign in
             </NavLink>

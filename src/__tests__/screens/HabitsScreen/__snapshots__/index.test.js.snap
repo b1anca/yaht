@@ -7,7 +7,7 @@ exports[`HabitsScreen should render correctly 1`] = `
       class="flex justify-between items-center mb-4"
     >
       <h2
-        class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-2xl !mb-0"
+        class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl !mb-0"
         level="h4"
       >
         Today, Jan 10 Tue
@@ -36,11 +36,11 @@ exports[`HabitsScreen should render correctly 1`] = `
       class="flex items-center mt-6 mb-2"
     >
       <div
-        class="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+        class="border dark:border-zinc-200 rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 dark:hover:bg-zinc-700 mr-4"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-chevron-left fa-sm "
+          class="svg-inline--fa fa-chevron-left fa-sm dark:text-zinc-300 text-zinc-600"
           data-icon="chevron-left"
           data-prefix="fas"
           focusable="false"
@@ -55,11 +55,11 @@ exports[`HabitsScreen should render correctly 1`] = `
         </svg>
       </div>
       <div
-        class="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+        class="border dark:border-zinc-200 rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 dark:hover:bg-zinc-700 mr-4"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-chevron-right fa-sm "
+          class="svg-inline--fa fa-chevron-right fa-sm dark:text-zinc-300 text-zinc-600"
           data-icon="chevron-right"
           data-prefix="fas"
           focusable="false"
@@ -74,7 +74,7 @@ exports[`HabitsScreen should render correctly 1`] = `
         </svg>
       </div>
       <h3
-        class="mb-4 font-extrabold tracking-tight dark:text-zinc-200 text-xl !mb-0"
+        class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-xl !mb-0"
         level="h4"
       >
         Mon 0/9 - Sun 0/15

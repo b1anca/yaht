@@ -174,22 +174,22 @@ const HabitsScreen = () => {
       <div className="flex items-center mt-6 mb-2">
         <div
           onClick={onClickLeft}
-          className="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+          className="border dark:border-zinc-200 rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 dark:hover:bg-zinc-700 mr-4"
         >
           <FontAwesomeIcon
             size="sm"
             icon={faChevronLeft}
-            style={{ color: COLORS.zinc600 }}
+            className="dark:text-zinc-300 text-zinc-600"
           />
         </div>
         <div
           onClick={onClickRight}
-          className="border rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 mr-4"
+          className="border dark:border-zinc-200 rounded-full px-3 py-1 hover:cursor-pointer hover:bg-slate-100 dark:hover:bg-zinc-700 mr-4"
         >
           <FontAwesomeIcon
             size="sm"
             icon={faChevronRight}
-            style={{ color: COLORS.zinc600 }}
+            className="dark:text-zinc-300 text-zinc-600"
           />
         </div>
         <Heading level="h3" className="!mb-0">
