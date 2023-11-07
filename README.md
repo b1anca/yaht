@@ -15,7 +15,7 @@ $ docker compose version # => Docker Compose version v2.10.2
 ## Initial setup
 
 ```sh
-$ cp .env.sample .env.development.local
+$ cp .env.sample .env
 $ docker compose build
 ```
 
