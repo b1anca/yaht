@@ -41,7 +41,7 @@ export const getDaysInMonth = (month, year) => {
 };
 
 export const getBeginningOfWeek = (date, startIndex = 1) => {
-  const day = date.getDay() || 7;
+  const day = date.getDay();
   const diff = date.getDate() - day + startIndex;
   return new Date(date.setDate(diff));
 };
