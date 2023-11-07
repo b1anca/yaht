@@ -1,5 +1,6 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import classNames from "classnames";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import { getWeekName, getMonthName } from "../../utils/dateHelpers";
@@ -7,27 +8,26 @@ import NavLink from "../../components/NavLink";
 import Heatmap from "../../components/Heatmap";
 import ProgressBar from "../../components/ProgressBar";
 import RadarChart from "../../components/RadarChart";
-import WeekHabits from "./WeekHabits";
+import LoadingDots from "../../components/LoadingDots";
+import WeeklyTracker from "./WeeklyTracker";
 
 // TODO:
 // - error tracking, monitoring for the react app
 // - tests for the other components (meet coverage threshold)
-// - show formatted date (with weekday) on tracker hover
 // - delete habit
 // - notes for habits
-// - loading state when loading habist (habits screen)
-// - allow changing month (habits screen)
 // - allow changing year (habit screen)
 
 // - perfect days
 
 const HabitsScreen = () => {
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
   const { habits } = useSelector((state) => state.habits);
   const currentDate = new Date();
 
   useEffect(() => {
-    dispatch(fetchHabits());
+    dispatch(fetchHabits()).then(() => setLoading(false));
   }, []);
 
   const data = useMemo(
@@ -68,6 +68,10 @@ const HabitsScreen = () => {
   const completedTodayPercentage =
     (completedTodayCount / habits.length) * 100 || 0;
 
+  if (loading) {
+    return <LoadingDots />;
+  }
+
   return (
     <div>
       <div className="flex justify-between items-center mb-4">
@@ -76,20 +80,30 @@ const HabitsScreen = () => {
             currentDate
           )} ${currentDate.getDate()} ${getWeekName(currentDate)}`}
         </Heading>
-        <NavLink className="!w-min h-min" primary to="/habits/new">
+        <NavLink
+          className={classNames("!w-min h-min", {
+            "animate-bounce": habits.length === 0,
+          })}
+          primary
+          to="/habits/new"
+        >
           Add habit
         </NavLink>
       </div>
       <ProgressBar value={completedTodayPercentage} className="mb-1" />
       <P bold>{completedTodayPercentage.toFixed(2)}% achieved</P>
-      <WeekHabits habits={habits} data={data} />
+      <WeeklyTracker habits={habits} data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      <P bold>Your stats</P>
-      <RadarChart data={progressPerHabit} legend="Overall progress %" />
-      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
+      {habits.length > 0 && (
+        <>
+          <P bold>Your stats</P>
+          <RadarChart data={progressPerHabit} legend="Overall progress %" />
+          <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
+        </>
+      )}
     </div>
   );
 };

@@ -35,7 +35,7 @@ const DayHeader = ({ day }) => {
   );
 };
 
-const WeekHabits = ({ habits, data }) => {
+const WeeklyTracker = ({ habits, data }) => {
   const [dateRange, setDateRange] = useState([]);
 
   useEffect(() => {
@@ -115,13 +115,6 @@ const WeekHabits = ({ habits, data }) => {
 
   return (
     <>
-      <ProgressBar value={completedWeekPercentage} className="mb-1" />
-      <div className="flex justify-between mb-4 items-center">
-        <div className="flex items-center">{comparedToLastWeek()}</div>
-        <P bold className="!mb-0">
-          {completedWeekPercentage.toFixed(2)}% achieved
-        </P>
-      </div>
       <div className="flex items-center mt-6 mb-2">
         <div
           onClick={onClickLeft}
@@ -154,30 +147,45 @@ const WeekHabits = ({ habits, data }) => {
             )} ${dateRange[6].getMonth()}/${dateRange[6].getDate()}`}
         </Heading>
       </div>
-      <div
-        className="grid gap-2"
-        style={{ gridTemplateColumns: "minmax(auto, 300px) repeat(10, 1fr)" }}
-      >
-        <div />
-        {dateRange.map((day) => (
-          <DayHeader key={day.toISOString()} day={day} />
-        ))}
-        <P bold className="!mb-0 p-1 text-center">
-          current <br />
-          streak
+      <ProgressBar value={completedWeekPercentage} className="mb-1" />
+      <div className="flex justify-between mb-4 items-center">
+        <div className="flex items-center">{comparedToLastWeek()}</div>
+        <P bold className="!mb-0">
+          {completedWeekPercentage.toFixed(2)}% achieved
         </P>
-        <P bold className="!mb-0 p-1 text-center">
-          longest <br />
-          streak
-        </P>
-        <P bold className="!mb-0 p-1 text-center">
-          overall <br />
-          progress
-        </P>
-        {habits.map((habit) => (
-          <HabitRow key={habit.id} {...habit} days={dateRange} />
-        ))}
       </div>
+      {habits.length > 0 ? (
+        <div
+          className="grid gap-2"
+          style={{ gridTemplateColumns: "minmax(auto, 300px) repeat(10, 1fr)" }}
+        >
+          <div />
+          {dateRange.map((day) => (
+            <DayHeader key={day.toISOString()} day={day} />
+          ))}
+          <P bold className="!mb-0 p-1 text-center">
+            current <br />
+            streak
+          </P>
+          <P bold className="!mb-0 p-1 text-center">
+            longest <br />
+            streak
+          </P>
+          <P bold className="!mb-0 p-1 text-center">
+            overall <br />
+            progress
+          </P>
+          {habits.map((habit) => (
+            <HabitRow key={habit.id} {...habit} days={dateRange} />
+          ))}
+        </div>
+      ) : (
+        <P>
+          Looks like you&apos;re just getting started! Click on the &apos;Add
+          Habit&apos; button to begin your journey towards positive change.
+          Let&apos;s create your first habit today!
+        </P>
+      )}
     </>
   );
 };
@@ -186,9 +194,9 @@ DayHeader.propTypes = {
   day: PropTypes.object,
 };
 
-WeekHabits.propTypes = {
+WeeklyTracker.propTypes = {
   habits: PropTypes.array,
   data: PropTypes.object,
 };
 
-export default WeekHabits;
+export default WeeklyTracker;
