@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { areDatesEqual } from "../../utils/dateHelpers";
+import { isSameDay } from "date-fns";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
@@ -77,7 +77,7 @@ const HabitRow = ({
       </NavLink>
       {days.map((day) => {
         const completedTaskForTheDay = tasks.find((task) =>
-          areDatesEqual(new Date(task.completed_at), day)
+          isSameDay(new Date(task.completed_at), day)
         );
 
         return (

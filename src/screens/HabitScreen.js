@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import { format } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { Heading, P } from "../components/Typography";
@@ -9,7 +10,6 @@ import { selectHabitById } from "../features/habits/habitSelectors";
 import { fetchHabit } from "../features/habits/habitActions";
 import Heatmap from "../components/Heatmap";
 import ProgressBar from "../components/ProgressBar";
-import { formatDate } from "../utils/dateHelpers";
 import PieChart from "../components/PieChart";
 
 const HabitScreen = () => {
@@ -85,7 +85,7 @@ const HabitScreen = () => {
             value={(habit.current_streak / habit.record_streak) * 100}
           />
           <P bold className="mt-auto">
-            Started on {formatDate(new Date(habit.created_at))}
+            Started on {format(new Date(habit.created_at), "MMMM dd, yyyy")}
           </P>
         </div>
       </div>

@@ -1,11 +1,9 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
+import { format, isToday } from "date-fns";
 import {
-  formatDate,
-  areDatesEqual,
   WEEKDAY_NAMES,
-  getWeekName,
   getBeginningOfWeek,
   getDaysBetweenDates,
   getMonthsBetweenDates,
@@ -75,11 +73,12 @@ const Heatmap = ({ data, oneColor = false }) => {
             const date = new Date(startDate);
             date.setDate(startDate.getDate() + day);
 
-            const isCurrentDate = areDatesEqual(date, new Date());
+            const isCurrentDate = isToday(date);
             const tasks = data[date.toLocaleDateString()];
-            const title = `${tasks || "no"} tasks completed - ${getWeekName(
-              date
-            )}, ${formatDate(date)}`;
+            const title = `${tasks || "no"} tasks completed - ${format(
+              date,
+              "EEE"
+            )}, ${format(date, "MMMM dd, yyyy")}`;
             const rowStart = (day % 7) + 1;
 
             return (

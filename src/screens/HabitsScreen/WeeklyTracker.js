@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo } from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import HabitRow from "./HabitRow";
+import { format, isSameDay } from "date-fns";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowDown,
@@ -10,16 +10,13 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { COLORS } from "../../constants";
-import {
-  getWeekName,
-  areDatesEqual,
-  createWeekRange,
-} from "../../utils/dateHelpers";
+import HabitRow from "./HabitRow";
+import { getWeeklyDateRange } from "../../utils/dateHelpers";
 import { Heading, P } from "../../components/Typography";
 import ProgressBar from "../../components/ProgressBar";
 
 const DayHeader = ({ day }) => {
-  const isCurrentDate = areDatesEqual(day, new Date());
+  const isCurrentDate = isSameDay(day, new Date());
 
   return (
     <P
@@ -30,28 +27,29 @@ const DayHeader = ({ day }) => {
       })}
     >
       {day.getDate()} <br />
-      {getWeekName(day)}
+      {format(day, "EEE")}
     </P>
   );
 };
 
 const WeeklyTracker = ({ habits, data }) => {
   const [dateRange, setDateRange] = useState([]);
+  const currentDate = new Date();
 
   useEffect(() => {
-    setDateRange(createWeekRange(new Date()));
+    setDateRange(getWeeklyDateRange(currentDate));
   }, []);
 
   const onClickLeft = () => {
     const date = dateRange[0];
     date.setDate(date.getDate() - 1);
-    setDateRange(createWeekRange(date));
+    setDateRange(getWeeklyDateRange(date));
   };
 
   const onClickRight = () => {
     const date = dateRange[6];
     date.setDate(date.getDate() + 1);
-    setDateRange(createWeekRange(date));
+    setDateRange(getWeeklyDateRange(date));
   };
 
   const lastWeekSum = useMemo(() => {
@@ -137,14 +135,8 @@ const WeeklyTracker = ({ habits, data }) => {
           />
         </div>
         <Heading level="h3" className="!mb-0">
-          {dateRange[0] &&
-            `${getWeekName(
-              dateRange[0]
-            )} ${dateRange[0].getMonth()}/${dateRange[0].getDate()}`}
-          {dateRange[6] &&
-            ` - ${getWeekName(
-              dateRange[6]
-            )} ${dateRange[6].getMonth()}/${dateRange[6].getDate()}`}
+          {dateRange[0] && format(dateRange[0], "EEE MM/dd")} -{" "}
+          {dateRange[6] && format(dateRange[6], "EEE MM/dd")}
         </Heading>
       </div>
       <ProgressBar value={completedWeekPercentage} className="mb-1" />

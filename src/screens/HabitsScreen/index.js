@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import classNames from "classnames";
+import { format } from "date-fns";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
-import { getWeekName, getMonthName } from "../../utils/dateHelpers";
 import NavLink from "../../components/NavLink";
 import Heatmap from "../../components/Heatmap";
 import ProgressBar from "../../components/ProgressBar";
@@ -76,9 +76,10 @@ const HabitsScreen = () => {
     <div>
       <div className="flex justify-between items-center mb-4">
         <Heading level="h2" className="!mb-0">
-          {`Today, ${getMonthName(
-            currentDate
-          )} ${currentDate.getDate()} ${getWeekName(currentDate)}`}
+          {`Today, ${format(
+            currentDate,
+            "MMM"
+          )} ${currentDate.getDate()} ${format(currentDate, "EEE")}`}
         </Heading>
         <NavLink
           className={classNames("!w-min h-min", {

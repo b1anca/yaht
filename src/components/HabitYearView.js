@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { format } from "date-fns";
 import { P } from "./Typography";
-import { MONTH_NAMES, getDaysInMonth, formatDate } from "../utils/dateHelpers";
+import { MONTH_NAMES, getDaysInMonth } from "../utils/dateHelpers";
 import { DEFAULT_HABIT_COLOR } from "../constants";
 
 const MAX_COLUMNS = 32;
@@ -28,7 +29,7 @@ const HabitYearView = ({ dataSet, habitColor }) => {
                   return (
                     <div
                       key={index}
-                      title={formatDate(currentDate)}
+                      title={format(currentDate, "MMMM dd, yyyy")}
                       className="rounded w-6 h-6 border border-slate-500 hover:border-slate-200 mb-1 mr-1"
                       style={{
                         backgroundColor: dataSet.has(
