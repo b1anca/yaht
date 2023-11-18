@@ -39,9 +39,6 @@ export const getDaysInMonth = (month, year) => {
     end: endOfMonth(new Date(year, month)),
   });
 };
-export const getBeginningOfWeek = (date, startIndex = 1) => {
-  return startOfWeek(date, { weekStartsOn: startIndex });
-};
 
 export const getDaysBetweenDates = (date1, date2) => {
   return differenceInDays(new Date(date2), new Date(date1));

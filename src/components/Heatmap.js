@@ -1,10 +1,9 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { format, isToday } from "date-fns";
+import { format, isToday, subYears, startOfWeek } from "date-fns";
 import {
   WEEKDAY_NAMES,
-  getBeginningOfWeek,
   getDaysBetweenDates,
   getMonthsBetweenDates,
 } from "../utils/dateHelpers";
@@ -45,10 +44,9 @@ export const useColorForTasks = (data, AVAILABLE_COLORS) => {
 const Heatmap = ({ data, oneColor = false }) => {
   const getColor = useColorForTasks(data, AVAILABLE_COLORS);
   const endDate = new Date();
-  const startDate = new Date(endDate.getTime() - 365 * 24 * 60 * 60 * 1000);
-  const startSunDate = getBeginningOfWeek(startDate, 0);
-  const length = getDaysBetweenDates(startSunDate, endDate) + 1;
-  const months = getMonthsBetweenDates(startSunDate, endDate);
+  const startDate = startOfWeek(subYears(new Date(), 1));
+  const length = getDaysBetweenDates(startDate, endDate) + 1;
+  const months = getMonthsBetweenDates(startDate, endDate);
 
   return (
     <>
