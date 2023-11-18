@@ -22,6 +22,7 @@ describe("HabitScreen", () => {
             tasks: [{ id: 11, completed_at: "2023-06-02T03:00:00.000Z" }],
             description: "Reading 10 pages",
             overall_progress: "90.0",
+            created_at: "2023-06-02T03:00:00.000Z",
           },
         ],
       },

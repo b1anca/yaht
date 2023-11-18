@@ -77,7 +77,7 @@ exports[`HabitsScreen should render correctly 1`] = `
         class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-xl !mb-0"
         level="h4"
       >
-        Mon 0/9 - Sun 0/15
+        Mon 01/09 - Sun 01/15
       </h3>
     </div>
     <div
@@ -344,7 +344,7 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, January 9, 2022"
+          title="no tasks completed - Sun, January 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -459,47 +459,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, February 1, 2022"
+          title="no tasks completed - Tue, February 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, February 2, 2022"
+          title="no tasks completed - Wed, February 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, February 3, 2022"
+          title="no tasks completed - Thu, February 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, February 4, 2022"
+          title="no tasks completed - Fri, February 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, February 5, 2022"
+          title="no tasks completed - Sat, February 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, February 6, 2022"
+          title="no tasks completed - Sun, February 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, February 7, 2022"
+          title="no tasks completed - Mon, February 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, February 8, 2022"
+          title="no tasks completed - Tue, February 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, February 9, 2022"
+          title="no tasks completed - Wed, February 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -599,47 +599,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, March 1, 2022"
+          title="no tasks completed - Tue, March 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, March 2, 2022"
+          title="no tasks completed - Wed, March 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, March 3, 2022"
+          title="no tasks completed - Thu, March 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, March 4, 2022"
+          title="no tasks completed - Fri, March 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, March 5, 2022"
+          title="no tasks completed - Sat, March 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, March 6, 2022"
+          title="no tasks completed - Sun, March 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, March 7, 2022"
+          title="no tasks completed - Mon, March 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, March 8, 2022"
+          title="no tasks completed - Tue, March 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, March 9, 2022"
+          title="no tasks completed - Wed, March 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -754,47 +754,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, April 1, 2022"
+          title="no tasks completed - Fri, April 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, April 2, 2022"
+          title="no tasks completed - Sat, April 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, April 3, 2022"
+          title="no tasks completed - Sun, April 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, April 4, 2022"
+          title="no tasks completed - Mon, April 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, April 5, 2022"
+          title="no tasks completed - Tue, April 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, April 6, 2022"
+          title="no tasks completed - Wed, April 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, April 7, 2022"
+          title="no tasks completed - Thu, April 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, April 8, 2022"
+          title="no tasks completed - Fri, April 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, April 9, 2022"
+          title="no tasks completed - Sat, April 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -904,47 +904,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, May 1, 2022"
+          title="no tasks completed - Sun, May 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, May 2, 2022"
+          title="no tasks completed - Mon, May 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, May 3, 2022"
+          title="no tasks completed - Tue, May 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, May 4, 2022"
+          title="no tasks completed - Wed, May 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, May 5, 2022"
+          title="no tasks completed - Thu, May 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, May 6, 2022"
+          title="no tasks completed - Fri, May 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, May 7, 2022"
+          title="no tasks completed - Sat, May 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, May 8, 2022"
+          title="no tasks completed - Sun, May 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, May 9, 2022"
+          title="no tasks completed - Mon, May 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1059,47 +1059,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, June 1, 2022"
+          title="no tasks completed - Wed, June 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, June 2, 2022"
+          title="no tasks completed - Thu, June 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, June 3, 2022"
+          title="no tasks completed - Fri, June 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, June 4, 2022"
+          title="no tasks completed - Sat, June 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, June 5, 2022"
+          title="no tasks completed - Sun, June 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, June 6, 2022"
+          title="no tasks completed - Mon, June 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, June 7, 2022"
+          title="no tasks completed - Tue, June 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, June 8, 2022"
+          title="no tasks completed - Wed, June 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, June 9, 2022"
+          title="no tasks completed - Thu, June 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1209,47 +1209,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, July 1, 2022"
+          title="no tasks completed - Fri, July 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, July 2, 2022"
+          title="no tasks completed - Sat, July 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, July 3, 2022"
+          title="no tasks completed - Sun, July 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, July 4, 2022"
+          title="no tasks completed - Mon, July 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, July 5, 2022"
+          title="no tasks completed - Tue, July 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, July 6, 2022"
+          title="no tasks completed - Wed, July 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, July 7, 2022"
+          title="no tasks completed - Thu, July 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, July 8, 2022"
+          title="no tasks completed - Fri, July 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, July 9, 2022"
+          title="no tasks completed - Sat, July 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1364,47 +1364,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, August 1, 2022"
+          title="no tasks completed - Mon, August 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, August 2, 2022"
+          title="no tasks completed - Tue, August 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, August 3, 2022"
+          title="no tasks completed - Wed, August 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, August 4, 2022"
+          title="no tasks completed - Thu, August 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, August 5, 2022"
+          title="no tasks completed - Fri, August 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, August 6, 2022"
+          title="no tasks completed - Sat, August 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, August 7, 2022"
+          title="no tasks completed - Sun, August 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, August 8, 2022"
+          title="no tasks completed - Mon, August 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, August 9, 2022"
+          title="no tasks completed - Tue, August 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1519,47 +1519,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, September 1, 2022"
+          title="no tasks completed - Thu, September 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, September 2, 2022"
+          title="no tasks completed - Fri, September 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, September 3, 2022"
+          title="no tasks completed - Sat, September 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, September 4, 2022"
+          title="no tasks completed - Sun, September 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, September 5, 2022"
+          title="no tasks completed - Mon, September 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, September 6, 2022"
+          title="no tasks completed - Tue, September 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, September 7, 2022"
+          title="no tasks completed - Wed, September 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, September 8, 2022"
+          title="no tasks completed - Thu, September 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, September 9, 2022"
+          title="no tasks completed - Fri, September 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1669,47 +1669,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, October 1, 2022"
+          title="no tasks completed - Sat, October 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, October 2, 2022"
+          title="no tasks completed - Sun, October 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, October 3, 2022"
+          title="no tasks completed - Mon, October 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, October 4, 2022"
+          title="no tasks completed - Tue, October 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, October 5, 2022"
+          title="no tasks completed - Wed, October 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, October 6, 2022"
+          title="no tasks completed - Thu, October 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, October 7, 2022"
+          title="no tasks completed - Fri, October 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, October 8, 2022"
+          title="no tasks completed - Sat, October 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, October 9, 2022"
+          title="no tasks completed - Sun, October 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1824,47 +1824,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, November 1, 2022"
+          title="no tasks completed - Tue, November 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, November 2, 2022"
+          title="no tasks completed - Wed, November 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, November 3, 2022"
+          title="no tasks completed - Thu, November 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, November 4, 2022"
+          title="no tasks completed - Fri, November 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, November 5, 2022"
+          title="no tasks completed - Sat, November 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, November 6, 2022"
+          title="no tasks completed - Sun, November 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, November 7, 2022"
+          title="no tasks completed - Mon, November 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, November 8, 2022"
+          title="no tasks completed - Tue, November 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, November 9, 2022"
+          title="no tasks completed - Wed, November 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -1974,47 +1974,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, December 1, 2022"
+          title="no tasks completed - Thu, December 01, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, December 2, 2022"
+          title="no tasks completed - Fri, December 02, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, December 3, 2022"
+          title="no tasks completed - Sat, December 03, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, December 4, 2022"
+          title="no tasks completed - Sun, December 04, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, December 5, 2022"
+          title="no tasks completed - Mon, December 05, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, December 6, 2022"
+          title="no tasks completed - Tue, December 06, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, December 7, 2022"
+          title="no tasks completed - Wed, December 07, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, December 8, 2022"
+          title="no tasks completed - Thu, December 08, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, December 9, 2022"
+          title="no tasks completed - Fri, December 09, 2022"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
@@ -2129,47 +2129,47 @@ exports[`HabitsScreen should render correctly 1`] = `
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, January 1, 2023"
+          title="no tasks completed - Sun, January 01, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, January 2, 2023"
+          title="no tasks completed - Mon, January 02, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 3; grid-row-end: 4;"
-          title="no tasks completed - Tue, January 3, 2023"
+          title="no tasks completed - Tue, January 03, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 4; grid-row-end: 5;"
-          title="no tasks completed - Wed, January 4, 2023"
+          title="no tasks completed - Wed, January 04, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 5; grid-row-end: 6;"
-          title="no tasks completed - Thu, January 5, 2023"
+          title="no tasks completed - Thu, January 05, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 6; grid-row-end: 7;"
-          title="no tasks completed - Fri, January 6, 2023"
+          title="no tasks completed - Fri, January 06, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 7; grid-row-end: 8;"
-          title="no tasks completed - Sat, January 7, 2023"
+          title="no tasks completed - Sat, January 07, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 1; grid-row-end: 2;"
-          title="no tasks completed - Sun, January 8, 2023"
+          title="no tasks completed - Sun, January 08, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
           style="grid-row-start: 2; grid-row-end: 3;"
-          title="no tasks completed - Mon, January 9, 2023"
+          title="no tasks completed - Mon, January 09, 2023"
         />
         <div
           class="h-4 border dark:border-zinc-800 border-zinc-400 bg-slate-200 dark:!bg-zinc-600"
