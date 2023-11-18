@@ -7,9 +7,9 @@ import { fetchHabits } from "../../features/habits/habitActions";
 import NavLink from "../../components/NavLink";
 import Heatmap from "../../components/Heatmap";
 import ProgressBar from "../../components/ProgressBar";
-import RadarChart from "../../components/RadarChart";
 import LoadingDots from "../../components/LoadingDots";
 import WeeklyTracker from "./WeeklyTracker";
+import RadialBarChart from "../../components/RadialBarChart";
 
 // TODO:
 // - error tracking, monitoring for the react app
@@ -51,8 +51,9 @@ const HabitsScreen = () => {
       habits.reduce(
         (arr, habit) =>
           arr.concat({
-            subject: habit.name,
-            A: Number(habit.overall_progress),
+            name: habit.name,
+            value: Number(habit.overall_progress),
+            fill: habit.color,
           }),
         []
       ),
@@ -101,7 +102,7 @@ const HabitsScreen = () => {
       {habits.length > 0 && (
         <>
           <P bold>Your stats</P>
-          <RadarChart data={progressPerHabit} legend="Overall progress %" />
+          <RadialBarChart data={progressPerHabit} legend="Overall progress %" />
           <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
         </>
       )}

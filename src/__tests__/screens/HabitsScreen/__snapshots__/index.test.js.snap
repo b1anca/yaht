@@ -2187,7 +2187,7 @@ exports[`HabitsScreen should render correctly 1`] = `
       Your stats
     </p>
     <div
-      class="h-[500px] relative flex flex-col items-center"
+      class="h-[400px] relative flex flex-col items-center"
     >
       <div
         class="recharts-responsive-container"

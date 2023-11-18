@@ -23,3 +23,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.recharts-legend-item-text {
+  font-size: 14px;
+  font-weight: 800;
+}
