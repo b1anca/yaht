@@ -48,7 +48,7 @@ const Day = ({ task, day, habitId, habitColor }) => {
         {
           "cursor-pointer hover:border-zinc-500": day <= currentDate,
           "animate-pulse": loading,
-          "dark:!bg-zinc-600 !bg-slate-200": !(task || loading),
+          "dark:!bg-[#24292E] !bg-slate-200": !(task || loading),
         }
       )}
       onClick={handleDayTaskClick}
@@ -90,15 +90,9 @@ const HabitRow = ({
           />
         );
       })}
-      <P bold className="!mb-0 text-center">
-        {current_streak}
-      </P>
-      <P bold className="!mb-0 text-center">
-        {record_streak}
-      </P>
-      <P bold className="!mb-0 text-center">
-        {overall_progress}%
-      </P>
+      <P className="!mb-0 text-center">{current_streak}</P>
+      <P className="!mb-0 text-center">{record_streak}</P>
+      <P className="!mb-0 text-center">{overall_progress}%</P>
     </>
   );
 };

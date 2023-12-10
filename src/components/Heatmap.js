@@ -11,10 +11,10 @@ import { COLORS } from "../constants";
 import { P } from "./Typography";
 
 const AVAILABLE_COLORS = [
-  COLORS.blue300,
-  COLORS.blue400,
-  COLORS.blue500,
   COLORS.blue600,
+  COLORS.blue500,
+  COLORS.blue400,
+  COLORS.blue300,
 ];
 
 export const calculateThresholds = (data) => {
@@ -52,7 +52,7 @@ const Heatmap = ({ data, oneColor = false }) => {
     <>
       <div className="flex ml-9 justify-around">
         {months.map((monthName, index) => (
-          <P bold key={`${monthName}-${index}`}>
+          <P semibold key={`${monthName}-${index}`}>
             {monthName}
           </P>
         ))}
@@ -60,7 +60,7 @@ const Heatmap = ({ data, oneColor = false }) => {
       <div className="flex">
         <div className="grid grid-rows-7 items-center">
           {WEEKDAY_NAMES.map((dayName) => (
-            <P bold key={dayName} className="text-center !mb-0 mr-2">
+            <P semibold key={dayName} className="text-center !mb-0 mr-2">
               {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
             </P>
           ))}
@@ -83,10 +83,13 @@ const Heatmap = ({ data, oneColor = false }) => {
               <div
                 key={title}
                 title={title}
-                className={classNames("h-4 border dark:border-zinc-800", {
-                  "border-zinc-400": isCurrentDate,
-                  "bg-slate-200 dark:!bg-zinc-600": !tasks,
-                })}
+                className={classNames(
+                  "h-4 border rounded-sm dark:border-zinc-800",
+                  {
+                    "border-zinc-400": isCurrentDate,
+                    "bg-slate-200 dark:!bg-[#24292E]": !tasks,
+                  }
+                )}
                 style={{
                   ...(tasks && {
                     backgroundColor: oneColor

@@ -5,12 +5,12 @@ import PropTypes from "prop-types";
 const ProgressBar = ({ value = 100, className = "" }) => (
   <div
     className={classNames(
-      "rounded-lg bg-slate-200 dark:bg-zinc-600",
+      "rounded-lg bg-slate-200 dark:bg-[#24292E]",
       className
     )}
   >
     <div
-      className="ease-in duration-300 py-1 rounded-lg bg-[#5498ff]"
+      className="ease-in duration-300 py-1 rounded-lg bg-sky-600"
       style={{ width: `${value}%` }}
     />
   </div>

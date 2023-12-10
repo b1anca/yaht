@@ -20,7 +20,7 @@ const DayHeader = ({ day }) => {
 
   return (
     <P
-      bold
+      semibold
       className={classNames("!mb-0 p-1 text-center rounded-lg border", {
         "border-zinc-100 dark:border-zinc-800": !isCurrentDate,
         "border-zinc-400 dark:border-zinc-200": isCurrentDate,
@@ -104,7 +104,7 @@ const WeeklyTracker = ({ habits, data }) => {
             }}
           />
         )}
-        <P bold className="!mb-0 ml-1">
+        <P semibold className="!mb-0 ml-1">
           {displayMessage}
         </P>
       </>
@@ -142,7 +142,7 @@ const WeeklyTracker = ({ habits, data }) => {
       <ProgressBar value={completedWeekPercentage} className="mb-1" />
       <div className="flex justify-between mb-4 items-center">
         <div className="flex items-center">{comparedToLastWeek()}</div>
-        <P bold className="!mb-0">
+        <P semibold className="!mb-0">
           {completedWeekPercentage.toFixed(2)}% achieved
         </P>
       </div>
@@ -155,15 +155,15 @@ const WeeklyTracker = ({ habits, data }) => {
           {dateRange.map((day) => (
             <DayHeader key={day.toISOString()} day={day} />
           ))}
-          <P bold className="!mb-0 p-1 text-center">
+          <P className="!mb-0 p-1 text-center font-semibold">
             current <br />
             streak
           </P>
-          <P bold className="!mb-0 p-1 text-center">
+          <P className="!mb-0 p-1 text-center font-semibold">
             longest <br />
             streak
           </P>
-          <P bold className="!mb-0 p-1 text-center">
+          <P className="!mb-0 p-1 text-center font-semibold">
             overall <br />
             progress
           </P>

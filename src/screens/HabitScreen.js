@@ -68,7 +68,7 @@ const HabitScreen = () => {
           <div className="flex">
             <div className="mr-4">
               <div className="flex items-baseline">
-                <div className="bg-[#5498ff] p-1 mr-1" />
+                <div className="bg-sky-600 p-1 mr-1" />
                 <P bold>Current streak</P>
               </div>
               <Heading level="h2">{habit.current_streak}</Heading>

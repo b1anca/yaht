@@ -93,15 +93,15 @@ const HabitsScreen = () => {
         </NavLink>
       </div>
       <ProgressBar value={completedTodayPercentage} className="mb-1" />
-      <P bold>{completedTodayPercentage.toFixed(2)}% achieved</P>
+      <P semibold>{completedTodayPercentage.toFixed(2)}% achieved</P>
       <WeeklyTracker habits={habits} data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      <P bold>{completedTasksSum} tasks completed in the last year</P>
+      <P semibold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       {habits.length > 0 && (
         <>
-          <P bold>Your stats</P>
+          <P semibold>Your stats</P>
           <RadialBarChart data={progressPerHabit} legend="Overall progress %" />
           <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
         </>

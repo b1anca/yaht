@@ -21,13 +21,13 @@ exports[`RegisterScreen should render correctly 1`] = `
               class="relative flex items-center ml-auto"
             >
               <a
-                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-[#5498ff] dark:hover:text-[#5498ff]"
+                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-sky-600 dark:hover:text-sky-600"
                 href="/login"
               >
                 Sign in
               </a>
               <a
-                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full bg-[#5498ff] hover:bg-[#3a89ff]"
+                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full bg-sky-600 hover:bg-sky-700"
                 href="/register"
               >
                 Register
@@ -60,7 +60,7 @@ exports[`RegisterScreen should render correctly 1`] = `
           </label>
           <input
             aria-label="name"
-            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
             id="text"
             name="name"
             required=""
@@ -78,7 +78,7 @@ exports[`RegisterScreen should render correctly 1`] = `
           </label>
           <input
             aria-label="email"
-            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
             id="email"
             name="email"
             required=""
@@ -96,7 +96,7 @@ exports[`RegisterScreen should render correctly 1`] = `
           </label>
           <input
             aria-label="password"
-            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
             id="password"
             name="password"
             required=""
@@ -114,7 +114,7 @@ exports[`RegisterScreen should render correctly 1`] = `
           </label>
           <input
             aria-label="password_confirmation"
-            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+            class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
             id="password"
             name="password_confirmation"
             required=""
@@ -122,7 +122,7 @@ exports[`RegisterScreen should render correctly 1`] = `
           />
         </div>
         <button
-          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 hover:bg-[#3a89ff] bg-[#5498ff] w-full"
+          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 bg-sky-600 hover:bg-sky-700 w-full"
           type="sumit"
         >
           Create account

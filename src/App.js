@@ -31,7 +31,7 @@ function App() {
   }, [data, dispatch]);
 
   return (
-    <div className="dark:bg-[#23272F] min-h-screen">
+    <div className="bg-slate-100 dark:bg-[#0D1117] min-h-screen">
       <Routes>
         <Route path="/" element={<HomeScreen />} />
         <Route path="/login" element={<LoginScreen />} />

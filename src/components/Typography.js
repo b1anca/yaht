@@ -28,12 +28,13 @@ export const Heading = ({ level = "h1", children, className, ...rest }) => {
   );
 };
 
-export const P = ({ children, className, bold, ...rest }) => {
+export const P = ({ children, className, semibold, bold, ...rest }) => {
   return (
     <p
       className={classNames(
         "text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200",
         { "font-extrabold": bold },
+        { "font-semibold": semibold },
         className
       )}
       {...rest}
@@ -53,4 +54,5 @@ P.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   bold: PropTypes.bool,
+  semibold: PropTypes.bool,
 };

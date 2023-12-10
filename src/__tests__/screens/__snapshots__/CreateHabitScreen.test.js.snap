@@ -21,7 +21,7 @@ exports[`CreateHabitScreen should render correctly 1`] = `
         </label>
         <input
           aria-label="name"
-          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
           id="name"
           name="name"
           required=""
@@ -39,7 +39,7 @@ exports[`CreateHabitScreen should render correctly 1`] = `
         </label>
         <input
           aria-label="description"
-          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+          class="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
           id="description"
           name="description"
           type="description"
@@ -104,7 +104,7 @@ exports[`CreateHabitScreen should render correctly 1`] = `
         class="mt-6 flex flex-col items-center"
       >
         <button
-          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 hover:bg-[#3a89ff] bg-[#5498ff] max-w-md w-full mt-6"
+          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 bg-sky-600 hover:bg-sky-700 max-w-md w-full mt-6"
           type="submit"
         >
           Create habit

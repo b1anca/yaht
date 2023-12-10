@@ -20,7 +20,7 @@ const Input = forwardRef((props, ref) => {
         id={type}
         name={rest.name}
         type={type}
-        className="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-[#5498ff] ring-1 ring-zinc-400"
+        className="bg-transparent appearance-none text-zinc-600 dark:text-zinc-200 rounded block w-full px-3 h-10 shadow-sm sm:text-sm focus:outline-none placeholder:text-slate-300 focus:ring-2 focus:ring-sky-600 ring-1 ring-zinc-400"
         required={required}
         ref={ref}
         aria-label={rest.name}

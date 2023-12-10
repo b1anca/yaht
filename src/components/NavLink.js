@@ -20,9 +20,9 @@ const NavLink = ({
         {
           "ring-1 ring-slate-300/10 dark:ring-zinc-200 dark:text-zinc-200 hover:ring-slate-200/20 shadow rounded-full":
             secondary,
-          "w-full shadow text-zinc-100 rounded-full bg-[#5498ff] hover:bg-[#3a89ff]":
+          "w-full shadow text-zinc-100 rounded-full bg-sky-600 hover:bg-sky-700":
             primary,
-          "dark:text-zinc-200 text-zinc-600 hover:text-[#5498ff] dark:hover:text-[#5498ff]":
+          "dark:text-zinc-200 text-zinc-600 hover:text-sky-600 dark:hover:text-sky-600":
             tetriary,
         },
         className

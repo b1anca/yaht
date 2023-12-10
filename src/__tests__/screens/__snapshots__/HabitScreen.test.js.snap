@@ -19,7 +19,7 @@ exports[`HabitScreen should render correctly 1`] = `
       </p>
     </div>
     <a
-      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-[#5498ff] dark:hover:text-[#5498ff] !text-xl px-0"
+      class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-sky-600 dark:hover:text-sky-600 !text-xl px-0"
       href="/habits/1/edit"
     >
       <svg
@@ -77,7 +77,7 @@ exports[`HabitScreen should render correctly 1`] = `
             class="flex items-baseline"
           >
             <div
-              class="bg-[#5498ff] p-1 mr-1"
+              class="bg-sky-600 p-1 mr-1"
             />
             <p
               class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
@@ -110,10 +110,10 @@ exports[`HabitScreen should render correctly 1`] = `
         </div>
       </div>
       <div
-        class="rounded-lg bg-slate-200 dark:bg-zinc-600"
+        class="rounded-lg bg-slate-200 dark:bg-[#24292E]"
       >
         <div
-          class="ease-in duration-300 py-1 rounded-lg bg-[#5498ff]"
+          class="ease-in duration-300 py-1 rounded-lg bg-sky-600"
         />
       </div>
       <p
@@ -135,69 +135,69 @@ exports[`HabitScreen should render correctly 1`] = `
     class="flex ml-9 justify-around"
   >
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
-    >
-      Nov
-    </p>
-    <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Dec
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Jan
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Feb
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Mar
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Apr
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       May
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Jun
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Jul
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Aug
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Sep
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Oct
     </p>
     <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
     >
       Nov
+    </p>
+    <p
+      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
+    >
+      Dec
     </p>
   </div>
   <div
@@ -207,1890 +207,1895 @@ exports[`HabitScreen should render correctly 1`] = `
       class="grid grid-rows-7 items-center"
     >
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       >
         Mon
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       >
         Wed
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       />
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       >
         Fri
       </p>
       <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold text-center !mb-0 mr-2"
+        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold text-center !mb-0 mr-2"
       />
     </div>
     <div
       class="grid grid-cols-53 gap-0.5 w-full"
     >
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 1; grid-row-end: 2;"
-        title="no tasks completed - Sun, November 13, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 2; grid-row-end: 3;"
-        title="no tasks completed - Mon, November 14, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 3; grid-row-end: 4;"
-        title="no tasks completed - Tue, November 15, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 4; grid-row-end: 5;"
-        title="no tasks completed - Wed, November 16, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 5; grid-row-end: 6;"
-        title="no tasks completed - Thu, November 17, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 6; grid-row-end: 7;"
-        title="no tasks completed - Fri, November 18, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 7; grid-row-end: 8;"
-        title="no tasks completed - Sat, November 19, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 1; grid-row-end: 2;"
-        title="no tasks completed - Sun, November 20, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 2; grid-row-end: 3;"
-        title="no tasks completed - Mon, November 21, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 3; grid-row-end: 4;"
-        title="no tasks completed - Tue, November 22, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 4; grid-row-end: 5;"
-        title="no tasks completed - Wed, November 23, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 5; grid-row-end: 6;"
-        title="no tasks completed - Thu, November 24, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 6; grid-row-end: 7;"
-        title="no tasks completed - Fri, November 25, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 7; grid-row-end: 8;"
-        title="no tasks completed - Sat, November 26, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 1; grid-row-end: 2;"
-        title="no tasks completed - Sun, November 27, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 2; grid-row-end: 3;"
-        title="no tasks completed - Mon, November 28, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 3; grid-row-end: 4;"
-        title="no tasks completed - Tue, November 29, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 4; grid-row-end: 5;"
-        title="no tasks completed - Wed, November 30, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 5; grid-row-end: 6;"
-        title="no tasks completed - Thu, December 01, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 6; grid-row-end: 7;"
-        title="no tasks completed - Fri, December 02, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
-        style="grid-row-start: 7; grid-row-end: 8;"
-        title="no tasks completed - Sat, December 03, 2022"
-      />
-      <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 04, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 05, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 06, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 07, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 08, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 09, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 10, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 11, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 12, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 13, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 14, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 15, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 16, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 17, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 18, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 19, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 20, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 21, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 22, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 23, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 24, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, December 25, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, December 26, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, December 27, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, December 28, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, December 29, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, December 30, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, December 31, 2022"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, January 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, January 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, January 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, January 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, January 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, January 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, January 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, February 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, February 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, February 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, February 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, February 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, February 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, February 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, March 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, March 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, March 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, March 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, March 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, March 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, March 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, April 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, April 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, April 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, April 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, April 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, April 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, April 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, May 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, May 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, May 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, May 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, May 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, May 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, May 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800"
-        style="background-color: rgb(84, 155, 255); grid-row-start: 6; grid-row-end: 7;"
+        class="h-4 border rounded-sm dark:border-zinc-800"
+        style="grid-row-start: 6; grid-row-end: 7;"
         title="1 tasks completed - Fri, June 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, June 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, June 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, June 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, June 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, June 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, June 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, June 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, July 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, July 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, July 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, July 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, July 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, July 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, July 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, August 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, August 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, August 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, August 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, August 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, August 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, August 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, September 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, September 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, September 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, September 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, September 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, September 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, September 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 18, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 19, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 20, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 21, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 22, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 23, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 24, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, October 25, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, October 26, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, October 27, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, October 28, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, October 29, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, October 30, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, October 31, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 01, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 02, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 03, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 04, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 05, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 06, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 07, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 08, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 09, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 10, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 11, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 1; grid-row-end: 2;"
         title="no tasks completed - Sun, November 12, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 2; grid-row-end: 3;"
         title="no tasks completed - Mon, November 13, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 3; grid-row-end: 4;"
         title="no tasks completed - Tue, November 14, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 4; grid-row-end: 5;"
         title="no tasks completed - Wed, November 15, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 5; grid-row-end: 6;"
         title="no tasks completed - Thu, November 16, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 6; grid-row-end: 7;"
         title="no tasks completed - Fri, November 17, 2023"
       />
       <div
-        class="h-4 border dark:border-zinc-800 border-zinc-400 bg-slate-200 dark:!bg-zinc-600"
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
         style="grid-row-start: 7; grid-row-end: 8;"
         title="no tasks completed - Sat, November 18, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 1; grid-row-end: 2;"
+        title="no tasks completed - Sun, November 19, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 2; grid-row-end: 3;"
+        title="no tasks completed - Mon, November 20, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 3; grid-row-end: 4;"
+        title="no tasks completed - Tue, November 21, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 4; grid-row-end: 5;"
+        title="no tasks completed - Wed, November 22, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 5; grid-row-end: 6;"
+        title="no tasks completed - Thu, November 23, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 6; grid-row-end: 7;"
+        title="no tasks completed - Fri, November 24, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 7; grid-row-end: 8;"
+        title="no tasks completed - Sat, November 25, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 1; grid-row-end: 2;"
+        title="no tasks completed - Sun, November 26, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 2; grid-row-end: 3;"
+        title="no tasks completed - Mon, November 27, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 3; grid-row-end: 4;"
+        title="no tasks completed - Tue, November 28, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 4; grid-row-end: 5;"
+        title="no tasks completed - Wed, November 29, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 5; grid-row-end: 6;"
+        title="no tasks completed - Thu, November 30, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 6; grid-row-end: 7;"
+        title="no tasks completed - Fri, December 01, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 7; grid-row-end: 8;"
+        title="no tasks completed - Sat, December 02, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 1; grid-row-end: 2;"
+        title="no tasks completed - Sun, December 03, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 2; grid-row-end: 3;"
+        title="no tasks completed - Mon, December 04, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 3; grid-row-end: 4;"
+        title="no tasks completed - Tue, December 05, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 4; grid-row-end: 5;"
+        title="no tasks completed - Wed, December 06, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 5; grid-row-end: 6;"
+        title="no tasks completed - Thu, December 07, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 6; grid-row-end: 7;"
+        title="no tasks completed - Fri, December 08, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 7; grid-row-end: 8;"
+        title="no tasks completed - Sat, December 09, 2023"
+      />
+      <div
+        class="h-4 border rounded-sm dark:border-zinc-800 border-zinc-400 bg-slate-200 dark:!bg-[#24292E]"
+        style="grid-row-start: 1; grid-row-end: 2;"
+        title="no tasks completed - Sun, December 10, 2023"
       />
     </div>
   </div>

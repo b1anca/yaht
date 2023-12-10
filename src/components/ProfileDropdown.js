@@ -31,7 +31,7 @@ const ProfileDropdown = () => {
       ]}
     >
       <div className="cursor-pointer inline-flex justify-center items-center">
-        <div className="shadow bg-[#5498ff] hover:bg-[#3a89ff] text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
+        <div className="shadow bg-sky-600 hover:bg-sky-700 text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
           {userInfo.name && userInfo.name[0].toUpperCase()}
         </div>
         <svg

@@ -19,7 +19,7 @@ const Button = ({
         {
           "text-zinc-100 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
             !primary,
-          "shadow text-zinc-100 hover:bg-[#3a89ff] bg-[#5498ff]": primary,
+          "shadow text-zinc-100 bg-sky-600 hover:bg-sky-700": primary,
         },
         className
       )}
