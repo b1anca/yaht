@@ -61,7 +61,7 @@ const habitSlice = createSlice({
       state.loading = false;
       state.success = true;
       state.habits = state.habits.map((habit) => {
-        if (habit.id === payload.habit_id) {
+        if (habit.id === payload.id) {
           return {
             ...habit,
             ...payload,
@@ -95,7 +95,16 @@ const habitSlice = createSlice({
     builder.addCase(fetchHabit.fulfilled, (state, { payload }) => {
       state.loading = false;
       state.success = true;
-      state.habits = state.habits.concat(payload);
+      state.habits = state.habits.map((habit) => {
+        if (habit.id === payload.id) {
+          return {
+            ...habit,
+            ...payload,
+          };
+        } else {
+          return habit;
+        }
+      });
     });
     builder.addCase(fetchHabit.rejected, (state, { payload }) => {
       state.loading = false;

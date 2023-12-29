@@ -4,6 +4,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 import { isSameDay } from "date-fns";
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
+import { fetchHabit } from "../../features/habits/habitActions";
 import { DEFAULT_HABIT_COLOR } from "../../constants";
 import NavLink from "../../components/NavLink";
 import { P } from "../../components/Typography";
@@ -19,15 +20,13 @@ const Day = ({ task, day, habitId, habitColor }) => {
     }
 
     setLoading(true);
-    if (task) {
-      dispatch(deleteTask({ habitId, id: task.id })).then(() =>
-        setLoading(false)
-      );
-    } else {
-      dispatch(createTask({ habitId, completed_at: day.toISOString() })).then(
-        () => setLoading(false)
-      );
-    }
+    dispatch(
+      task
+        ? deleteTask({ habitId, id: task.id })
+        : createTask({ habitId, completed_at: day.toISOString() })
+    )
+      .then(() => dispatch(fetchHabit(habitId)))
+      .then(() => setLoading(false));
   }, [day, currentDate, habitId, loading]);
 
   return (

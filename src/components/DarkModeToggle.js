@@ -26,7 +26,7 @@ const DarkModeToggle = () => {
     <FontAwesomeIcon
       onClick={toggleDarkMode}
       size="lg"
-      className="dark:text-zinc-200 text-zinc-600 cursor-pointer dark:hover:text-[#357EFC] hover:text-[#357EFC] p-2"
+      className="dark:text-zinc-200 text-zinc-600 cursor-pointer dark:hover:text-sky-600 hover:text-sky-600 p-2"
       icon={darkMode ? faMoon : faSun}
     />
   );
