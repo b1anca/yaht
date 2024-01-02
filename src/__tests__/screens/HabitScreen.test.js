@@ -3,6 +3,8 @@ import { waitFor } from "@testing-library/react";
 import { renderWithProviders } from "../../utils/test-utils";
 import HabitScreen from "../../screens/HabitScreen";
 
+jest.useFakeTimers().setSystemTime(new Date("2023-01-10"));
+
 jest.mock("react-router-dom", () => ({
   ...jest.requireActual("react-router-dom"),
   useParams: () => ({ id: 1 }),
