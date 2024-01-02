@@ -2181,27 +2181,6 @@ exports[`HabitsScreen should render correctly 1`] = `
     <div
       class="border-b border-slate-900/10 dark:border-slate-100/10 my-6"
     />
-    <p
-      class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-semibold"
-    >
-      Your stats
-    </p>
-    <div
-      class="h-[400px] relative flex flex-col items-center"
-    >
-      <div
-        class="recharts-responsive-container"
-        style="width: 100%; height: 100%; min-width: 0;"
-      />
-      <p
-        class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 font-extrabold"
-      >
-        Overall progress %
-      </p>
-    </div>
-    <div
-      class="border-b border-slate-900/10 dark:border-slate-100/10 my-6"
-    />
   </div>
 </DocumentFragment>
 `;

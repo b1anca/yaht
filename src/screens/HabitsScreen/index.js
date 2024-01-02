@@ -9,7 +9,6 @@ import Heatmap from "../../components/Heatmap";
 import ProgressBar from "../../components/ProgressBar";
 import LoadingDots from "../../components/LoadingDots";
 import WeeklyTracker from "./WeeklyTracker";
-import RadialBarChart from "../../components/RadialBarChart";
 
 // TODO:
 // - error tracking, monitoring for the react app
@@ -43,20 +42,6 @@ const HabitsScreen = () => {
         });
         return h;
       }, {}),
-    [habits]
-  );
-
-  const progressPerHabit = useMemo(
-    () =>
-      habits.reduce(
-        (arr, habit) =>
-          arr.concat({
-            name: habit.name,
-            value: Number(habit.overall_progress),
-            fill: habit.color,
-          }),
-        []
-      ),
     [habits]
   );
 
@@ -99,13 +84,6 @@ const HabitsScreen = () => {
       <P semibold>{completedTasksSum} tasks completed in the last year</P>
       <Heatmap data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      {habits.length > 0 && (
-        <>
-          <P semibold>Your stats</P>
-          <RadialBarChart data={progressPerHabit} legend="Overall progress %" />
-          <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-        </>
-      )}
     </div>
   );
 };
