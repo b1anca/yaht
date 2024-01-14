@@ -5,7 +5,7 @@ import { format } from "date-fns";
 import { Heading, P } from "../../components/Typography";
 import { fetchHabits } from "../../features/habits/habitActions";
 import NavLink from "../../components/NavLink";
-import Heatmap from "../../components/Heatmap";
+import YearlyGrid from "../../components/YearlyGrid";
 import ProgressBar from "../../components/ProgressBar";
 import LoadingDots from "../../components/LoadingDots";
 import WeeklyTracker from "./WeeklyTracker";
@@ -82,7 +82,7 @@ const HabitsScreen = () => {
       <WeeklyTracker habits={habits} data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P semibold>{completedTasksSum} tasks completed in the last year</P>
-      <Heatmap data={data} />
+      <YearlyGrid data={data} />
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
     </div>
   );

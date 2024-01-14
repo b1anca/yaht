@@ -19,7 +19,6 @@ const DarkModeToggle = () => {
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
-    console.log(localStorage.theme, "theme");
   };
 
   return (

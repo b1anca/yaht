@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { format, isToday, subYears, startOfWeek } from "date-fns";
+import { format, isToday, startOfWeek, subWeeks } from "date-fns";
 import {
   WEEKDAY_NAMES,
   getDaysBetweenDates,
@@ -41,10 +41,10 @@ export const useColorForTasks = (data, AVAILABLE_COLORS) => {
   };
 };
 
-const Heatmap = ({ data, oneColor = false }) => {
+const YearlyGrid = ({ data, oneColor = false }) => {
   const getColor = useColorForTasks(data, AVAILABLE_COLORS);
   const endDate = new Date();
-  const startDate = startOfWeek(subYears(new Date(), 1));
+  const startDate = startOfWeek(subWeeks(new Date(), 52));
   const length = getDaysBetweenDates(startDate, endDate) + 1;
   const months = getMonthsBetweenDates(startDate, endDate);
 
@@ -108,9 +108,9 @@ const Heatmap = ({ data, oneColor = false }) => {
   );
 };
 
-Heatmap.propTypes = {
+YearlyGrid.propTypes = {
   data: PropTypes.object.isRequired,
   oneColor: PropTypes.bool,
 };
 
-export default Heatmap;
+export default YearlyGrid;

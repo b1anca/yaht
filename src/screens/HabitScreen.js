@@ -8,7 +8,7 @@ import { Heading, P } from "../components/Typography";
 import NavLink from "../components/NavLink";
 import { selectHabitById } from "../features/habits/habitSelectors";
 import { fetchHabit } from "../features/habits/habitActions";
-import Heatmap from "../components/Heatmap";
+import YearlyGrid from "../components/YearlyGrid";
 import ProgressBar from "../components/ProgressBar";
 import PieChart from "../components/PieChart";
 
@@ -91,7 +91,7 @@ const HabitScreen = () => {
       </div>
       <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       <P bold>{completedTasksSum} tasks completed in the last year</P>
-      <Heatmap data={data} oneColor />
+      <YearlyGrid data={data} oneColor />
     </>
   );
 };
