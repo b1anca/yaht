@@ -41,7 +41,7 @@ export const useColorForTasks = (data, AVAILABLE_COLORS) => {
   };
 };
 
-const YearlyGrid = ({ data, oneColor = false }) => {
+const YearlyGrid = ({ data, color = "" }) => {
   const getColor = useColorForTasks(data, AVAILABLE_COLORS);
   const endDate = new Date();
   const startDate = startOfWeek(subWeeks(new Date(), 52));
@@ -92,9 +92,7 @@ const YearlyGrid = ({ data, oneColor = false }) => {
                 )}
                 style={{
                   ...(tasks && {
-                    backgroundColor: oneColor
-                      ? COLORS.blue500
-                      : getColor(tasks),
+                    backgroundColor: color || getColor(tasks),
                   }),
                   gridRowStart: rowStart,
                   gridRowEnd: rowStart + 1,
@@ -110,7 +108,7 @@ const YearlyGrid = ({ data, oneColor = false }) => {
 
 YearlyGrid.propTypes = {
   data: PropTypes.object.isRequired,
-  oneColor: PropTypes.bool,
+  color: PropTypes.string,
 };
 
 export default YearlyGrid;
