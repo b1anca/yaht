@@ -60,59 +60,67 @@ const HabitsScreen = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center mb-4">
-        <Heading level="h2" className="!mb-0">
-          {`Today, ${format(
-            currentDate,
-            "MMM"
-          )} ${currentDate.getDate()} ${format(currentDate, "EEE")}`}
-        </Heading>
-        <NavLink
-          className={classNames("!w-min h-min", {
-            "animate-bounce": habits.length === 0,
-          })}
-          primary
-          to="/habits/new"
-        >
-          Add habit
-        </NavLink>
+      <div className="max-w-6xl mx-auto p-6">
+        <div className="flex justify-between items-center mb-4">
+          <Heading level="h2" className="!mb-0">
+            {`Today, ${format(
+              currentDate,
+              "MMM"
+            )} ${currentDate.getDate()} ${format(currentDate, "EEE")}`}
+          </Heading>
+          <NavLink
+            className={classNames("!w-min h-min", {
+              "animate-bounce": habits.length === 0,
+            })}
+            primary
+            to="/habits/new"
+          >
+            Add habit
+          </NavLink>
+        </div>
+        <ProgressBar value={completedTodayPercentage} className="mb-1" />
+        <P semibold>{completedTodayPercentage.toFixed(2)}% achieved</P>
+        <WeeklyTracker habits={habits} data={data} />
+        <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       </div>
-      <ProgressBar value={completedTodayPercentage} className="mb-1" />
-      <P semibold>{completedTodayPercentage.toFixed(2)}% achieved</P>
-      <WeeklyTracker habits={habits} data={data} />
-      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      <P semibold>{completedTasksSum} tasks completed in the last year</P>
-      <YearlyGrid data={data} />
-      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      {habits.map((habit) => {
-        const habitData = habit.tasks.reduce((h, t) => {
-          const date = new Date(t.completed_at).toLocaleDateString();
-          if (h[date]) {
-            h[date] += 1;
-          } else {
-            h[date] = 1;
-          }
-          return h;
-        }, {});
-        const completedTasksSum = Object.keys(habitData).length;
+      <div className="grid grid-cols-2 gap-4">
+        <div className="border border-slate-900/10 dark:border-slate-100/10 p-4 rounded-sm">
+          <P semibold>{completedTasksSum} tasks completed in the last year</P>
+          <YearlyGrid data={data} />
+        </div>
+        {habits.map((habit) => {
+          const habitData = habit.tasks.reduce((h, t) => {
+            const date = new Date(t.completed_at).toLocaleDateString();
+            if (h[date]) {
+              h[date] += 1;
+            } else {
+              h[date] = 1;
+            }
+            return h;
+          }, {});
+          const completedTasksSum = Object.keys(habitData).length;
 
-        return (
-          <div key={habit.id} className="mb-8">
-            <NavLink
-              to={`/habits/${habit.id}`}
-              tetriary
-              className="!p-0 !text-base"
+          return (
+            <div
+              key={habit.id}
+              className="border border-slate-900/10 dark:border-slate-100/10 p-4 rounded-sm"
             >
-              {habit.name}
-            </NavLink>
-            <P className="inline">
-              {` - ${completedTasksSum} tasks completed`}
-            </P>
-            <P>{habit.description}</P>
-            <YearlyGrid data={habitData} color={habit.color} />
-          </div>
-        );
-      })}
+              <NavLink
+                to={`/habits/${habit.id}`}
+                tetriary
+                className="!p-0 !text-base"
+              >
+                {habit.name}
+              </NavLink>
+              <P className="inline">
+                {` - ${completedTasksSum} tasks completed`}
+              </P>
+              <P>{habit.description}</P>
+              <YearlyGrid data={habitData} color={habit.color} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

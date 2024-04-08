@@ -84,7 +84,7 @@ const YearlyGrid = ({ data, color = "" }) => {
                 key={title}
                 title={title}
                 className={classNames(
-                  "h-4 border rounded-sm dark:border-zinc-800",
+                  "aspect-square border rounded-sm dark:border-zinc-800",
                   {
                     "border-zinc-400": isCurrentDate,
                     "bg-slate-200 dark:!bg-[#24292E]": !tasks,
