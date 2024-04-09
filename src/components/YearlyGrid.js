@@ -11,9 +11,9 @@ import { COLORS } from "../constants";
 import { P } from "./Typography";
 
 const AVAILABLE_COLORS = [
+  COLORS.blue950,
+  COLORS.blue800,
   COLORS.blue600,
-  COLORS.blue500,
-  COLORS.blue400,
   COLORS.blue300,
 ];
 
@@ -52,7 +52,7 @@ const YearlyGrid = ({ data, color = "" }) => {
     <>
       <div className="flex ml-9 justify-around">
         {months.map((monthName, index) => (
-          <P semibold key={`${monthName}-${index}`}>
+          <P semibold key={`${monthName}-${index}`} className="text-xm !mb-1">
             {monthName}
           </P>
         ))}
@@ -60,7 +60,11 @@ const YearlyGrid = ({ data, color = "" }) => {
       <div className="flex">
         <div className="grid grid-rows-7 items-center">
           {WEEKDAY_NAMES.map((dayName) => (
-            <P semibold key={dayName} className="text-center !mb-0 mr-2">
+            <P
+              semibold
+              key={dayName}
+              className="text-center text-xm !mb-0 mr-1"
+            >
               {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
             </P>
           ))}
@@ -84,7 +88,7 @@ const YearlyGrid = ({ data, color = "" }) => {
                 key={title}
                 title={title}
                 className={classNames(
-                  "aspect-square border rounded-sm dark:border-zinc-800",
+                  "aspect-square border rounded dark:border-zinc-800",
                   {
                     "border-zinc-400": isCurrentDate,
                     "bg-slate-200 dark:!bg-[#24292E]": !tasks,

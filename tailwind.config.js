@@ -9,6 +9,9 @@ module.exports = {
         53: "repeat(53, minmax(0, 1fr))",
       },
     },
+    fontSize: {
+      xm: "0.8rem",
+    },
   },
   plugins: [],
 };

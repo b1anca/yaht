@@ -84,7 +84,7 @@ const HabitsScreen = () => {
         <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
       </div>
       <div className="grid grid-cols-2 gap-4">
-        <div className="border border-slate-900/10 dark:border-slate-100/10 p-4 rounded-sm">
+        <div className="border border-slate-900/10 dark:border-slate-100/10 p-3 rounded-sm">
           <P semibold>{completedTasksSum} tasks completed in the last year</P>
           <YearlyGrid data={data} />
         </div>
@@ -103,19 +103,20 @@ const HabitsScreen = () => {
           return (
             <div
               key={habit.id}
-              className="border border-slate-900/10 dark:border-slate-100/10 p-4 rounded-sm"
+              className="border border-slate-900/10 dark:border-slate-100/10 p-3 rounded-sm"
             >
-              <NavLink
-                to={`/habits/${habit.id}`}
-                tetriary
-                className="!p-0 !text-base"
-              >
-                {habit.name}
-              </NavLink>
-              <P className="inline">
-                {` - ${completedTasksSum} tasks completed`}
-              </P>
-              <P>{habit.description}</P>
+              <div className="mb-2">
+                <NavLink
+                  to={`/habits/${habit.id}`}
+                  tetriary
+                  className="!p-0 !text-base"
+                >
+                  {habit.name}
+                </NavLink>
+                <P className="inline">
+                  {` - ${completedTasksSum} tasks completed`}
+                </P>
+              </div>
               <YearlyGrid data={habitData} color={habit.color} />
             </div>
           );

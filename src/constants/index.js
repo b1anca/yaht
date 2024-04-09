@@ -1,8 +1,14 @@
 export const COLORS = {
+  blue100: "rgb(224 242 254)", // sky
+  blue200: "rgb(186 230 253)",
   blue300: "rgb(125 211 252)",
   blue400: "rgb(56 189 248)",
   blue500: "rgb(14 165 233)",
   blue600: "rgb(2 132 199)",
+  blue700: "rgb(3 105 161)",
+  blue800: "rgb(7 89 133)",
+  blue900: "rgb(12 74 110)",
+  blue950: "rgb(8 47 73)",
   slate100: "#F1F5F9",
   slate200: "#E2E8F0",
   slate300: "#CBD5E1",
