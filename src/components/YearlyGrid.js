@@ -4,6 +4,7 @@ import classNames from "classnames";
 import { format, isToday, startOfWeek, subWeeks } from "date-fns";
 import {
   WEEKDAY_NAMES,
+  WEEKDAY_LETTERS,
   getDaysBetweenDates,
   getMonthsBetweenDates,
 } from "../utils/dateHelpers";
@@ -11,10 +12,10 @@ import { COLORS } from "../constants";
 import { P } from "./Typography";
 
 const AVAILABLE_COLORS = [
-  COLORS.blue950,
-  COLORS.blue800,
-  COLORS.blue600,
-  COLORS.blue300,
+  COLORS.green950,
+  COLORS.green800,
+  COLORS.green600,
+  COLORS.green300,
 ];
 
 export const calculateThresholds = (data) => {
@@ -52,20 +53,20 @@ const YearlyGrid = ({ data, color = "" }) => {
     <>
       <div className="flex ml-9 justify-around">
         {months.map((monthName, index) => (
-          <P semibold key={`${monthName}-${index}`} className="text-xm !mb-1">
+          <P secondary key={`${monthName}-${index}`} className="text-xs !mb-1">
             {monthName}
           </P>
         ))}
       </div>
       <div className="flex">
         <div className="grid grid-rows-7 items-center">
-          {WEEKDAY_NAMES.map((dayName) => (
+          {WEEKDAY_LETTERS.map((dayName) => (
             <P
-              semibold
+              secondary
               key={dayName}
-              className="text-center text-xm !mb-0 mr-1"
+              className="text-center text-xs !mb-0 mr-1"
             >
-              {["Mon", "Wed", "Fri"].includes(dayName) ? dayName : ""}
+              {["M", "W", "F"].includes(dayName) ? dayName : ""}
             </P>
           ))}
         </div>
@@ -88,7 +89,7 @@ const YearlyGrid = ({ data, color = "" }) => {
                 key={title}
                 title={title}
                 className={classNames(
-                  "aspect-square border rounded dark:border-zinc-800",
+                  "aspect-square border rounded dark:border-zinc-800 opacity-80",
                   {
                     "border-zinc-400": isCurrentDate,
                     "bg-slate-200 dark:!bg-[#24292E]": !tasks,

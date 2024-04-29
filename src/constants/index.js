@@ -9,6 +9,10 @@ export const COLORS = {
   blue800: "rgb(7 89 133)",
   blue900: "rgb(12 74 110)",
   blue950: "rgb(8 47 73)",
+  green300: "rgb(134 239 172)",
+  green600: "rgb(22 163 74)",
+  green800: "rgb(22 101 52)",
+  green950: "rgb(5 46 22)",
   slate100: "#F1F5F9",
   slate200: "#E2E8F0",
   slate300: "#CBD5E1",
@@ -23,6 +27,22 @@ export const COLORS = {
   lime700: "rgb(77 124 15)",
   zinc600: "rgb(82 82 91)",
   red500: "rgb(239 68 68)",
+};
+
+export const TEXT_COLORS = {
+  base: "text-zinc-600/90 dark:text-zinc-100/90",
+  primary: "text-green-700/90",
+  secondary: "text-zinc-600/90 dark:text-zinc-200/70", // muted
+};
+
+export const BG_COLORS = {
+  primary: "bg-green-700 hover:bg-green-700/90",
+  secondary: "!bg-slate-200 dark:!bg-[#24292E]",
+};
+
+export const BORDER_STYLES = {
+  default: "border rounded border-slate-900/10 dark:border-slate-100/10",
+  light: "border rounded !border-slate-100/30",
 };
 
 export const DEFAULT_HABIT_COLOR = COLORS.slate300;

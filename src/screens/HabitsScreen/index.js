@@ -9,6 +9,7 @@ import YearlyGrid from "../../components/YearlyGrid";
 import ProgressBar from "../../components/ProgressBar";
 import LoadingDots from "../../components/LoadingDots";
 import WeeklyTracker from "./WeeklyTracker";
+import { BORDER_STYLES } from "../../constants";
 
 // TODO:
 // - error tracking, monitoring for the react app
@@ -60,32 +61,33 @@ const HabitsScreen = () => {
 
   return (
     <div>
-      <div className="max-w-6xl mx-auto p-6">
-        <div className="flex justify-between items-center mb-4">
-          <Heading level="h2" className="!mb-0">
-            {`Today, ${format(
-              currentDate,
-              "MMM"
-            )} ${currentDate.getDate()} ${format(currentDate, "EEE")}`}
-          </Heading>
-          <NavLink
-            className={classNames("!w-min h-min", {
-              "animate-bounce": habits.length === 0,
-            })}
-            primary
-            to="/habits/new"
-          >
-            Add habit
-          </NavLink>
+      <div className="flex justify-between items-center mb-4">
+        <Heading level="h2" className="!mb-0">
+          {`Today, ${format(
+            currentDate,
+            "MMM"
+          )} ${currentDate.getDate()} ${format(currentDate, "EEE")}`}
+        </Heading>
+        <div className="grow mx-6">
+          <ProgressBar value={completedTodayPercentage} className="mb-1" />
+          <P semibold secondary className="!mb-0">
+            {completedTodayPercentage.toFixed(2)}% achieved
+          </P>
         </div>
-        <ProgressBar value={completedTodayPercentage} className="mb-1" />
-        <P semibold>{completedTodayPercentage.toFixed(2)}% achieved</P>
-        <WeeklyTracker habits={habits} data={data} />
-        <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
+        <NavLink
+          className={classNames("!w-min h-min", {
+            "animate-bounce": habits.length === 0,
+          })}
+          primary
+          to="/habits/new"
+        >
+          Add habit
+        </NavLink>
       </div>
+      <WeeklyTracker habits={habits} data={data} />
       <div className="grid grid-cols-2 gap-4">
         <div className="border border-slate-900/10 dark:border-slate-100/10 p-3 rounded-sm">
-          <P semibold>{completedTasksSum} tasks completed in the last year</P>
+          <P semibold>{completedTasksSum} completions in the past year</P>
           <YearlyGrid data={data} />
         </div>
         {habits.map((habit) => {
@@ -101,20 +103,17 @@ const HabitsScreen = () => {
           const completedTasksSum = Object.keys(habitData).length;
 
           return (
-            <div
-              key={habit.id}
-              className="border border-slate-900/10 dark:border-slate-100/10 p-3 rounded-sm"
-            >
+            <div key={habit.id} className={`${BORDER_STYLES.default} p-2`}>
               <div className="mb-2">
                 <NavLink
                   to={`/habits/${habit.id}`}
-                  tetriary
+                  tertiary
                   className="!p-0 !text-base"
                 >
                   {habit.name}
                 </NavLink>
-                <P className="inline">
-                  {` - ${completedTasksSum} tasks completed`}
+                <P secondary semibold className="inline">
+                  {` - ${completedTasksSum}x`}
                 </P>
               </div>
               <YearlyGrid data={habitData} color={habit.color} />

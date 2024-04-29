@@ -9,29 +9,27 @@ const Header = () => {
 
   return (
     <header className="top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-100/10 text-sm font-semibold leading-6">
-      <div className="max-w-6xl mx-auto">
-        <div className="py-4 px-6">
-          <div className="relative flex items-center">
-            <div className="relative flex items-center ml-auto">
-              {userInfo ? (
-                <>
-                  <DarkModeToggle />
-                  <NavLink tetriary to="/habits">
-                    Habits
-                  </NavLink>
-                  <ProfileDropdown />
-                </>
-              ) : (
-                <>
-                  <NavLink tetriary to="/login">
-                    Sign in
-                  </NavLink>
-                  <NavLink primary to="/register">
-                    Register
-                  </NavLink>
-                </>
-              )}
-            </div>
+      <div className="py-4 px-6">
+        <div className="relative flex items-center">
+          <div className="relative flex items-center ml-auto">
+            {userInfo ? (
+              <>
+                <DarkModeToggle />
+                <NavLink tertiary to="/habits">
+                  Habits
+                </NavLink>
+                <ProfileDropdown />
+              </>
+            ) : (
+              <>
+                <NavLink tertiary to="/login">
+                  Sign in
+                </NavLink>
+                <NavLink primary to="/register">
+                  Register
+                </NavLink>
+              </>
+            )}
           </div>
         </div>
       </div>

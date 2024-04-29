@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 import { logout } from "../features/auth/authSlice";
 import Dropdown from "./Dropdown";
+import { BG_COLOR, BG_COLORS } from "../constants";
 
 const ProfileDropdown = () => {
   const dispatch = useDispatch();
@@ -31,7 +32,9 @@ const ProfileDropdown = () => {
       ]}
     >
       <div className="cursor-pointer inline-flex justify-center items-center">
-        <div className="shadow bg-sky-600 hover:bg-sky-700 text-zinc-100 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center">
+        <div
+          className={`shadow ${BG_COLORS.primary} text-zinc-100/90 rounded-full h-8 w-8 inline-flex justify-center text-sm items-center`}
+        >
           {userInfo.name && userInfo.name[0].toUpperCase()}
         </div>
         <svg

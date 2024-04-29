@@ -33,10 +33,12 @@ export const MONTH_NAMES = [
 
 export const WEEKDAY_NAMES = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-export const getDaysInMonth = (month, year) => {
+export const WEEKDAY_LETTERS = ["S", "M", "T", "W", "T", "F", "S"];
+
+export const getDaysInMonth = (date) => {
   return eachDayOfInterval({
-    start: startOfMonth(new Date(year, month)),
-    end: endOfMonth(new Date(year, month)),
+    start: startOfMonth(date),
+    end: endOfMonth(date),
   });
 };
 

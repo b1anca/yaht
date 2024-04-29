@@ -11,6 +11,7 @@ import { fetchHabit } from "../features/habits/habitActions";
 import YearlyGrid from "../components/YearlyGrid";
 import ProgressBar from "../components/ProgressBar";
 import PieChart from "../components/PieChart";
+import { BG_COLORS, BORDER_STYLES } from "../constants";
 
 const HabitScreen = () => {
   const { id } = useParams();
@@ -41,58 +42,74 @@ const HabitScreen = () => {
   if (!habit) return null;
 
   return (
-    <>
-      <div className="flex justify-between items-center mb-3">
-        <div>
-          <Heading level="h2" className="!mb-1">
+    <div>
+      <div>
+        <div className="flex align-center">
+          <Heading level="h2" className="!mb-0">
             {habit.name}
           </Heading>
-          <P bold>{habit.description}</P>
+          <NavLink to={`/habits/${id}/edit`} className="!text-xl px-0" tertiary>
+            <FontAwesomeIcon icon={faEdit} />
+          </NavLink>
         </div>
-        <NavLink to={`/habits/${id}/edit`} className="!text-xl px-0" tetriary>
-          <FontAwesomeIcon icon={faEdit} />
-        </NavLink>
+        <P secondary semibold>
+          {habit.description}
+        </P>
       </div>
       <div className="flex">
-        <div className="border border-slate-900/10 dark:border-slate-100/10 py-2 px-4 mr-4">
-          <P bold>Overall progress</P>
-          <PieChart
-            data={[
-              { value: Number(habit.overall_progress) },
-              { value: Number(100 - Number(habit.overall_progress)) },
-            ]}
-            innerLabel={`${Number(habit.overall_progress)}%`}
-          />
+        <div className={`grow ${BORDER_STYLES.default} p-2 mr-2`}>
+          <P bold>Completed {completedTasksSum} times in the last year</P>
+          <YearlyGrid data={data} color={habit.color} />
         </div>
-        <div className="flex flex-col border border-slate-900/10 dark:border-slate-100/10 py-2 px-4">
+        <div className="grow">
           <div className="flex">
-            <div className="mr-4">
-              <div className="flex items-baseline">
-                <div className="bg-sky-600 p-1 mr-1" />
-                <P bold>Current streak</P>
-              </div>
-              <Heading level="h2">{habit.current_streak}</Heading>
+            <div className="border border-slate-900/10 dark:border-slate-100/10 py-2 px-4 mr-4">
+              <P bold>Overall progress</P>
+              <PieChart
+                data={[
+                  { value: Number(habit.overall_progress) },
+                  { value: Number(100 - Number(habit.overall_progress)) },
+                ]}
+                innerLabel={`${Number(habit.overall_progress)}%`}
+                color={habit.color}
+              />
             </div>
-            <div>
-              <div className="flex items-baseline">
-                <div className="bg-slate-200 p-1 mr-1" />
-                <P bold>Longest streak</P>
+            <div className="flex flex-col border border-slate-900/10 dark:border-slate-100/10 py-2 px-4">
+              <div className="flex">
+                <div className="mr-4">
+                  <div className="flex items-center">
+                    <div
+                      className="w-3 h-3 mr-1"
+                      style={{ backgroundColor: habit.color }}
+                    />
+                    <P semibold className="!mb-0">
+                      Current streak
+                    </P>
+                  </div>
+                  <Heading level="h2">{habit.current_streak}</Heading>
+                </div>
+                <div>
+                  <div className="flex items-center">
+                    <div className={`${BG_COLORS.secondary} w-3 h-3 mr-1`} />
+                    <P semibold className="!mb-0">
+                      Longest streak
+                    </P>
+                  </div>
+                  <Heading level="h2">{habit.record_streak}</Heading>
+                </div>
               </div>
-              <Heading level="h2">{habit.record_streak}</Heading>
+              <ProgressBar
+                value={(habit.current_streak / habit.record_streak) * 100}
+                color={habit.color}
+              />
+              <P secondary className="mt-auto">
+                Started on {format(parseISO(habit.created_at), "MMMM dd, yyyy")}
+              </P>
             </div>
           </div>
-          <ProgressBar
-            value={(habit.current_streak / habit.record_streak) * 100}
-          />
-          <P bold className="mt-auto">
-            Started on {format(parseISO(habit.created_at), "MMMM dd, yyyy")}
-          </P>
         </div>
       </div>
-      <div className="border-b border-slate-900/10 dark:border-slate-100/10 my-6" />
-      <P bold>{completedTasksSum} tasks completed in the last year</P>
-      <YearlyGrid data={data} oneColor />
-    </>
+    </div>
   );
 };
 
