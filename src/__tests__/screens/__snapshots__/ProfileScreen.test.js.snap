@@ -3,13 +3,13 @@
 exports[`ProfileScreen should render correctly 1`] = `
 <DocumentFragment>
   <h2
-    class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl"
+    class="content-center mb-4 font-extrabold tracking-tight text-zinc-600/90 dark:text-zinc-100/90 text-2xl"
     level="h4"
   >
     Your profile
   </h2>
   <p
-    class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200"
+    class="content-center text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200"
   >
     Welcome 
     <strong>

@@ -33,6 +33,7 @@ export const TEXT_COLORS = {
   base: "text-zinc-600/90 dark:text-zinc-100/90",
   primary: "text-green-700/90",
   secondary: "text-zinc-600/90 dark:text-zinc-200/70", // muted
+  light: "text-zinc-100/90",
 };
 
 export const BG_COLORS = {
@@ -43,6 +44,12 @@ export const BG_COLORS = {
 export const BORDER_STYLES = {
   default: "border rounded border-slate-900/10 dark:border-slate-100/10",
   light: "border rounded !border-slate-100/30",
+};
+
+export const BUTTON_STYLES = {
+  base: "text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4",
+  primary: `w-full shadow rounded-lg ${TEXT_COLORS.light} ${BG_COLORS.primary}`,
+  secondary: `shadow rounded-lg ${TEXT_COLORS.primary} border border-green-700/90 dark:border-green-700/90`,
 };
 
 export const DEFAULT_HABIT_COLOR = COLORS.slate300;

@@ -4,7 +4,7 @@ exports[`EditHabitScreen should render correctly 1`] = `
 <DocumentFragment>
   <div>
     <h2
-      class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl text-center"
+      class="content-center mb-4 font-extrabold tracking-tight text-zinc-600/90 dark:text-zinc-100/90 text-2xl text-center"
       level="h4"
     >
       Edit habit
@@ -104,7 +104,7 @@ exports[`EditHabitScreen should render correctly 1`] = `
         class="mt-6 flex flex-col items-center"
       >
         <button
-          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 bg-sky-600 hover:bg-sky-700 max-w-md w-full mt-6"
+          class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 w-full shadow rounded-lg text-zinc-100/90 bg-green-700 hover:bg-green-700/90 max-w-md w-full mt-6"
           type="submit"
         >
           Save habit

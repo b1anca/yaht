@@ -1,11 +1,13 @@
 # Yet Another Habits Tracker
 
+Because one more habits tracker is never too many.
+
 ## Requirements
 
 - Docker (recommended)
 - Node.js and npm (for local setup)
 
-## Recommended Setup with Docker
+## Setup with Docker
 
 Docker simplifies the setup process and ensures consistency across environments. Follow these steps to set up the application using Docker:
 

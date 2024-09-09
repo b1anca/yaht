@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink } from "react-router-dom";
 import { logout } from "../features/auth/authSlice";
 import Dropdown from "./Dropdown";
-import { BG_COLOR, BG_COLORS } from "../constants";
+import { BG_COLORS } from "../constants";
+import NavLink from "./NavLink";
 
 const ProfileDropdown = () => {
   const dispatch = useDispatch();
@@ -14,20 +14,22 @@ const ProfileDropdown = () => {
       options={[
         () => (
           <NavLink
-            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-zinc-600 dark:text-zinc-200 hover:text-[#549bff] dark:hover:text-[#549bff] border-b border-slate-900/10 dark:border-slate-100/10"
+            tertiary
             to="/user-profile"
+            className="inline-flex justify-center"
           >
             Your profile
           </NavLink>
         ),
         () => (
-          <a
+          <NavLink
+            tertiary
             href="/"
             onClick={() => dispatch(logout())}
-            className="w-full whitespace-nowrap inline-flex justify-center text-sm font-semibold py-2.5 px-4 text-zinc-600 dark:text-zinc-200 hover:text-[#549bff] dark:hover:text-[#549bff]"
+            className="inline-flex justify-center"
           >
             Sign out
-          </a>
+          </NavLink>
         ),
       ]}
     >

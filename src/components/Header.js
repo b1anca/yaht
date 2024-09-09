@@ -11,6 +11,9 @@ const Header = () => {
     <header className="top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-100/10 text-sm font-semibold leading-6">
       <div className="py-4 px-6">
         <div className="relative flex items-center">
+          <NavLink tertiary to="/" className="pl-0">
+            YAHT
+          </NavLink>
           <div className="relative flex items-center ml-auto">
             {userInfo ? (
               <>

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import Spinner from "./Spinner";
+import { BUTTON_STYLES } from "../constants";
 
 const Button = ({
   type = "text",
@@ -15,11 +16,10 @@ const Button = ({
     <button
       type={type}
       className={classNames(
-        "opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4",
+        BUTTON_STYLES.base,
         {
-          "text-zinc-100 ring-1 ring-slate-900/10 hover:ring-slate-900/20":
-            !primary,
-          "shadow text-zinc-100 bg-sky-600 hover:bg-sky-700": primary,
+          [BUTTON_STYLES.secondary]: !primary,
+          [BUTTON_STYLES.primary]: primary,
         },
         className
       )}

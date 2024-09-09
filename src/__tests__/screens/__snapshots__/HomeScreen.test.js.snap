@@ -6,30 +6,33 @@ exports[`HomeScreen should render correctly 1`] = `
     class="top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-100/10 text-sm font-semibold leading-6"
   >
     <div
-      class="max-w-6xl mx-auto"
+      class="py-4 px-6"
     >
       <div
-        class="py-4 px-6"
+        class="relative flex items-center"
       >
-        <div
-          class="relative flex items-center"
+        <a
+          aria-current="page"
+          class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 text-zinc-600/90 dark:text-zinc-100/90 hover:underline pl-0 active"
+          href="/"
         >
-          <div
-            class="relative flex items-center ml-auto"
+          YAHT
+        </a>
+        <div
+          class="relative flex items-center ml-auto"
+        >
+          <a
+            class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 text-zinc-600/90 dark:text-zinc-100/90 hover:underline"
+            href="/login"
           >
-            <a
-              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-sky-600 dark:hover:text-sky-600"
-              href="/login"
-            >
-              Sign in
-            </a>
-            <a
-              class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full bg-sky-600 hover:bg-sky-700"
-              href="/register"
-            >
-              Register
-            </a>
-          </div>
+            Sign in
+          </a>
+          <a
+            class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 w-full shadow rounded-lg text-zinc-100/90 bg-green-700 hover:bg-green-700/90"
+            href="/register"
+          >
+            Register
+          </a>
         </div>
       </div>
     </div>
@@ -38,7 +41,7 @@ exports[`HomeScreen should render correctly 1`] = `
     class="relative mx-auto mt-16 grid w-full max-w-container grid-cols-1 px-4 sm:mt-20 sm:px-6 lg:px-8 xl:mt-32"
   >
     <h1
-      class="text-sky-600 col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight sm:text-7xl xl:max-w-[43.5rem]"
+      class="text-green-700/90 col-start-1 row-start-2 mt-4 max-w-[36rem] text-7xl font-extrabold tracking-tight"
     >
       Yet Another Habits Tracker
     </h1>

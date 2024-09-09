@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import { NavLink as RRDNavLink } from "react-router-dom";
-import { TEXT_COLORS, BG_COLORS } from "../constants";
+import { TEXT_COLORS, BUTTON_STYLES } from "../constants";
 
 const NavLink = ({
   to,
@@ -17,12 +17,10 @@ const NavLink = ({
     <RRDNavLink
       to={to}
       className={classNames(
-        `text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4`,
+        BUTTON_STYLES.base,
         {
-          [`ring-1 ring-slate-300/10 dark:ring-zinc-200 hover:ring-slate-200/20 shadow rounded-full`]:
-            secondary,
-          [`w-full shadow rounded-lg text-zinc-100/90 ${BG_COLORS.primary}`]:
-            primary,
+          [BUTTON_STYLES.primary]: primary,
+          [BUTTON_STYLES.secondary]: secondary,
           [`${TEXT_COLORS.base} hover:underline`]: tertiary,
         },
         className

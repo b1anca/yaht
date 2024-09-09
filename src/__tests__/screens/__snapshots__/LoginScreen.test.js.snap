@@ -9,30 +9,33 @@ exports[`LoginScreen should render correctly 1`] = `
       class="top-0 z-40 w-full backdrop-blur transition-colors duration-500 border-b border-slate-900/10 dark:border-slate-100/10 text-sm font-semibold leading-6"
     >
       <div
-        class="max-w-6xl mx-auto"
+        class="py-4 px-6"
       >
         <div
-          class="py-4 px-6"
+          class="relative flex items-center"
         >
-          <div
-            class="relative flex items-center"
+          <a
+            aria-current="page"
+            class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 text-zinc-600/90 dark:text-zinc-100/90 hover:underline pl-0 active"
+            href="/"
           >
-            <div
-              class="relative flex items-center ml-auto"
+            YAHT
+          </a>
+          <div
+            class="relative flex items-center ml-auto"
+          >
+            <a
+              class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 text-zinc-600/90 dark:text-zinc-100/90 hover:underline"
+              href="/login"
             >
-              <a
-                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 dark:text-zinc-200 text-zinc-600 hover:text-sky-600 dark:hover:text-sky-600"
-                href="/login"
-              >
-                Sign in
-              </a>
-              <a
-                class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 w-full shadow text-zinc-100 rounded-full bg-sky-600 hover:bg-sky-700"
-                href="/register"
-              >
-                Register
-              </a>
-            </div>
+              Sign in
+            </a>
+            <a
+              class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 w-full shadow rounded-lg text-zinc-100/90 bg-green-700 hover:bg-green-700/90"
+              href="/register"
+            >
+              Register
+            </a>
           </div>
         </div>
       </div>
@@ -44,7 +47,7 @@ exports[`LoginScreen should render correctly 1`] = `
         class="w-full max-w-md p-6"
       >
         <h2
-          class="mb-4 font-extrabold tracking-tight text-zinc-600 dark:text-zinc-200 text-2xl text-center"
+          class="content-center mb-4 font-extrabold tracking-tight text-zinc-600/90 dark:text-zinc-100/90 text-2xl text-center"
           level="h4"
         >
           Sign in
@@ -88,7 +91,7 @@ exports[`LoginScreen should render correctly 1`] = `
           />
         </div>
         <button
-          class="opacity-90 hover:opacity-100 text-sm button py-2 px-6 rounded-full inline-flex justify-center text-sm font-semibold py-2.5 px-4 shadow text-zinc-100 bg-sky-600 hover:bg-sky-700 w-full"
+          class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 w-full shadow rounded-lg text-zinc-100/90 bg-green-700 hover:bg-green-700/90 w-full"
           type="submit"
         >
           Sign in
@@ -102,12 +105,12 @@ exports[`LoginScreen should render correctly 1`] = `
         class="flex justify-center items-center"
       >
         <p
-          class="text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 text-center mr-4 !mb-0"
+          class="content-center text-sm mb-2 tracking-tight text-zinc-600 dark:text-zinc-200 text-center mr-4 !mb-0"
         >
           Don't have an account?
         </p>
         <a
-          class="text-sm whitespace-nowrap py-2 px-6 justify-center font-extrabold py-2.5 px-4 ring-1 ring-slate-300/10 dark:ring-zinc-200 dark:text-zinc-200 hover:ring-slate-200/20 shadow rounded-full"
+          class="text-base whitespace-nowrap py-2 px-4 justify-center font-extrabold py-2.5 px-4 shadow rounded-lg text-green-700/90 border border-green-700/90 dark:border-green-700/90"
           href="/register"
         >
           Register
