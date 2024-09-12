@@ -154,18 +154,7 @@ const WeeklyTracker = ({ habits, data }) => {
             {dateRange.map((day) => (
               <DayHeader key={day.toISOString()} day={day} />
             ))}
-            {/* <P className="!mb-0 p-1 text-center font-semibold">
-              current <br />
-              streak
-            </P>
-            <P className="!mb-0 p-1 text-center font-semibold">
-              longest <br />
-              streak
-            </P>
-            <P className="!mb-0 p-1 text-center font-semibold">
-              overall <br />
-              progress
-            </P> */}
+            <P className="!mb-0 p-1 text-center font-semibold w-[145px]"></P>
           </div>
           {habits.map((habit) => (
             <HabitRow key={habit.id} {...habit} days={dateRange} />

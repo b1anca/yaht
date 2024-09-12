@@ -2,17 +2,24 @@ import React, { useCallback, useState } from "react";
 import { useDispatch } from "react-redux";
 import classNames from "classnames";
 import PropTypes from "prop-types";
-import { isSameDay } from "date-fns";
+import { isSameDay, format } from "date-fns";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFire, faTrophy, faCheck } from "@fortawesome/free-solid-svg-icons";
+
 import { deleteTask, createTask } from "../../features/tasks/taskActions";
 import { fetchHabit } from "../../features/habits/habitActions";
 import { DEFAULT_HABIT_COLOR, BORDER_STYLES } from "../../constants";
 import NavLink from "../../components/NavLink";
 import { P } from "../../components/Typography";
 
-const Day = ({ task, day, habitId, habitColor }) => {
+const Day = ({ task, day, habitId, habitColor, habitName }) => {
   const currentDate = new Date();
   const dispatch = useDispatch();
   const [loading, setLoading] = useState();
+  const formattedDay = `${format(day, "MMM")} ${day.getDate()} ${format(
+    day,
+    "EEE"
+  )}`;
 
   const handleDayTaskClick = useCallback(() => {
     if (loading || day > currentDate) {
@@ -36,8 +43,8 @@ const Day = ({ task, day, habitId, habitColor }) => {
           day > currentDate
             ? "This is a future date. You can't mark tasks as completed in advance."
             : task
-            ? "Click to unmark this day."
-            : "Click to mark this day."
+            ? `Click to unmark ${formattedDay} for "${habitName}"`
+            : `Click to mark ${formattedDay} for "${habitName}"`
         }
         style={{
           backgroundColor:
@@ -88,12 +95,40 @@ const HabitRow = ({
             task={completedTaskForTheDay}
             habitId={id}
             habitColor={color}
+            habitName={name}
           />
         );
       })}
-      {/* <P className="!mb-0 text-center">{current_streak}</P>
-      <P className="!mb-0 text-center">{record_streak}</P>
-      <P className="!mb-0 text-center">{overall_progress}%</P> */}
+      <div
+        className="flex justify-end w-[30px]"
+        title={`${name} current streak`}
+      >
+        <P semibold className="!mb-0 pr-1">
+          {current_streak}
+        </P>
+        <P secondary className="!m-0">
+          <FontAwesomeIcon icon={faFire} />
+        </P>
+      </div>
+      <div
+        className="flex justify-end w-[45px]"
+        title={`${name} record streak`}
+      >
+        <P semibold className="!mb-0 pr-1">
+          {record_streak}
+        </P>
+        <P secondary className="!m-0">
+          <FontAwesomeIcon icon={faTrophy} />
+        </P>
+      </div>
+      <div className="flex justify-end w-[70px]" title={`${name} % completed`}>
+        <P semibold className="!mb-0 pr-1">
+          {overall_progress}%
+        </P>
+        <P secondary className="!m-0">
+          <FontAwesomeIcon icon={faCheck} />
+        </P>
+      </div>
     </div>
   );
 };
@@ -103,6 +138,7 @@ Day.propTypes = {
   task: PropTypes.object,
   habitId: PropTypes.number,
   habitColor: PropTypes.string,
+  habitName: PropTypes.string,
 };
 
 HabitRow.propTypes = {
